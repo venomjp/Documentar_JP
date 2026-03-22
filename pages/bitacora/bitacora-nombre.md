@@ -1,5 +1,5 @@
 ---
-title: Entrada Bitacora X
+title: Entrada Bitacora 1
 description: Descripción de la entrada.- aquí escribir algo
 layout: libdoc_page.liquid
 permalink: "{{ libdocConfig.blogSlug }}/entrada1/index.html"
