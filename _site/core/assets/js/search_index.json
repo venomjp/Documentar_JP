@@ -1,81 +1,81 @@
 [
             {
-                "url": "/Documentar_JP/tags/contenido",
+                "url": "/tags/contenido",
                 "title": "Tag contenido",
                 "content": " contenido "
             },
             {
-                "url": "/Documentar_JP/tags/nivel 1",
+                "url": "/tags/nivel 1",
                 "title": "Tag nivel 1",
                 "content": " nivel 1 "
             },
             {
-                "url": "/Documentar_JP/tags/etiqueta 2",
+                "url": "/tags/etiqueta 2",
                 "title": "Tag etiqueta 2",
                 "content": " etiqueta 2 "
             },
             {
-                "url": "/Documentar_JP/tags/etiqueta1",
+                "url": "/tags/etiqueta1",
                 "title": "Tag etiqueta1",
                 "content": " etiqueta1 "
             },
             {
-                "url": "/Documentar_JP/tags/etiqueta2",
+                "url": "/tags/etiqueta2",
                 "title": "Tag etiqueta2",
                 "content": " etiqueta2 "
             },
             {
-                "url": "/Documentar_JP/tags/nivel 2",
+                "url": "/tags/nivel 2",
                 "title": "Tag nivel 2",
                 "content": " nivel 2 "
             },
             {
-                "url": "/Documentar_JP/tags/blockquote",
+                "url": "/tags/blockquote",
                 "title": "Tag blockquote",
                 "content": " blockquote "
             },
             {
-                "url": "/Documentar_JP/tags/nivel 3",
+                "url": "/tags/nivel 3",
                 "title": "Tag nivel 3",
                 "content": " nivel 3 "
             },
         {
-            "url": "/Documentar_JP/posts/entrada1/",
+            "url": "/posts/entrada1/",
             "title": "Entrada Bitacora 1",
             "content": "Descripción de la entrada.- aquí escribir algo post contenido Me gusta insertar una imagen principal, aquí puede venir una descripción más detallada del contenido del post.UtilidadPuedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.ContenidoLas cabeceras (#h1 a #h6) sirven para generar la tabla de contenido. Solo cambia el tamaño de la letra, no genera subcontenidos, los distingue independientes, pero si pones el contenido principal como H1 y luego H4 y H6 puedes ver distintos tamaños de los títulos. Pero esto no tiene ninguna utilidad real, debería ceñirme dividir el contenido en bloques de igual importancia, para eso lo suyo sería utilizar páginas (Nivel1 -&amp;gt; Nivel 2 -&amp;gt; Nivel 3)UnoAvancesCambios importantesProblemas encontradosUno.UnoSoluciones aplicadasDistintas Versiones de firmware o softwareNotas técnicasDosDecisiones de diseñoCosas aprendidas"
         },
         {
-            "url": "/Documentar_JP/posts/entrada2/",
+            "url": "/posts/entrada2/",
             "title": "Entrada Bitacora 2",
             "content": "Esta es la segunda entrada del cuaderno de bitácora post contenido Utilidad:Puedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.Contenido:AvancesCambios importantesProblemas encontradosSoluciones aplicadasDistintas Versiones de firmware o softwareNotas técnicasDecisiones de diseñoCosas aprendidas"
         },
         {
-            "url": "/Documentar_JP/pag-n1-primera/",
+            "url": "/pag-n1-primera/",
             "title": "Página de nivel 1",
             "content": "Nivel 1 de navegación entre páginas nivel 1 etiqueta 2 Hola soy una página de nivel 1. Vamos a una página hijo con un link página nivel 2.Esto en una caja de texto escrito con sintaxis Markdown [página nivel 2](/pag-n2-primera.md &amp;quot;También cambia a nivel inferior&amp;quot;)."
         },
         {
-            "url": "/Documentar_JP/pag-n1-primera/pag-n2-primera/",
+            "url": "/pag-n1-primera/pag-n2-primera/",
             "title": "Pagina de nivel 2",
             "content": "Soy una página de nivel 2 nivel 2 blockquote A continuación una cita:Hola! soy una página de nivel 2, hija de una de nivel 1― ChildVamos hacia atrás página de nivel 1 o hacia adelante página de nivel 3.A continuación un texto en Markdown:&amp;gt; Así se escriben las citas en Markdown.&amp;gt; &amp;gt; ― **Cita**Esto es texto normal en markdown"
         },
         {
-            "url": "/Documentar_JP/pag-n1-primera/pag-n2-primera/pag-n3-primera/",
+            "url": "/pag-n1-primera/pag-n2-primera/pag-n3-primera/",
             "title": "Página de nivel 3",
             "content": "Soy una página de nivel 3 nivel 3 Hola! Soy la página hija del nivel 2, estoy en el nivel 3― GrandchildVamos a subir al nivel 2.Los enlaces se referencian al nombre de la página. En ella tiene que haber un permalink con la dirección real."
         },
         {
-            "url": "/Documentar_JP/",
-            "title": "Portada del proyecto X",
+            "url": "/",
+            "title": "Portada del proyecto Documentar JP",
             "content": "Es la página HOME del proyecto etiqueta1 etiqueta2 Este parece que va a ser el comienzo de una gran historia de documentación!Comencemos!ConfigurarEmpieza introduciendo tus propias configuraciones en settings.json en la raiz del proyecto. Documentación de Configuración.EscribeFacilmente puedes escribir tu documentación con Markdown y HTML . Crear Contenido.Consigue AyudaLibDoc’s website contains a comprehensive documentation about how to install, configure and :LibDoc’s homepage The website containing LibDocs’s presentation and comprehensive documentation.Front matter Documentation of all front matter settings related to a LibDoc page.Primary navigation Detailed features of LibDoc’s primary navigation.SEO How LibDoc’s configuration and pages parameters are applied for Search Engine Optimization.Credits LibDoc could not work without these resources.LicenciaProyecto X © 2026 by Juan Pedro Perianes is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
         },
         {
-            "url": "/Documentar_JP/posts/",
+            "url": "/posts/",
             "title": "./core/libdoc_blog.liquid",
             "content": "  2026-03-20 Juan Pedro Perianes Entrada Bitacora 1 Descripción de la entrada.- aquí escribir algo 2026-03-20 Juan Pedro Perianes Entrada Bitacora 2 Esta es la segunda entrada del cuaderno de bitácora 1"
         },
         {
-            "url": "/Documentar_JP/tags/",
+            "url": "/tags/",
             "title": "./core/libdoc_tags.liquid",
             "content": "  contenido 2 páginas nivel 1 1 página etiqueta 2 1 página etiqueta1 1 página etiqueta2 1 página nivel 2 1 página blockquote 1 página nivel 3 1 página"
         }
