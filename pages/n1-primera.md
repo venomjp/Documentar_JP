@@ -1,5 +1,5 @@
 ---
-title: Página de nivel 1
+title: Nivel 1
 description: Nivel 1 de navegación entre páginas
 layout: libdoc_page.liquid
 permalink: /pages/n1-primera/index.html

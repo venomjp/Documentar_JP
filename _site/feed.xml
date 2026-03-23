@@ -4,21 +4,21 @@
     <subtitle>Guía para documentar un proyecto de forma efectiva y organizada</subtitle>
     <link href="feed.xml" rel="self" />
     <link href="#/feed.xml" />
-    <updated>2026-03-20T00:00:00Z</updated>
+    <updated>2026-03-21T00:00:00Z</updated>
     <id>#/feed.xml</id>
     <author>
         <name>11ty LibDoc</name>
     </author>
         <entry>
-            <title>Entrada Bitacora 2</title>
-            <link href="#/posts/entrada2/" />
-            <updated>2026-03-20T00:00:00Z</updated>
-            <id>#/posts/entrada2/</id>
+            <title>Ejemplo Bitácora</title>
+            <link href="#/posts/ejemplo-bitacora/" />
+            <updated>2026-03-21T00:00:00Z</updated>
+            <id>#/posts/ejemplo-bitacora/</id>
             <author>
                 <name>Juan Pedro Perianes</name>
             </author>
             <content type="html">
-                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__730__.avif 730w, /#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__730__.webp&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__730__.webp 730w, /#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/posts/ejemplo-bitacora/skills-3270306-1280-psWFXUi8id-__730__.avif 730w, /#/posts/ejemplo-bitacora/skills-3270306-1280-psWFXUi8id-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/posts/ejemplo-bitacora/skills-3270306-1280-psWFXUi8id-__730__.webp&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/posts/ejemplo-bitacora/skills-3270306-1280-psWFXUi8id-__730__.webp 730w, /#/posts/ejemplo-bitacora/skills-3270306-1280-psWFXUi8id-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;h2&gt;Utilidad:&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Puedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Contenido:&lt;/h2&gt;
@@ -35,15 +35,15 @@
 </content>
         </entry>
         <entry>
-            <title>Entrada Bitacora 1</title>
-            <link href="#/posts/entrada1/" />
+            <title>Bitácora 1</title>
+            <link href="#/posts/bitacora-1/" />
             <updated>2026-03-20T00:00:00Z</updated>
-            <id>#/posts/entrada1/</id>
+            <id>#/posts/bitacora-1/</id>
             <author>
                 <name>Juan Pedro Perianes</name>
             </author>
             <content type="html">
-                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__730__.avif 730w, /#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__730__.webp&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__730__.webp 730w, /#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;
+                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__730__.avif 730w, /#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__730__.webp&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__730__.webp 730w, /#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;
 Me gusta insertar una imagen principal, aquí puede venir una descripción más detallada del contenido del post.&lt;/p&gt;
 &lt;h1&gt;Utilidad&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;Puedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.&lt;/em&gt;&lt;/p&gt;

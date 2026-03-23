@@ -7,7 +7,7 @@
   "author": "Juan Pedro Perianes",
   "license": "ISC",
   "type": "module",
-  "scripts":{
+  "scripts": {
     "test": "echo \"Error: no se han especificado tests\" && exit 1",
     "start": "npx @11ty/eleventy --serve",
     "build-ghpages": "npx @11ty/eleventy --pathprefix",

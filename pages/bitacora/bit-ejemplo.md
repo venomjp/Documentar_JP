@@ -1,12 +1,12 @@
 ---
-title: Entrada Bitacora 2
+title: Ejemplo Bitácora
 description: Esta es la segunda entrada del cuaderno de bitácora
 layout: libdoc_page.liquid
-permalink: "{{ libdocConfig.blogSlug }}/entrada2/index.html"
+permalink: "{{ libdocConfig.blogSlug }}/{{title | slugify}}/index.html"
 tags:
     - post
     - contenido
-date: 2026-03-20
+date: 2026-03-21
 author: Juan Pedro Perianes
 ---
 ![Imagen de ejemplo](https://cdn.pixabay.com/photo/2018/03/28/19/40/skills-3270306_1280.jpg)

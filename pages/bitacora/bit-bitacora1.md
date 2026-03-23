@@ -1,8 +1,8 @@
 ---
-title: Entrada Bitacora 1
+title: Bitácora 1
 description: Descripción de la entrada.- aquí escribir algo
 layout: libdoc_page.liquid
-permalink: "{{ libdocConfig.blogSlug }}/entrada1/index.html"
+permalink: "{{ libdocConfig.blogSlug }}/{{title | slugify}}/index.html"
 tags:
     - post
     - contenido

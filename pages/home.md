@@ -7,6 +7,8 @@ tags:
     - etiqueta1
     - etiqueta2
 ---
+
+
 {% alert 'Este parece que va a ser el comienzo de una gran historia de documentación!', 'success', 'Hola!' %}
 
 ## Comencemos!
