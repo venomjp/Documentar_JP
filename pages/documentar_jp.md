@@ -1,8 +1,8 @@
 ---
-title: Portada del proyecto Documentar JP
-description: Es la página HOME del proyecto
+title: Documentar un Proyecto
+description: Página HOME del proyecto
 layout: libdoc_page.liquid
-permalink: index.html
+permalink: /index.html
 tags:
     - etiqueta1
     - etiqueta2

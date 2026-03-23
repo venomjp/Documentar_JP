@@ -2,7 +2,7 @@
 title: Página de nivel 3
 description: Soy una página de nivel 3
 layout: libdoc_page.liquid
-permalink: pages/n1-primera/n2-primera/n3-primera/index.html
+permalink: /pages/n1-primera/n2-primera/n3-primera/index.html
 eleventyNavigation:
     key: Nivel 3. Primera
     parent: Nivel 2. Primera
