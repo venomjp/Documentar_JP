@@ -1,7 +1,7 @@
 {
-  "name": "proyectox-11ty-libdoc",
+  "name": "documentar-proyectos",
   "version": "0.1",
-  "description": "Eleventy starter para hacer documentacion responsiva",
+  "description": "Proyecto basado en 11ty LibDocstarter para hacer documentacion responsiva",
   "main": "index.js",
   "keywords": [],
   "author": "Juan Pedro Perianes",

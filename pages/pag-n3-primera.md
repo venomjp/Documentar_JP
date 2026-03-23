@@ -2,7 +2,7 @@
 title: Página de nivel 3
 description: Soy una página de nivel 3
 layout: libdoc_page.liquid
-permalink: pag-n1-primera/pag-n2-primera/pag-n3-primera/index.html
+permalink: pages/n1-primera/n2-primera/n3-primera/index.html
 eleventyNavigation:
     key: Nivel 3. Primera
     parent: Nivel 2. Primera
@@ -13,6 +13,6 @@ tags:
 > 
 > ― **Grandchild**
 
-Vamos a subir al [nivel 2](/pag-n2-primera.md "Vamos a mi página padre").
+Vamos a subir al [nivel 2](./n2-primera.md "Vamos a mi página padre").
 
 Los enlaces se referencian al nombre de la página. En ella tiene que haber un permalink con la dirección real.

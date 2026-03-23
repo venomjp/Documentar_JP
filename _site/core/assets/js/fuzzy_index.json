@@ -1,41 +1,41 @@
 [
         {
-            "url": "/posts/entrada1/",
+            "url": "/Documentar_Proyecto/posts/entrada1/",
             "title": "Entrada Bitacora 1",
             "description": "Descripción de la entrada.- aquí escribir algo post contenido"
         },
         {
-            "url": "/posts/entrada2/",
+            "url": "/Documentar_Proyecto/posts/entrada2/",
             "title": "Entrada Bitacora 2",
             "description": "Esta es la segunda entrada del cuaderno de bitácora post contenido"
         },
         {
-            "url": "/pag-n1-primera/",
+            "url": "/Documentar_Proyecto/pages/n1-primera/",
             "title": "Página de nivel 1",
             "description": "Nivel 1 de navegación entre páginas nivel 1 etiqueta 2"
         },
         {
-            "url": "/pag-n1-primera/pag-n2-primera/",
+            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/",
             "title": "Pagina de nivel 2",
             "description": "Soy una página de nivel 2 nivel 2 blockquote"
         },
         {
-            "url": "/pag-n1-primera/pag-n2-primera/pag-n3-primera/",
+            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/n3-primera/",
             "title": "Página de nivel 3",
             "description": "Soy una página de nivel 3 nivel 3"
         },
         {
-            "url": "/",
+            "url": "/Documentar_Proyecto/",
             "title": "Portada del proyecto Documentar JP",
             "description": "Es la página HOME del proyecto etiqueta1 etiqueta2"
         },
         {
-            "url": "/posts/",
+            "url": "/Documentar_Proyecto/posts/",
             "title": "./core/libdoc_blog.liquid",
             "description": " "
         },
         {
-            "url": "/tags/",
+            "url": "/Documentar_Proyecto/tags/",
             "title": "./core/libdoc_tags.liquid",
             "description": " "
         }

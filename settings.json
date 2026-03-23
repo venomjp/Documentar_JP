@@ -1,6 +1,6 @@
 {
-    "siteTitle": "Documentar JP",
-    "siteDescription": "Descripción breve de mi proyecto=subtitulo",
+    "siteTitle": "Documentar un Proyecto",
+    "siteDescription": "Guía para documentar un proyecto de forma efectiva y organizada",
     "author": "Juan Pedro Perianes",
     "faviconUrl": "/assets/myfavicon.png",
     "blogTitle": "Bitácora",
@@ -29,7 +29,7 @@
         }
     ],
     "lang": "es",
-    "htmlBasePathPrefix": "/Documentar_JP/",
+    "htmlBasePathPrefix": "/Documentar_Proyecto/",
     "hljsLanguages": [
         "xml",
         "javascript",

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="es">
-    <title>Documentar JP</title>
-    <subtitle>Descripción breve de mi proyecto=subtitulo</subtitle>
+    <title>Documentar un Proyecto</title>
+    <subtitle>Guía para documentar un proyecto de forma efectiva y organizada</subtitle>
     <link href="feed.xml" rel="self" />
     <link href="#/feed.xml" />
     <updated>2026-03-20T00:00:00Z</updated>
@@ -18,7 +18,7 @@
                 <name>Juan Pedro Perianes</name>
             </author>
             <content type="html">
-                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=730&amp;format=avif&amp;via=transform 730w, /#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=1280&amp;format=avif&amp;via=transform 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=730&amp;format=webp&amp;via=transform&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=730&amp;format=webp&amp;via=transform 730w, /#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=1280&amp;format=webp&amp;via=transform 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
+                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__730__.avif 730w, /#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__730__.webp&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__730__.webp 730w, /#/posts/entrada2/skills-3270306-1280-psWFXUi8id-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;&lt;/p&gt;
 &lt;h2&gt;Utilidad:&lt;/h2&gt;
 &lt;p&gt;&lt;em&gt;Puedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.&lt;/em&gt;&lt;/p&gt;
 &lt;h2&gt;Contenido:&lt;/h2&gt;
@@ -43,7 +43,7 @@
                 <name>Juan Pedro Perianes</name>
             </author>
             <content type="html">
-                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=730&amp;format=avif&amp;via=transform 730w, /#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=1280&amp;format=avif&amp;via=transform 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=730&amp;format=webp&amp;via=transform&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=730&amp;format=webp&amp;via=transform 730w, /#/.11ty/image/?src=https%3A%2F%2Fcdn.pixabay.com%2Fphoto%2F2018%2F03%2F28%2F19%2F40%2Fskills-3270306_1280.jpg&amp;width=1280&amp;format=webp&amp;via=transform 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;
+                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__730__.avif 730w, /#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__730__.webp&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__730__.webp 730w, /#/posts/entrada1/skills-3270306-1280-psWFXUi8id-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;
 Me gusta insertar una imagen principal, aquí puede venir una descripción más detallada del contenido del post.&lt;/p&gt;
 &lt;h1&gt;Utilidad&lt;/h1&gt;
 &lt;p&gt;&lt;em&gt;Puedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.&lt;/em&gt;&lt;/p&gt;

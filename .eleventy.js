@@ -13,11 +13,6 @@ import libdocFunctions                      from "./_data/libdocFunctions.js";
 // END LibDoc imports
 
 export default function(eleventyConfig) {
-    
-    // DIRECTORIOS
-    // Directorio de salida
-    //eleventyConfig.setOutputDirectory("docs");
-    // FIN DIRECTORIOS
 
     // START PLUGINS
     eleventyConfig.addPlugin(EleventyHtmlBasePlugin);
