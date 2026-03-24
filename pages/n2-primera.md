@@ -26,11 +26,8 @@ A continuación un texto en Markdown:
 > ― **Cita**
 
 Ir hacia atrás con rutas relativas (..):
-[página de nivel 1](../n1-primera/ "Hacia atrás")
-Ir hacia atrás con rutas absolutas y pathPrefix:
-[página de nivel 1]({{ 'pages/n1-primera/' | url }} "Hacia atrás")
-Sin poner / delante y usará pathPrefix 2 veces
+[página de nivel 1](../ "Hacia atrás")
 
 Ir hacia adelante con ruta relativa:
-./pagina-siguiente/
+[página de nivel 3](./pagina-siguiente/ "Hacia adelante")
 ```
