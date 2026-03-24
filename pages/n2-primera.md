@@ -29,7 +29,9 @@ A continuación un texto en Markdown:
 Ir hacia atrás con rutas relativas (..):
 
 [página de nivel 1](../ "Hacia atrás")
+[Nivel 1]( ./n1-primera.md "Hacia atrás =  padre")
 
 Ir hacia adelante con ruta relativa:
 [página de nivel 3](./pagina-siguiente/ "Hacia adelante")
+[Nivel 3]( ./n3-primera.md "Hacia adelante = hija")
 ```
