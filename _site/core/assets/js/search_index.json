@@ -1,5 +1,35 @@
 [
             {
+                "url": "/Documentar_Proyecto/tags/navegación",
+                "title": "Tag navegación",
+                "content": " navegación "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/bitácora",
+                "title": "Tag bitácora",
+                "content": " bitácora "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/búsqueda",
+                "title": "Tag búsqueda",
+                "content": " búsqueda "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/search",
+                "title": "Tag search",
+                "content": " search "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/home",
+                "title": "Tag home",
+                "content": " home "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/tabla de contenidos",
+                "title": "Tag tabla de contenidos",
+                "content": " tabla de contenidos "
+            },
+            {
                 "url": "/Documentar_Proyecto/tags/nivel 2",
                 "title": "Tag nivel 2",
                 "content": " nivel 2 "
@@ -40,9 +70,9 @@
                 "content": " niveles de páginas "
             },
             {
-                "url": "/Documentar_Proyecto/tags/bitácora",
-                "title": "Tag bitácora",
-                "content": " bitácora "
+                "url": "/Documentar_Proyecto/tags/cuaderno",
+                "title": "Tag cuaderno",
+                "content": " cuaderno "
             },
             {
                 "url": "/Documentar_Proyecto/tags/crear  contenido",
@@ -50,9 +80,14 @@
                 "content": " crear  contenido "
             },
             {
-                "url": "/Documentar_Proyecto/tags/estructura de ficheros",
-                "title": "Tag estructura de ficheros",
-                "content": " estructura de ficheros "
+                "url": "/Documentar_Proyecto/tags/estructura",
+                "title": "Tag estructura",
+                "content": " estructura "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/ficheros",
+                "title": "Tag ficheros",
+                "content": " ficheros "
             },
             {
                 "url": "/Documentar_Proyecto/tags/file tree",
@@ -75,14 +110,44 @@
                 "content": " github pages "
             },
             {
+                "url": "/Documentar_Proyecto/tags/git",
+                "title": "Tag git",
+                "content": " git "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/github desktop",
+                "title": "Tag github desktop",
+                "content": " github desktop "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/visual studio code",
+                "title": "Tag visual studio code",
+                "content": " visual studio code "
+            },
+            {
                 "url": "/Documentar_Proyecto/tags/licencia",
                 "title": "Tag licencia",
                 "content": " licencia "
             },
             {
-                "url": "/Documentar_Proyecto/tags/navegación",
-                "title": "Tag navegación",
-                "content": " navegación "
+                "url": "/Documentar_Proyecto/tags/difusa",
+                "title": "Tag difusa",
+                "content": " difusa "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/links personalizados",
+                "title": "Tag links personalizados",
+                "content": " links personalizados "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/tags",
+                "title": "Tag tags",
+                "content": " tags "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/resultados",
+                "title": "Tag resultados",
+                "content": " resultados "
             },
             {
                 "url": "/Documentar_Proyecto/tags/nivel 1",
@@ -93,11 +158,6 @@
                 "url": "/Documentar_Proyecto/tags/etiqueta 2",
                 "title": "Tag etiqueta 2",
                 "content": " etiqueta 2 "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/contenido",
-                "title": "Tag contenido",
-                "content": " contenido "
             },
             {
                 "url": "/Documentar_Proyecto/tags/modificaciones",
@@ -115,16 +175,6 @@
                 "content": " toc "
             },
             {
-                "url": "/Documentar_Proyecto/tags/tabla de contenidos",
-                "title": "Tag tabla de contenidos",
-                "content": " tabla de contenidos "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/home",
-                "title": "Tag home",
-                "content": " home "
-            },
-            {
                 "url": "/Documentar_Proyecto/tags/blockquote",
                 "title": "Tag blockquote",
                 "content": " blockquote "
@@ -140,34 +190,19 @@
                 "content": " nivel 3 "
             },
         {
-            "url": "/Documentar_Proyecto/posts/bitacora-1/",
-            "title": "Bitácora 1",
-            "content": "Descripción de la entrada.- aquí escribir algo post contenido Me gusta insertar una imagen principal, aquí puede venir una descripción más detallada del contenido del post.UtilidadPuedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.ContenidoLas cabeceras (#h1 a #h6) sirven para generar la tabla de contenido. Solo cambia el tamaño de la letra, no genera subcontenidos, los distingue independientes, pero si pones el contenido principal como H1 y luego H4 y H6 puedes ver distintos tamaños de los títulos. Pero esto no tiene ninguna utilidad real, debería ceñirme dividir el contenido en bloques de igual importancia, para eso lo suyo sería utilizar páginas (Nivel1 -&amp;gt; Nivel 2 -&amp;gt; Nivel 3)UnoAvancesCambios importantesProblemas encontradosUno.UnoSoluciones aplicadasDistintas Versiones de firmware o softwareNotas técnicasDosDecisiones de diseñoCosas aprendidas"
-        },
-        {
             "url": "/Documentar_Proyecto/pages/n1-primera/",
             "title": "Nivel 1",
             "content": "Nivel 1 de navegación entre páginas nivel 1 etiqueta 2 Hola soy una página de nivel 1.Vamos a una página hijo con referencia a la plantilla de origen Nivel 2.Este otro enlace se hace con referencia a la ruta relativa (que ya lleva pathPrefix) Nivel 2.Para bajar un nivel, se puede hacer referenciando la plantilla de origen[página nivel 2](n2-segunda.md &amp;quot;También cambia a nivel inferior&amp;quot;)."
         },
         {
-            "url": "/Documentar_Proyecto/pages/licencia/",
-            "title": "./pages/licencia.md",
-            "content": "  Puedes generar el pie de la licencia en la página de Creative Commons https://creativecommons.org/chooser/Indicando:El nombre del proyecto y su webEl autor y su webEl tipo de licencia (incorpora el enlace a la web que lo explica y sus logos)Proyecto X © 2026 by Juan Pedro Perianes is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
-        },
-        {
-            "url": "/Documentar_Proyecto/files/readme/",
-            "title": "./files/readme.md",
-            "content": "  ContenidoEn esta carpeta se guardarán ARCHIVOS VARIOS en 4 carpetasaudio - archivos de audioimagen - imágenestexto - documentos de texto, docs, pdf...video - archivos de video"
-        },
-        {
             "url": "/Documentar_Proyecto/posts/",
             "title": "./core/libdoc_blog.liquid",
-            "content": "  2026-03-25 Juan Pedro Perianes Modificaciones respecto a &#34;LibDoc Starter Project&#34; Cambios realizados en el proyecto base para adaptarlo a mis necesidades. 2026-03-20 Juan Pedro Perianes Bitácora 1 Descripción de la entrada.- aquí escribir algo 1"
+            "content": "  2026-03-25 Modificaciones respecto a &#34;LibDoc Starter Project&#34; Cambios realizados en el proyecto base para adaptarlo a mis necesidades. 2026-03-24 Cuaderno de bitácora Cómo lo voy a utilizar, qué tipo de contenido voy a incluir, cómo lo voy a organizar, etc. 1"
         },
         {
             "url": "/Documentar_Proyecto/tags/",
             "title": "./core/libdoc_tags.liquid",
-            "content": "  nivel 2 2 páginas configuración 1 página iniciar proyecto 1 página package.json 1 página settings.json 1 página README.md 1 página favicon 1 página niveles de páginas 1 página bitácora 1 página crear contenido 1 página estructura de ficheros 1 página file tree 1 página instalación 1 página nodejs 1 página github pages 1 página licencia 1 página navegación 1 página nivel 1 1 página etiqueta 2 1 página contenido 1 página modificaciones 1 página libdoc 1 página toc 1 página tabla de contenidos 1 página home 1 página blockquote 1 página segunda 1 página nivel 3 1 página"
+            "content": "  navegación 7 páginas bitácora 2 páginas búsqueda 2 páginas search 2 páginas home 2 páginas tabla de contenidos 2 páginas nivel 2 2 páginas configuración 1 página iniciar proyecto 1 página package.json 1 página settings.json 1 página README.md 1 página favicon 1 página niveles de páginas 1 página cuaderno 1 página crear contenido 1 página estructura 1 página ficheros 1 página file tree 1 página instalación 1 página nodejs 1 página github pages 1 página git 1 página github desktop 1 página visual studio code 1 página licencia 1 página difusa 1 página links personalizados 1 página tags 1 página resultados 1 página nivel 1 1 página etiqueta 2 1 página modificaciones 1 página libdoc 1 página toc 1 página blockquote 1 página segunda 1 página nivel 3 1 página"
         },
         {
             "url": "/Documentar_Proyecto/",
@@ -190,6 +225,11 @@
             "content": "Soy una página de nivel 2 nivel 2 segunda A continuación una cita:Hola! soy una SEGUNDA página de nivel 2, hija de una de nivel 1― ChildVamos hacia atrás página de nivel 1 o hacia adelante página de nivel 3.A continuación un texto en Markdown:&amp;gt; Así se escriben las citas en Markdown.&amp;gt; &amp;gt; ― **Cita**Esto es texto normal en markdown"
         },
         {
+            "url": "/Documentar_Proyecto/posts/cuaderno-de-bitacora/",
+            "title": "Cuaderno de bitácora",
+            "content": "Cómo lo voy a utilizar, qué tipo de contenido voy a incluir, cómo lo voy a organizar, etc. post bitácora cuaderno Imagen principal del postEsto es un cuaderno de bitácora. Me gusta insertar una imagen principal en cada post, justo debajo se puede incluir una descripción más detallada del contenido del post o una introducción.Cómo lo voy a utilizarVoy a utilizar el BLOG como un cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.Cada entrada del blog será un post de cualquier cosa que me parezca relevante para el proyecto y que me gustaría tener documentada.Qué tipo de Contenido incluirAvances en el proyectoCambios importantes que surgen durante el desarrolloProblemas encontrados en el procesoSoluciones aplicadas a esos problemasDistintas Versiones de firmware o softwareNotas técnicasDecisiones de diseñoAclaraciones sobre el proyectoCosas aprendidasRecordatorios de aciertos y errores que me gustaría no olvidarCómo organizarloEn principio, todos los posts se organizan cronológicamente con el post más reciente en la parte superior.Para facilitar la organización y búsqueda de los posts, es recomendable utilizar tags relacionados con el contenido del post.Ubicación de las plantillasLas plantillas de los posts se encuentran en la subcarpeta pages/bitacora.Formato de los nombres los postsEl formato de los nombres de plantilla de los posts es:bit- + &amp;lt;nombre del post&amp;gt;.mdSin embargo el formato de salida de los posts es:posts/ + &amp;lt;nombre del post&amp;gt;/+index.htmlCabecera de los postsLo más importante es que cada post contenga el tag post que sirve para identificarlo como una entrada del (blog) cuaderno de bitácora. Además, es recomendable incluir otros tags relacionados con el contenido del post para facilitar su organización y búsqueda.---title: Título del postdescription: Subtítulo del post o brevedescripción del postlayout: libdoc_page.liquidpermalink: &amp;quot;posts/cuaderno-de-bitacora/index.html&amp;quot;tags: - post - tag relacionado con el contenido del postdate: 2026-03-26---![Imagen del post](/assets/cuadernoBitacora.jpg)Contenido del post..."
+        },
+        {
             "url": "/Documentar_Proyecto/pages/n1-configuracion/",
             "title": "Configuraciones",
             "content": "Pasos previos para que funcione cualquier proyecto. configuración iniciar proyecto package.json settings.json README.md favicon niveles de páginas bitácora Qué cosas cambiar al iniciar un nuevo proyectoUna vez que se ha clonado la plantilla para crear un nuevo proyecto, hay que realizar algunos cambios en los archivos de configuración para adaptarlos al nuevo proyecto:Nombre del proyecto y descripción.Icono del sitio web (favicon).Custom links en la barra de navegación.PathPrefix para GitHub Pages (repositorio).Resaltado de sintaxis para los lenguajes de programación relevantes para el proyecto.Cuáles son los archivos de configuración y qué se configura en cada uno de ellospackage.json - archivo de configuración de NodeJS con los scripts para generar la documentación.Nombre del proyecto - debe coincidir con el nombre del repositorio en GitHub.Versión - para indicar la versión inicial del proyecto.Descripción - para proporcionar una breve descripción del proyecto, es como un subtítulo.main: &amp;quot;index.js&amp;quot; aunque no se utiliza un archivo index.js en este proyecto, es necesario mantener esta propiedad para que NodeJS no genere errores al ejecutar los scripts.Licencia - CC BY-NC-SA 4.0 para que coincida con la licencia del proyecto.Scripts:start para iniciar el servidor local y comprobar que se visualiza la documentación en localhost.build-ghpages para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.clean para limpiar la carpeta de salida antes de generar la documentación.settings.json - este archivo contiene la configuración del home y general del sitio web, sobreescribe los valores por defecto de LibDoc.Título del sitio web - para darle un título personalizado al sitio web.Descripción del sitio web - para proporcionar una breve descripción del sitio web, es como un subtítulo.Autor - para mostrar el nombre del autor en las entradas del blog (bitácora).Ubicación del favicon - para mostrar un favicon personalizado en la pestaña del navegador.Título del blog - para darle un título personalizado a la sección del blog, que en este caso es el cuaderno de bitácora donde se registran los cambios realizados en el proyecto.Descripción del blog - para proporcionar una breve descripción de la sección del blog (bitácora).customLinks para agregar enlaces personalizados en la barra de navegación, como el enlace a mi perfil de GitHub.Lenguaje - para establecer el idioma del sitio web, en este caso español (&amp;quot;es&amp;quot;).htmlBasePathPrefix para que los enlaces a los archivos y recursos funcionen correctamente en GitHub Pages, ya que el sitio web se alojará en una subcarpeta con el nombre del repositorio.hljsLanguages para incluir lenguajes de programación relevantes para el tipo de documentación que estoy creando, como arduino, python, c y gcode.tocEnabled para mostrar una tabla de contenidos en cada página de la documentación (en el blog no aparecía).README.md - archivo de presentación del proyecto con información general y enlaces a la documentación. Recuerda cambiarlo en cada proyecto.myfavicon.png - archivo de imagen para el favicon del sitio web. Recomendado usar una imagen PNG de 512x512 pixeles. [./assets/myfavicon.png]Cómo gestiono e identifico los Niveles de Páginasn1-nombreN1.md - Este es el formato de las páginas de nivel 1, secciones principales.n2-nombreN2.md - Este es el formato de las páginas de nivel 2, subsecciones dentro de las secciones principales.n3-nombreN3.md - Este es el formato de las páginas de nivel 3, subsecciones dentro de las subsecciones de nivel 2.Cuál es el formato de las Entradas del cuaderno de Bitácorabit-nombreEntrada.md - Este es el formato de las entradas de la bitácora, con información sobre los cambios realizados en el proyecto, problemas encontrados, soluciones implementadas, etc."
@@ -202,17 +242,17 @@
         {
             "url": "/Documentar_Proyecto/pages/n1-estructura-ficheros/",
             "title": "Estructura de ficheros",
-            "content": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura de ficheros file tree En esta sección se muestra la estructura de ficheros y archivos más significativos de la plantilla de proyecto, con una breve descripción.RAIZ DEL PROYECTO¦ .eleventy.js -&amp;gt; Configuración de Eleventy¦ .eleventyignore -&amp;gt; Indica a Eleventy qué ignorar¦ .gitattributes -&amp;gt; Configurar atributos específicos para Git¦ .gitignore -&amp;gt; Indica a Git qué archivos o carpetas ignorar¦ LICENSE -&amp;gt; Licencia del proyecto¦ package-lock.json -&amp;gt; Versiones de las dependencias instaladas¦ package.json -&amp;gt; Configuración de NodeJS¦ README.md -&amp;gt; Resumen del proyecto¦ settings.json -&amp;gt; Configuración general del proyecto¦ +---.github¦ +---workflows¦ build.yml -&amp;gt; GHAction automatiza la construcción de la web¦ +---3dDesign -&amp;gt; Carpeta para almacenar diseños 3D¦ ¦ readme.md¦ ¦ ¦ +---3mf¦ +---gcode¦ +---stl+---assets -&amp;gt; Recursos estáticos como imágenes, íconos...¦ logo-11ty.png¦ myfavicon.png -&amp;gt; Favicon del proyecto¦ +---core -&amp;gt; Archivos del núcleo del proyecto¦ ¦ feed.njk¦ ¦ libdoc_blog.liquid¦ ¦ libdoc_fuzzy_index.liquid¦ ¦ libdoc_search.html¦ ¦ libdoc_search_index.liquid¦ ¦ libdoc_tag.liquid¦ ¦ libdoc_tags.liquid¦ ¦ ¦ +---assets -&amp;gt; Recursos específicos del núcleo¦ +---css¦ ¦ ¦ +---fonts¦ ¦ ¦ +---icons¦ ¦ ¦ +---js¦ +---files -&amp;gt; Carpeta para archivos del proyecto¦ ¦ readme.md¦ ¦ ¦ +---audio¦ +---images¦ +---text¦ +---video¦ +---node_modules -&amp;gt; Dependencias del proyecto¦ +---pages -&amp;gt; Páginas web del proyecto¦ ¦ home.md¦ ¦ n1-primera.md¦ ¦ n2-primera.md¦ ¦ n2-segunda.md¦ ¦ n3-primera.md¦ ¦ ¦ +---bitacora -&amp;gt; Páginas del Blog = bitácora del proyecto¦ bit-bitacora1.md¦ bit-ejemplo.md¦ +---sandboxes -&amp;gt; (No usado) Proyectos experimentales¦ +---sourceCode -&amp;gt; Carpeta para almacener el Código fuente¦ ¦ readme.md¦ ¦ ¦ +---proyectoX1¦ +---proyectoX2+---_data -&amp;gt; Datos globales para el proyecto¦ libdocConfig.js¦ libdocFunctions.js¦ libdocMessages.json¦ libdocSystem.json¦ libdocUtils.js¦ +---_includes -&amp;gt; Estructura de las páginas libdoc_before_html.liquid libdoc_breadcrumb.liquid libdoc_page.liquid sandbox.liquid"
+            "content": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree En esta sección se muestra la estructura de ficheros y archivos más significativos de la plantilla de proyecto, con una breve descripción.He modificado la estructura original de LibDocLas plantillas que serán transformadas en páginas web se han movido a la carpeta pages.El blog (bitácora) lo he incluido dentro de la carpeta pages/bitacora.Hay una nueva carpeta .github para almacenar los archivos de configuración de GitHub Actions.Los proyectos disponen de unas carpetas para organizar los archivos3dDesign: para diseños 3Dfieles: para archivos del proyectosourceCode: para el código fuente del proyectoRAIZ DEL PROYECTO¦ .eleventy.js -&amp;gt; Configuración de Eleventy¦ .eleventyignore -&amp;gt; Indica a Eleventy qué ignorar¦ .gitattributes -&amp;gt; Configurar atributos específicos para Git¦ .gitignore -&amp;gt; Indica a Git qué archivos o carpetas ignorar¦ LICENSE -&amp;gt; Licencia del proyecto¦ package-lock.json -&amp;gt; Versiones de las dependencias instaladas¦ package.json -&amp;gt; Configuración de NodeJS¦ README.md -&amp;gt; Resumen del proyecto¦ settings.json -&amp;gt; Configuración general del proyecto¦ +---.github¦ +---workflows¦ build.yml -&amp;gt; GHAction automatiza la construcción de la web¦ +---3dDesign -&amp;gt; Carpeta para almacenar diseños 3D¦ ¦ readme.md¦ ¦ ¦ +---3mf¦ +---gcode¦ +---stl+---assets -&amp;gt; Recursos estáticos como imágenes, íconos...¦ logo-11ty.png¦ myfavicon.png -&amp;gt; Favicon del proyecto¦ +---core -&amp;gt; Archivos del núcleo del proyecto¦ ¦ feed.njk¦ ¦ libdoc_blog.liquid¦ ¦ libdoc_fuzzy_index.liquid¦ ¦ libdoc_search.html¦ ¦ libdoc_search_index.liquid¦ ¦ libdoc_tag.liquid¦ ¦ libdoc_tags.liquid¦ ¦ ¦ +---assets -&amp;gt; Recursos específicos del núcleo¦ +---css¦ ¦ ¦ +---fonts¦ ¦ ¦ +---icons¦ ¦ ¦ +---js¦ +---files -&amp;gt; Carpeta para archivos del proyecto¦ ¦ readme.md¦ ¦ ¦ +---audio¦ +---images¦ +---text¦ +---video¦ +---node_modules -&amp;gt; Dependencias del proyecto¦ +---pages -&amp;gt; Páginas web del proyecto¦ ¦ home.md¦ ¦ n1-primera.md¦ ¦ n2-primera.md¦ ¦ n2-segunda.md¦ ¦ n3-primera.md¦ ¦ ¦ +---bitacora -&amp;gt; Páginas del Blog = bitácora del proyecto¦ bit-bitacora1.md¦ bit-ejemplo.md¦ +---sandboxes -&amp;gt; (No usado) Proyectos experimentales¦ +---sourceCode -&amp;gt; Carpeta para almacener el Código fuente¦ ¦ readme.md¦ ¦ ¦ +---proyectoX1¦ +---proyectoX2+---_data -&amp;gt; Datos globales para el proyecto¦ libdocConfig.js¦ libdocFunctions.js¦ libdocMessages.json¦ libdocSystem.json¦ libdocUtils.js¦ +---_includes -&amp;gt; Estructura de las páginas libdoc_before_html.liquid libdoc_breadcrumb.liquid libdoc_page.liquid sandbox.liquid"
         },
         {
             "url": "/Documentar_Proyecto/pages/n1-instalaciones/",
             "title": "Instalaciones necesarias",
-            "content": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages Partimos de la base de que el ordenador que se utilice deberá tener instalado previamente:GitGitHub DesktopVisual Studio Code. Extensiones:Markdown All in OneGitHub ActionsGitHub Copilot ChatGit HistoryLiquidNodeJSAdemás, para que funcione cualquier proyecto basado en la plantilla de proyectos con documentación en formato web alojada en GitHub Pages, se necesitan los siguientes pasos iniciales:Clonar el repositorio de la plantilla para proyectos y cambiarle el nombre.Borrar la carpte oculta .git para desvincularlo del repositorio original.Instalar Eleventy en el repositorio clonado:npm install @11ty/eleventy - instalar Eleventynpm audit fix - corregir vulnerabilidades de seguridadComprobar que el proyecto funciona en modo local:npm run clean - script para limpiar la carpeta de salidanpm run start - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhostSubir el proyecto a un repositorio nuevo en GitHub:Crear un nuevo repositorio en GitHub con el mismo nombre que el proyecto.Subir el proyecto al nuevo repositorio utilizando GitHub Desktop.Modificar el pathPrefix (.eleventy.js) con el nombre del repositorio nuevo.npm run clean - script para limpiar la carpeta de salida antes de subir los cambios.npm run build-ghpages - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.Activar GitHub Pages en el repositorio nuevo y comprobar que se visualiza la documentación.Settings &amp;gt; Pages &amp;gt; Build &amp;amp; Deploy: GitHub Actions &amp;gt; Save - genera la página web automáticamente cada vez que se suben cambios al repositorio.Hacer algún cambio, generar un commit y subirlo con push para comprobar que se actualiza la página web.Recuerda que el repositorio tiene que ser público para que se visualice la página web."
+            "content": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages git github desktop visual studio code Partimos de la base de que el ordenador que se utilice deberá tener instalado previamente:GitGitHub DesktopVisual Studio Code. Extensiones:Markdown All in OneGitHub ActionsGitHub Copilot ChatGit HistoryLiquidNodeJSAdemás, para que funcione cualquier proyecto basado en la plantilla de proyectos con documentación en formato web alojada en GitHub Pages, se necesitan los siguientes pasos iniciales:Clonar el repositorio de la plantilla para proyectos y cambiarle el nombre.Borrar la carpte oculta .git para desvincularlo del repositorio original.Instalar Eleventy en el repositorio clonado:npm install @11ty/eleventy - instalar Eleventynpm audit fix - corregir vulnerabilidades de seguridadComprobar que el proyecto funciona en modo local:npm run clean - script para limpiar la carpeta de salidanpm run start - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhostSubir el proyecto a un repositorio nuevo en GitHub:Crear un nuevo repositorio en GitHub con el mismo nombre que el proyecto.Subir el proyecto al nuevo repositorio utilizando GitHub Desktop.Modificar el pathPrefix (.eleventy.js) con el nombre del repositorio nuevo.npm run clean - script para limpiar la carpeta de salida antes de subir los cambios.npm run build-ghpages - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.Activar GitHub Pages en el repositorio nuevo y comprobar que se visualiza la documentación.Settings &amp;gt; Pages &amp;gt; Build &amp;amp; Deploy: GitHub Actions &amp;gt; Save - genera la página web automáticamente cada vez que se suben cambios al repositorio.Hacer algún cambio, generar un commit y subirlo con push para comprobar que se actualiza la página web.Recuerda que el repositorio tiene que ser público para que se visualice la página web."
         },
         {
             "url": "/Documentar_Proyecto/pages/n1-navegacion/",
             "title": "Navegación",
-            "content": "Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú. navegación "
+            "content": "Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú. navegación La navegación es un aspecto crucial en cualquier sitio web, ya que permite a los usuarios encontrar fácilmente la información que buscan. En esta sección, exploraremos diferentes técnicas de navegación, incluyendo tablas de contenidos, navegación inteligente, búsqueda difusa y estándar. Además, aprenderás cómo crear items en el menú para mejorar la experiencia del usuario.Enlace a HOMEEntrada de búsquedaResultados de búsquedaLinks personalizadosLista de tagsTabla de contenidos"
         },
         {
             "url": "/Documentar_Proyecto/posts/modificaciones-respecto-a-libdoc-starter-project/",
@@ -225,8 +265,33 @@
             "content": "Información sobre la licencia del proyecto. licencia Es importante definir la licencia de un proyecto para que los usuarios sepan cómo pueden usar, modificar y distribuir el proyecto. La licencia también protege los derechos del autor y establece las condiciones de uso del proyecto.Licencia del ProyectoWeb documentación = proyecto público Para disponer de la documentación del proyecto en una web estática a través de GitHub Pages, el proyecto debe ser público y debe incluir un archivo de licencia en la raíz del proyecto.Hay un archivo de texto llamado LICENSE que contiene el texto completo de la licencia del proyecto en castellano y en inglés.RecuerdaCambiar el nombre del proyecto.Licencia en la documentaciónWeb del proyecto La documentación del proyecto también incluye una referencia a la licencia del mismo. En el pie del HOME, al final, se encuentra la licencia.El texto de la licencia se puede generar en la página de Creative Commons con su generador, que permite personalizarlo indicando:El nombre del proyecto y su webEl autor y su webEl tipo de licencia (incorpora el enlace a la web que lo explica y sus logos) Recuerda Cambiar el nombre del proyecto y el enlace a su web."
         },
         {
-            "url": "/Documentar_Proyecto/pages/fileTree/",
-            "title": "./pages/fileTree.md",
-            "content": "  File TreeListado de carpetas y archivos más significativos en la estructura de la plantilla de un proyecto.RAIZ DEL PROYECTO¦ .eleventy.js¦ .eleventyignore¦ .gitattributes¦ .gitignore¦ fileTree.txt¦ LICENSE¦ package-lock.json¦ package.json¦ README.md¦ settings.json¦+---.github¦ +---workflows¦ build.yml¦+---3dDesign¦ ¦ readme.md¦ ¦¦ +---3mf¦ +---gcode¦ +---stl+---assets¦ logo-11ty.png¦ myfavicon.png¦+---core¦ ¦ feed.njk¦ ¦ libdoc_blog.liquid¦ ¦ libdoc_fuzzy_index.liquid¦ ¦ libdoc_search.html¦ ¦ libdoc_search_index.liquid¦ ¦ libdoc_tag.liquid¦ ¦ libdoc_tags.liquid¦ ¦¦ +---assets¦ +---css¦ ¦¦ +---fonts¦ ¦¦ +---icons¦ ¦¦ +---js¦+---files¦ ¦ readme.md¦ ¦¦ +---audio¦ +---images¦ +---text¦ +---video+---node_modules¦+---pages¦ ¦ home.md¦ ¦ n1-primera.md¦ ¦ n2-primera.md¦ ¦ n2-segunda.md¦ ¦ n3-primera.md¦ ¦¦ +---bitacora¦ bit-bitacora1.md¦ bit-ejemplo.md¦+---sandboxes¦+---sourceCode¦ ¦ readme.md¦ ¦¦ +---proyectoX1¦ +---proyectoX2+---_data¦ libdocConfig.js¦ libdocFunctions.js¦ libdocMessages.json¦ libdocSystem.json¦ libdocUtils.js¦+---_includeslibdoc_before_html.liquidlibdoc_breadcrumb.liquidlibdoc_page.liquidsandbox.liquid"
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-busqueda/",
+            "title": "Entrada de búsqueda",
+            "content": "Modos de entrada de búsqueda estándar y difusa. navegación búsqueda search difusa La entrada de búqueda soporta la búsqueda estándar y la difusa.Presiona 🆂 para saltar a la entrada de búsqueda.Búsqueda estándarPermite encontrar la coincidencia exacta de la consulta escrita en el campo de entrada. Use Enter para enviar una búsqueda estándar. La función de búsqueda estándar permite encontrar cualquier consulta de texto de más de 3 caracteres en todas las páginas creadas en el proyecto.Búsqueda difusaEstá diseñada para una navegación sencilla mediante teclado.Permite encontrar rápidamente cualquier página escribiendo algunos caracteres, incluso en el orden incorrecto. La búsqueda difusa facilita la navegación mediante el teclado. Use las flechas arriba ↑y abajo ↓para Enterenviar.Dispositivos pequeñosEn dispositivos pequeños, la página de búsqueda y la página de resultados se fusionan, y se muestra un botón de búsqueda como un elemento más en la barra de navegación situada en la parte inferior de la página."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-home/",
+            "title": "Enlace a HOME",
+            "content": "Siempre visible, redirige a la raíz del proyecto. navegación home El enlace a HOME está siempre visible y redirige a la raíz del proyecto. Está visible en la barra de navegación y es el valor &amp;quot;siteTitle&amp;quot;: &amp;quot;Mi proyecto&amp;quot; en el archivo de configuración settings.json.En los dispositivos pequeños, el enlace a la página de inicio se muestra como el primer elemento de la barra de navegación situada en la parte inferior de la página."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-linksPersonalizados/",
+            "title": "Links personalizados",
+            "content": "Muestra enlaces en la barra de navegación. navegación links personalizados Los links personalizados permiten mostrar enlaces en la barra de navegación. En general los voy a utilizar para enlazar con lo que puede estar relacionado con el proyecto:Trello - tablero de gestión del proyecto.OneNote - borradores y preparación del proyecto.Nube - carpeta con los archivos del proyecto.Fusion - enlace a la página de fusión del proyecto.GitHub - repositorio del proyecto o enlace a mi GitHub.En este proyecto he eliminado alguno de los enlaces personalizados.Crear link personalizadoSe crean en el archivo de configuración settings.jsonPara crear un link personalizado, añade a la propiedad customLinks:{ &amp;quot;url&amp;quot;: &amp;quot;https://ejemplo.com&amp;quot;, &amp;quot;text&amp;quot;: &amp;quot;Texto del enlace&amp;quot; }"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-listaTags/",
+            "title": "Lista de tags",
+            "content": "Muestra los tags definidos y el número de veces que se utilizan. navegación tags La lista de tags muestra los tags definidos y el número de veces que se utilizan. Se muestra en la barra lateral. Al hacer clic en un tag, se mostrarán todas las páginas o entradas asociadas a ese tag específico, facilitando así la exploración del contenido relacionado.Enlace a la lista de Tags"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-resultadosBusqueda/",
+            "title": "Resultados de la búsqueda",
+            "content": "La página de resultados de búsqueda mustra extractos de las ocurrencias. navegación resultados search búsqueda En la imagen se muestra una página de resultados de búsqueda.Al final de la página aparecen unos botones para poder navegar entre las distintas ocurrencias o desactivar la búsqueda."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-tablaContenidos/",
+            "title": "Tabla de contenidos",
+            "content": "Puedes navegar por la tabla de contenido principal y la flotante. navegación tabla de contenidos Basándose en la estructura del contenido de las etiquetas de nivel de encabezado ( &amp;lt;h1&amp;gt; a &amp;lt;h6&amp;gt; ) de cada plantilla, se generan automáticamente dos tablas de contenido: una principal y otra flotante.En la página web resultado, los distintos niveles de encabezados se muestran con distinto tamaño de fuente, pero no generan una jerarquía en la tabla de contenido, todos los encabezados tienen el mismo nivel de importancia.Los enlaces resultantespermiten desplazarse rápidamente a las diferentes secciones del contenido.Tabla de contenido principalLocalizado en el encabezado de cada página.Se genera a partir del proceso de compilación de cada plantilla.Es plegable.Tabla de contenido flotanteLocalizado en el lateral derecho de cada página, fuera del área de contenido principal y visible solo en pantallas grandes.Tiene función ScrollSpy, lo que significa que resalta automáticamente la sección actual a medida que el usuario se desplaza por la página.Es plegable.Generado desde el lado del cliente, requiere que JavaScript esté habilitado en el navegador del usuario para funcionar correctamente. Si JavaScript está deshabilitado, la tabla de contenido flotante no se mostrará ni funcionará, pero la tabla de contenido principal seguirá siendo accesible y funcional."
         }
 ]

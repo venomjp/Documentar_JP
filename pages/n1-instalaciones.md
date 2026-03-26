@@ -10,6 +10,9 @@ tags:
     - instalación
     - nodejs
     - github pages
+    - git
+    - github desktop
+    - visual studio code
 date: 2026-03-24
 ---
 

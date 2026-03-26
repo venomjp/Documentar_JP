@@ -15,7 +15,7 @@
             <updated>2026-03-25T00:00:00Z</updated>
             <id>#/posts/modificaciones-respecto-a-libdoc-starter-project/</id>
             <author>
-                <name>Juan Pedro Perianes</name>
+                <name>11ty LibDoc</name>
             </author>
             <content type="html">
                 &lt;h1&gt;libdocMessages.js&lt;/h1&gt;
@@ -120,37 +120,68 @@
 </content>
         </entry>
         <entry>
-            <title>Bitácora 1</title>
-            <link href="#/posts/bitacora-1/" />
-            <updated>2026-03-20T00:00:00Z</updated>
-            <id>#/posts/bitacora-1/</id>
+            <title>Cuaderno de bitácora</title>
+            <link href="#/posts/cuaderno-de-bitacora/" />
+            <updated>2026-03-24T00:00:00Z</updated>
+            <id>#/posts/cuaderno-de-bitacora/</id>
             <author>
-                <name>Juan Pedro Perianes</name>
+                <name>11ty LibDoc</name>
             </author>
             <content type="html">
-                &lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__730__.avif 730w, /#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__730__.webp&quot; alt=&quot;Imagen de ejemplo&quot; width=&quot;1280&quot; height=&quot;962&quot; srcset=&quot;/#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__730__.webp 730w, /#/posts/bitacora-1/skills-3270306-1280-psWFXUi8id-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;
-Me gusta insertar una imagen principal, aquí puede venir una descripción más detallada del contenido del post.&lt;/p&gt;
-&lt;h1&gt;Utilidad&lt;/h1&gt;
-&lt;p&gt;&lt;em&gt;Puedo utilizar el BLOG como una cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.&lt;/em&gt;&lt;/p&gt;
-&lt;h1&gt;Contenido&lt;/h1&gt;
-&lt;p&gt;Las cabeceras (#h1 a #h6) sirven para generar la tabla de contenido. Solo cambia el tamaño de la letra, no genera subcontenidos, los distingue independientes, pero si pones el contenido principal como H1 y luego H4 y H6 puedes ver distintos tamaños de los títulos. Pero esto no tiene ninguna utilidad real, debería ceñirme dividir el contenido en bloques de igual importancia, para eso lo suyo sería utilizar páginas (Nivel1 -&amp;gt; Nivel 2 -&amp;gt; Nivel 3)&lt;/p&gt;
-&lt;h3&gt;Uno&lt;/h3&gt;
+                &lt;h1&gt;Imagen principal del post&lt;/h1&gt;
+&lt;p&gt;&lt;picture class=&quot;eleventy-image&quot;&gt;&lt;source type=&quot;image/avif&quot; srcset=&quot;/#/img/assets-cuadernobitacora-ffeSZnkVUJ-__730__.avif 730w, /#/img/assets-cuadernobitacora-ffeSZnkVUJ-__1280__.avif 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;img loading=&quot;lazy&quot; decoding=&quot;async&quot; src=&quot;/#/img/assets-cuadernobitacora-ffeSZnkVUJ-__730__.webp&quot; alt=&quot;Cuaderno de Bitácora&quot; width=&quot;1280&quot; height=&quot;960&quot; srcset=&quot;/#/img/assets-cuadernobitacora-ffeSZnkVUJ-__730__.webp 730w, /#/img/assets-cuadernobitacora-ffeSZnkVUJ-__1280__.webp 1280w&quot; sizes=&quot;auto&quot;&gt;&lt;/picture&gt;
+Esto es un cuaderno de bitácora. Me gusta insertar una imagen principal en cada post, justo debajo se puede incluir una descripción más detallada del contenido del post o una introducción.&lt;/p&gt;
+&lt;h1&gt;Cómo lo voy a utilizar&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;em&gt;Voy a utilizar el BLOG como un cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.&lt;/em&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Cada entrada del blog será un post de cualquier cosa que me parezca relevante para el proyecto y que me gustaría tener documentada.&lt;/p&gt;
+&lt;h1&gt;Qué tipo de Contenido incluir&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;Avances&lt;/li&gt;
-&lt;li&gt;Cambios importantes&lt;/li&gt;
-&lt;li&gt;Problemas encontrados&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h6&gt;Uno.Uno&lt;/h6&gt;
-&lt;ul&gt;
-&lt;li&gt;Soluciones aplicadas&lt;/li&gt;
+&lt;li&gt;Avances en el proyecto&lt;/li&gt;
+&lt;li&gt;Cambios importantes que surgen durante el desarrollo&lt;/li&gt;
+&lt;li&gt;Problemas encontrados en el proceso&lt;/li&gt;
+&lt;li&gt;Soluciones aplicadas a esos problemas&lt;/li&gt;
 &lt;li&gt;Distintas Versiones de firmware o software&lt;/li&gt;
 &lt;li&gt;Notas técnicas&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h3&gt;Dos&lt;/h3&gt;
-&lt;ul&gt;
 &lt;li&gt;Decisiones de diseño&lt;/li&gt;
+&lt;li&gt;Aclaraciones sobre el proyecto&lt;/li&gt;
 &lt;li&gt;Cosas aprendidas&lt;/li&gt;
+&lt;li&gt;Recordatorios de aciertos y errores que me gustaría no olvidar&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1&gt;Cómo organizarlo&lt;/h1&gt;
+&lt;p&gt;En principio, todos los posts se organizan cronológicamente con el post más reciente en la parte superior.
+&lt;br&gt;Para facilitar la organización y búsqueda de los posts, es recomendable utilizar tags relacionados con el contenido del post.&lt;/p&gt;
+&lt;h1&gt;Ubicación de las plantillas&lt;/h1&gt;
+&lt;p&gt;Las plantillas de los posts se encuentran en la subcarpeta &lt;strong&gt;pages/bitacora&lt;/strong&gt;.&lt;/p&gt;
+&lt;h1&gt;Formato de los nombres los posts&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;El formato de los nombres de plantilla de los posts es:
+&lt;br&gt;&lt;code&gt;bit-&lt;/code&gt; + &lt;code&gt;&amp;lt;nombre del post&amp;gt;.md&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Sin embargo el formato de salida de los posts es:
+&lt;br&gt;&lt;code&gt;posts/&lt;/code&gt; + &lt;code&gt;&amp;lt;nombre del post&amp;gt;/&lt;/code&gt;+&lt;code&gt;index.html&lt;/code&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Cabecera de los posts&lt;/h1&gt;
+&lt;p&gt;Lo más importante es que cada post contenga el tag &lt;strong&gt;post&lt;/strong&gt; que sirve para identificarlo como una entrada del (blog) cuaderno de bitácora. Además, es recomendable incluir otros tags relacionados con el contenido del post para facilitar su organización y búsqueda.&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-yml&quot;&gt;---
+title: Título del post
+description: Subtítulo del post o brevedescripción del post
+layout: libdoc_page.liquid
+permalink: &amp;quot;posts/cuaderno-de-bitacora/index.html&amp;quot;
+tags:
+    - post
+    - tag relacionado con el contenido del post
+date: 2026-03-26
+---
+![Imagen del post](/assets/cuadernoBitacora.jpg)
+
+Contenido del post...
+
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         </entry>
 </feed>

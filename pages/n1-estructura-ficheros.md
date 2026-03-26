@@ -7,12 +7,23 @@ eleventyNavigation:
     key: Estructura de ficheros
     order: 5
 tags:
-    - estructura de ficheros
+    - estructura
+    - ficheros
     - file tree
 date: 2026-03-24
 ---
 
 En esta sección se muestra la estructura de ficheros y archivos más significativos de la plantilla de proyecto, con una breve descripción.
+
+* He modificado la estructura original de LibDoc
+  * Las plantillas que serán transformadas en páginas web se han movido a la carpeta **pages**.
+  * El blog (bitácora) lo he incluido dentro de la carpeta **pages/bitacora**.
+  * Hay una nueva carpeta **.github** para almacenar los archivos de configuración de GitHub Actions.
+
+* Los proyectos disponen de unas carpetas para organizar los archivos
+  * **3dDesign**: para diseños 3D
+  * **fieles**: para archivos del proyecto
+  * **sourceCode**: para el código fuente del proyecto
 
 ```
 RAIZ DEL PROYECTO

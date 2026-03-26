@@ -36,6 +36,7 @@ export default {
         "javascript",
         "json",
         "yaml",
+        "yml",
         "liquid",
         "markdown",
         "css",

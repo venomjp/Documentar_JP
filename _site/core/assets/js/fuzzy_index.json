@@ -1,23 +1,8 @@
 [
         {
-            "url": "/Documentar_Proyecto/posts/bitacora-1/",
-            "title": "Bitácora 1",
-            "description": "Descripción de la entrada.- aquí escribir algo post contenido"
-        },
-        {
             "url": "/Documentar_Proyecto/pages/n1-primera/",
             "title": "Nivel 1",
             "description": "Nivel 1 de navegación entre páginas nivel 1 etiqueta 2"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/licencia/",
-            "title": "./pages/licencia.md",
-            "description": " "
-        },
-        {
-            "url": "/Documentar_Proyecto/files/readme/",
-            "title": "./files/readme.md",
-            "description": " "
         },
         {
             "url": "/Documentar_Proyecto/posts/",
@@ -50,6 +35,11 @@
             "description": "Soy una página de nivel 2 nivel 2 segunda"
         },
         {
+            "url": "/Documentar_Proyecto/posts/cuaderno-de-bitacora/",
+            "title": "Cuaderno de bitácora",
+            "description": "Cómo lo voy a utilizar, qué tipo de contenido voy a incluir, cómo lo voy a organizar, etc. post bitácora cuaderno"
+        },
+        {
             "url": "/Documentar_Proyecto/pages/n1-configuracion/",
             "title": "Configuraciones",
             "description": "Pasos previos para que funcione cualquier proyecto. configuración iniciar proyecto package.json settings.json README.md favicon niveles de páginas bitácora"
@@ -62,12 +52,12 @@
         {
             "url": "/Documentar_Proyecto/pages/n1-estructura-ficheros/",
             "title": "Estructura de ficheros",
-            "description": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura de ficheros file tree"
+            "description": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree"
         },
         {
             "url": "/Documentar_Proyecto/pages/n1-instalaciones/",
             "title": "Instalaciones necesarias",
-            "description": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages"
+            "description": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages git github desktop visual studio code"
         },
         {
             "url": "/Documentar_Proyecto/pages/n1-navegacion/",
@@ -85,8 +75,33 @@
             "description": "Información sobre la licencia del proyecto. licencia"
         },
         {
-            "url": "/Documentar_Proyecto/pages/fileTree/",
-            "title": "./pages/fileTree.md",
-            "description": " "
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-busqueda/",
+            "title": "Entrada de búsqueda",
+            "description": "Modos de entrada de búsqueda estándar y difusa. navegación búsqueda search difusa"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-home/",
+            "title": "Enlace a HOME",
+            "description": "Siempre visible, redirige a la raíz del proyecto. navegación home"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-linksPersonalizados/",
+            "title": "Links personalizados",
+            "description": "Muestra enlaces en la barra de navegación. navegación links personalizados"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-listaTags/",
+            "title": "Lista de tags",
+            "description": "Muestra los tags definidos y el número de veces que se utilizan. navegación tags"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-resultadosBusqueda/",
+            "title": "Resultados de la búsqueda",
+            "description": "La página de resultados de búsqueda mustra extractos de las ocurrencias. navegación resultados search búsqueda"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-tablaContenidos/",
+            "title": "Tabla de contenidos",
+            "description": "Puedes navegar por la tabla de contenido principal y la flotante. navegación tabla de contenidos"
         }
 ]
