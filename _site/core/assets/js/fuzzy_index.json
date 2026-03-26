@@ -45,11 +45,6 @@
             "description": "Pasos previos para que funcione cualquier proyecto. configuración iniciar proyecto package.json settings.json README.md favicon niveles de páginas bitácora"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/",
-            "title": "Crear contenido",
-            "description": "Como escribir mi documentación con Markdown y HTML y añadirle widgets. crear  contenido"
-        },
-        {
             "url": "/Documentar_Proyecto/pages/n1-estructura-ficheros/",
             "title": "Estructura de ficheros",
             "description": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree"
@@ -102,6 +97,61 @@
         {
             "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-tablaContenidos/",
             "title": "Tabla de contenidos",
-            "description": "Puedes navegar por la tabla de contenido principal y la flotante. navegación tabla de contenidos"
+            "description": "Puedes navegar por la tabla de contenido principal y la flotante. navegación tabla de contenidos encabezados"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/",
+            "title": "Crear contenido",
+            "description": "Como escribir mi documentación con Markdown y HTML y añadirle widgets. crear contenido"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-html/",
+            "title": "HTML en línea",
+            "description": "Ejemplo de las etiquetas HTML disponibles. contenido html"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/",
+            "title": "Markdown",
+            "description": "Ejemplo de las etiquetas Markdown disponibles. contenido markdown"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/",
+            "title": "Widgets",
+            "description": "Fragmentos HTML que mejoran la visualización del contenido. contenido widgets"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-citaGrande/",
+            "title": "Cita grande",
+            "description": "Para citas con formato grande. contenido markdown cita"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-codigo/",
+            "title": "Código",
+            "description": "En línea, bloque con resaltado de sintaxis y variables. contenido markdown código resaltado de sintaxis"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-enlaces/",
+            "title": "Enlaces",
+            "description": "Tipos de enlaces. contenido markdown enlaces"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-imagenes/",
+            "title": "Imágenes",
+            "description": "Locales y externas, con o sin enlace, pequeñas o grandes. contenido markdown imagen"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-listas/",
+            "title": "Listas",
+            "description": "Ordenadas, NO ordenadas y mixtas. contenido markdown listas"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/",
+            "title": "Modificadores de texto",
+            "description": "Parráfos, saltos de línea, encabezados y énfasis en el texto. contenido markdown modificadores texto parráfo salto de línea encabezados énfasis cursiva negrita tachado línea horizontal"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-tablas/",
+            "title": "Tablas",
+            "description": "Creación y formato de tablas. contenido markdown tablas"
         }
 ]

@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modificadores de texto</title>
+    
+
+    <meta itemprop="name" content="Modificadores de texto">
+    <meta name="description" itemprop="description" content="Parráfos, saltos de línea, encabezados y énfasis en el texto.">
+    <meta name="application-name" content="Modificadores de texto">
+    <meta name="author" content="Juan Pedro Perianes">
+    <link rel="icon" type="image/png" href="/Documentar_Proyecto/assets/myfavicon.png">
+    
+    <!-- Microsoft -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="msapplication-starturl" content="/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/">
+    <meta name="msapplication-tooltip" content="Modificadores de texto">
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/">
+    <meta property="og:title" content="Modificadores de texto">
+    <meta property="og:description" content="Parráfos, saltos de línea, encabezados y énfasis en el texto.">
+    <meta property="og:image" content="https://raw.githubusercontent.com/ita-design-system/ita-medias/refs/heads/main/ogimage-11ty-libdoc.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Modificadores de texto">
+    <meta name="twitter:description" content="Parráfos, saltos de línea, encabezados y énfasis en el texto.">
+    <meta name="twitter:url" content="/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/">
+    <meta name="twitter:image" content="https://raw.githubusercontent.com/ita-design-system/ita-medias/refs/heads/main/ogimage-11ty-libdoc.png">
+    
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-title" content="Modificadores de texto">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    
+    <!-- Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+
+    <meta name="color-scheme" content="light dark">
+
+    <meta name="generator" content="Eleventy v3.1.5">
+
+    <!-- Font fallback -->
+    <style>
+        @font-face {
+            font-family: "fallbackFont";
+            src: local("Arial");
+            size-adjust: 103%;
+        }
+        html, body {
+            font-family: fallbackFont, -apple-system, BlinkMacSystemFont, avenir next, avenir, segoe ui, helvetica neue, Adwaita Sans, Cantarell, Ubuntu, roboto, noto, helvetica, arial, sans-serif;
+            font-display: swap;
+        }
+        pre, code {
+            font-family: Menlo, Consolas, Monaco, Adwaita Mono, Liberation Mono, Lucida Console, monospace;
+        }
+    </style>
+    <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/fonts.css">
+    <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/ds.css">
+    <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/ds__defaults.css">
+    <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/ds__colors.css">
+    <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/ds__dark_mode.css" media="(prefers-color-scheme: dark)" id="libdoc_dark_mode_css">
+    <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/hljs/night-owl.css">
+    <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/icons.css">
+    <style>
+        :root {
+            --libdoc-image-background-color-light-mode: transparent;
+            --libdoc-image-background-color-dark-mode: transparent;
+            --libdoc-image-background-color: var(--libdoc-image-background-color-light-mode);
+            --ita-widths-sidebar: 300px;
+            --ita-widths-content: 700px;
+            --ita-widths-main-container-max: calc(2 * var(--ita-widths-content) + var(--ita-widths-sidebar));
+        }
+        
+            main img {
+                border-radius: 9px;
+            }
+        
+    </style>
+    <noscript>
+        <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/noscript.css">
+    </noscript>
+    <script>
+        const libdocMessages = {
+            
+                copiedToClipboard: `Copiado al portapapeles`,
+                code: `Código`,
+                colorSchemes: `Esquemas de color`,
+                colorSchemeAuto: `Automático`,
+                colorSchemeDescriptionAuto: `Basado en las preferencias de tu sistema`,
+                colorSchemeLight: `Claro`,
+                colorSchemeDescriptionLight: `Siempre aplicar el modo claro`,
+                colorSchemeDark: `Oscuro`,
+                colorSchemeDescriptionDark: `Siempre aplicar el modo oscuro`,
+                copied: `Copiado`,
+                copy: `Copiar`,
+                copyCode: `Copiar código`,
+                copyHTML: `Copiar HTML`,
+                copyURL: `Copiar URL`,
+                enable: `Activar`,
+                goToTopOfPage: `Ir a la parte superior de la página`,
+                editThisPage: `Editar esta página`,
+                height: `Altura`,
+                homepage: `Página de inicio`,
+                homepageShort: `Inicio`,
+                inANewTab: `En una nueva pestaña`,
+                lastModified: `Última modificación`,
+                menu: `Menú`,
+                noscriptAlert: `Parece que JavaScript está desactivado en tu navegador, LibDoc está en modo de reserva con funciones reducidas.`,
+                open: `Abrir`,
+                openInANewTab: `Abrir en una nueva pestaña`,
+                otherCustomLinks: `Otros enlaces personalizados`,
+                page: `Página`,
+                pages: `Páginas`,
+                pagesTagged: `Páginas etiquetadas`,
+                preferences: `Preferencias`,
+                reload: `Recargar`,
+                reloaded: `Recargado`,
+                result: `Resultado`,
+                sandbox: `Sandbox`,
+                sandboxResizeHelper: `Haz clic y arrastra para redimensionar el código y el resultado`,
+                search: `Buscar`,
+                searchClear: `Limpiar entrada`,
+                searchMinimumCharacters: `Mínimo 3 caracteres`,
+                searchResultsNoResultForQuery: `Sin resultados para la consulta`,
+                searchOccurrence: `Búsqueda de ocurrencias`,
+                searchOccurrencesCurrent: `Ocurrencia de búsqueda actual`,
+                searchOccurrencesNext: `Siguiente ocurrencia de búsqueda`,
+                searchOccurrencesPrevious: `Anterior ocurrencia de búsqueda`,
+                searchOccurrencesStop: `Detener búsqueda de ocurrencias`,
+                searchPlaceholder: `Presiona 🆂 para buscar`,
+                searchSubmit: `Enviar búsqueda`,
+                tableOfContent: `Tabla de contenido`,
+                tableOfContentAbbr: `TC`,
+                tag: `Tag`,
+                tagsList: `Lista de tags`,
+                tagsListDescription: `Lista de todos los tags disponibles`,
+                toggleFloatingToc: `Alternar tabla de contenido flotante`,
+                top: `Arriba`,
+                userPreferences: `Preferencias del usuario`,
+                width: `Ancho`,
+        }
+        const libdocConfig = {
+            htmlBasePathPrefix: `/Documentar_Proyecto/`,
+            blogTitle: `Bitácora`,
+            blogDescription: `El blog va a servir como un cuaderno de Bitácora`,
+            displayTagsListLink: true
+        }
+        const libdocSystem = {
+            searchIndexUrl: `/Documentar_Proyecto/core/assets/js/search_index.json`,
+            fuzzyIndexUrl: `/Documentar_Proyecto/core/assets/js/fuzzy_index.json`,
+            productionUrl: `eleventy-libdoc.netlify.app`,
+            blogPostsCount: `2`
+        }
+    </script>
+</head>
+<body class="d-flex fd-column ai-center | m-0">
+    <div class="d-flex | w-100" fd-column="xs,sm" ai-start="md" ai-center="xs,sm" pl-5="md" style="max-width: var(--ita-widths-main-container-max)">
+        <div id="sidebar" class="d-flex fd-column | pos-sticky top-0 z-3" ai-center="xs,sm" w-100="xs,sm" w-sidebar="md">
+            <nav id="nav_small_devices" class="d-flex | pos-fixed bottom-0 left-0 z-1 | w-100 h-60px" d-none="md">
+                <div class="d-flex jc-space-between | w-100 | bc-neutral-100 btwidth-1 btstyle-dashed bcolor-neutral-500">
+                    <a href="/Documentar_Proyecto/" class="d-flex fd-column jc-center ai-center gap-1 | pl-5 pr-2 | td-none ta-center | c-primary-900 b-0 brad-3">
+                        <span class="icon-house fs-6"></span>
+                        <span class="fvs-wght-400 fs-1 tt-uppercase">Inicio</span>
+                    </a>
+                    
+                        <a href="/Documentar_Proyecto/search/" class="d-flex fd-column jc-center ai-center gap-1 | pl-2 pr-2 | td-none ta-center | c-primary-900 b-0 brad-3">
+                            <span class="icon-magnifying-glass fs-6"></span>
+                            <span class="fvs-wght-400 fs-1 tt-uppercase">Buscar</span>
+                        </a>
+                    
+                    <button type="button" id="sd_floating_toc_toggle_btn" class="d-flex fd-column jc-center ai-center gap-1 | pl-2 pr-2 | ta-center | cur-pointer c-primary-900 bc-neutral-100 b-0 brad-3" disabled="">
+                        <span class="icon-list-dashes fs-6"></span>
+                        <span class="fvs-wght-400 fs-1 tt-uppercase">TC</span>
+                    </button>
+                    <button type="button" id="sd_gtt_btn" class="d-flex fd-column jc-center ai-center gap-1 | pl-2 pr-2 | ta-center | cur-pointer c-primary-900 bc-neutral-100 b-0 brad-3" onclick="libdocUi.handlers._clickGTT()">
+                        <span class="icon-arrow-line-up fs-6"></span>
+                        <span class="fvs-wght-400 fs-1 tt-uppercase">Arriba</span>
+                    </button>
+                    <div class="d-flex ai-center">
+                        <input type="checkbox" name="nav_primary" id="nav_primary_checkbox" value="" class="pos-absolute opa-0 pe-none">
+                        <label for="nav_primary_checkbox" class="d-flex fd-column jc-center ai-center gap-1 | h-100 pl-2 pr-5 | ta-center | cur-pointer c-primary-900 bc-neutral-100">
+                            <span class="icon-list fs-6"></span>
+                            <span class="fvs-wght-400 fs-1 tt-uppercase">Menú</span>
+                        </label>
+                    </div>
+                </div>
+            </nav>
+            <nav id="nav_primary_container" class="d-flex d-none--xs d-none--sm fd-column | w-100 | bwidth-1 bstyle-dashed bcolor-neutral-500 | __soft-shadow" mt-5="md" maxw-sidebar="md" maxh-sidebar="md" h-sidebar="xs,sm" brad-3="md">
+                <menu id="nav_primary_header" class="
+                    d-flex fd-column
+                    pos-sticky top-0 z-1
+                    m-0 p-0 
+                    ls-none
+                    bbwidth-1 bbstyle-dashed bcolor-neutral-500" gap-5="md" bradtl-3="md" bradtr-3="md">
+                    <li class="d-flex ai-center">
+                        
+                            <a href="/Documentar_Proyecto/" class="p-5 | td-none fvs-wght-700 lsp-5 fs-8 tws-balance | c-neutral-900" title="Guía para documentar un proyecto de forma efectiva y organizada">
+                                Documentar un Proyecto
+                            </a>
+                        
+                    </li>
+                    
+                        <li class="pos-relative z-1" d-none="xs,sm">
+                            <form action="/Documentar_Proyecto/search/" class="d-flex fd-column | pos-relative | pl-5 pr-5 | search_form | auto-search-wrapper">
+                                <label for="searchInput" class="pos-absolute z-2 | ml-5 t-tY-50 | fvs-wght-400 fs-1 tt-uppercase | c-neutral-900 bc-neutral-100">
+                                    Buscar
+                                </label>
+                                <input id="searchInput" type="search" name="search" autocomplete="off" class="pos-relative z-1 | pl-5 pr-5 pt-4 pb-4 | fs-3 | c-neutral-900 bc-neutral-100 brad-4 bwidth-1 bstyle-dashed bcolor-neutral-500" placeholder="Presiona 🆂 para buscar" value="">
+                                <div class="pos-relative z-1 | d-flex ai-center | pos-absolute top-0 right-0 | h-100 mr-5">
+                                    <button type="button" class="pos-relative | p-4 pr-7 | fs-3 | c-neutral-900 bc-neutral-100 c-neutral-900 b-0 cur-pointer | search_form__clear_btn" title="Limpiar entrada" hidden="">
+                                        <span class="icon-x | pos-absolute top-50 left-50 t-tY-50 t-tX-50"></span>
+                                    </button>
+                                    <button type="submit" class="pos-relative | h-100 p-0 ar-square | fs-5 | brad-4 bc-primary-500 c-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-100 cur-pointer" title="Enviar búsqueda">
+                                        <span class="icon-magnifying-glass | pos-absolute top-50 left-50 t-tY-50 t-tX-50"></span>
+                                    </button>
+                                </div>
+                            </form>
+                        </li>
+                    
+                    
+                        <li id="custom_links" class="d-flex ai-center rgap-1 | pos-relative | pb-3 pl-5 o-auto">
+                            
+                                <a href="https://trello.com/u/juanpedroperianes/boards" class="
+                                    d-flex ai-center gap-1
+                                    pt-2 pb-2 pr-5
+                                    fvs-wght-700 fs-2 lsp-3 lh-1 tt-uppercase td-none ws-nowrap
+                                    c-primary-600" target="_blank">
+                                    Trello
+                                </a>
+                            
+                                <a href="https://uc3m-my.sharepoint.com/personal/perianes_pa_uc3m_es/_layouts/15/guestaccess.aspx?share=IgAl9cMGAfHQSreC1GoyJ2FLAXL6GfUZzBRQ7ZaT6tLFHdQ&email=venom.jpp%40gmail.com&e=pOVtg7" class="
+                                    d-flex ai-center gap-1
+                                    pt-2 pb-2 pr-5
+                                    fvs-wght-700 fs-2 lsp-3 lh-1 tt-uppercase td-none ws-nowrap
+                                    c-primary-600" target="_blank">
+                                    OneNote
+                                </a>
+                            
+                                <a href="https://github.com/venomjp" class="
+                                    d-flex ai-center gap-1
+                                    pt-2 pb-2 pr-5
+                                    fvs-wght-700 fs-2 lsp-3 lh-1 tt-uppercase td-none ws-nowrap
+                                    c-primary-600" target="_blank">
+                                    GitHub
+                                </a>
+                            
+                        </li>
+                    
+                </menu>
+                
+                
+                    <a href="/Documentar_Proyecto/posts/" id="nav_primary_blog_link" class="d-flex ai-center | pt-5 pb-5 | fvs-wght-500 fs-4 td-none lsp-2 | c-neutral-900 bbwidth-1 bbstyle-dashed bcolor-neutral-500 cur-pointer">
+                        
+                        Bitácora
+                    </a>
+                
+
+                
+                    <a href="/Documentar_Proyecto/tags/" id="nav_primary_blog_link" class="d-flex ai-center | pt-5 pb-5 | fvs-wght-500 fs-4 td-none lsp-2 | c-neutral-900 bbwidth-1 bbstyle-dashed bcolor-neutral-500 cur-pointer">
+                        
+                        Lista de tags
+                    </a>
+                
+
+                <div id="nav_primary" class="pos-relative | fg-1 o-auto">
+                    <ol class="d-flex fd-column | m-0 pl-0 pt-3 pb-3 | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-instalaciones/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Instalaciones necesarias</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-configuracion/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Configuraciones</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Crear contenido</a><ol class="d-flex fd-column fg-1 order-1 | m-0 pl-5 o-hidden | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Markdown</a><ol class="d-flex fd-column fg-1 order-1 | m-0 pl-5 o-hidden | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/" aria-current="page" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Modificadores de texto</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-listas/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Listas</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-enlaces/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Enlaces</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-imagenes/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Imágenes</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-codigo/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Código</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-tablas/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Tablas</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-citaGrande/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Cita grande</a></li></ol></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-html/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">HTML en línea</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Widgets</a></li></ol></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-navegacion/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Navegación</a><ol class="d-flex fd-column fg-1 order-1 | m-0 pl-5 o-hidden | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-navegacion/n2-home/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Enlace a HOME</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-navegacion/n2-busqueda/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Entrada de búsqueda</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-navegacion/n2-resultadosBusqueda/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Resultados de búsqueda</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-navegacion/n2-linksPersonalizados/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Links personalizados</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-navegacion/n2-listaTags/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Lista de tags</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-navegacion/n2-tablaContenidos/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Tabla de contenidos</a></li></ol></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-estructura-ficheros/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Estructura de ficheros</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-licencia/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Licencia</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-primera/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Nivel 1. Primera</a><ol class="d-flex fd-column fg-1 order-1 | m-0 pl-5 o-hidden | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-primera/n2-primera/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Nivel 2. Primera</a><ol class="d-flex fd-column fg-1 order-1 | m-0 pl-5 o-hidden | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-primera/n2-primera/n3-primera/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Nivel 3. Primera</a></li></ol></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-primera/n2-segunda/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Nivel 2. Segunda</a></li></ol></li></ol>
+                </div>
+            </nav>
+        </div>
+        <main class="pos-relative" w-100-minus-sidebar="md" w-100="xs,sm">
+            <header class="d-flex fd-column | pt-5 pb-7 mb-7">
+                <nav class="d-flex jc-space-between | pos-relative">
+                    <ul class="d-flex ai-center gap-2 | p-0 m-0 | fs-2 lh-3 | ls-none" style="width: calc(100% - 42px)">
+    <li class="d-flex ai-center gap-2">
+        <a href="/Documentar_Proyecto/" class="pos-relative | p-5 | fs-4 td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" title="Página de inicio">
+            <span class="icon-house | pos-absolute top-50 left-50 t-tY-50 t-tX-50"></span>
+        </a> /
+    </li>
+    <li class="o-auto">
+        <ul class="d-flex ai-center gap-2 | p-0 m-0 | fs-2 lh-3 | ls-none">
+            
+                
+                    <li class="d-flex ai-baseline gap-2">
+                        <a href="/Documentar_Proyecto/pages/n1-crear-contenido/" class="pt-2 pb-2 | fvs-wght-400 ws-nowrap">
+                            Crear contenido
+                        </a> /
+                    </li>
+                
+                    <li class="d-flex ai-baseline gap-2">
+                        <a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/" class="pt-2 pb-2 | fvs-wght-400 ws-nowrap">
+                            Markdown
+                        </a> /
+                    </li>
+                
+            
+            
+            
+            <li class="c-neutral-800 ws-nowrap">Modificadores de texto</li>
+        </ul>
+    </li>
+</ul>
+                    <details id="user_preferences">
+                        <summary class="d-flex | pos-relative z-2 | p-5 | fs-4 td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 cur-pointer __hover-1 __soft-shadow" title="Preferencias del usuario">
+                            <span class="icons">
+                                <span class="icon-faders | pos-absolute top-50 left-50 t-tY-50 t-tX-50"></span>
+                                <span class="icon-x | pos-absolute top-50 left-50 t-tY-50 t-tX-50"></span>
+                            </span>
+                        </summary>
+                        <menu class="d-flex fd-column | pos-absolute right-0 z-1 | w-100 mt-3 mb-0 p-4 | ls-none bc-neutral-100 brad-2 bwidth-1 bstyle-dashed bcolor-neutral-500 | __soft-shadow" style="max-width: 400px">
+                            <li class="d-flex fd-column gap-3 | c-neutral-900">
+                                <p class="m-0 | fs-3 fvs-wght-500">Esquemas de color</p>
+                                <div class="d-flex fd-column gap-3">
+                                    
+                                        <div>
+                                            <input type="radio" name="libdoc_color_scheme" id="libdoc_color_scheme__auto" class="pos-absolute opa-0" value="auto" checked="">
+                                            <label for="libdoc_color_scheme__auto" class="d-flex ai-start gap-2">
+                                                <span class="d-flex fd-column gap-1">
+                                                    <strong class="fs-2 tt-uppercase">Automático</strong>
+                                                    <span class="fs-2 | c-neutral-700">Basado en las preferencias de tu sistema</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    
+                                        <div>
+                                            <input type="radio" name="libdoc_color_scheme" id="libdoc_color_scheme__light" class="pos-absolute opa-0" value="light">
+                                            <label for="libdoc_color_scheme__light" class="d-flex ai-start gap-2">
+                                                <span class="d-flex fd-column gap-1">
+                                                    <strong class="fs-2 tt-uppercase">Claro</strong>
+                                                    <span class="fs-2 | c-neutral-700">Siempre aplicar el modo claro</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    
+                                        <div>
+                                            <input type="radio" name="libdoc_color_scheme" id="libdoc_color_scheme__dark" class="pos-absolute opa-0" value="dark">
+                                            <label for="libdoc_color_scheme__dark" class="d-flex ai-start gap-2">
+                                                <span class="d-flex fd-column gap-1">
+                                                    <strong class="fs-2 tt-uppercase">Oscuro</strong>
+                                                    <span class="fs-2 | c-neutral-700">Siempre aplicar el modo oscuro</span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    
+                                </div>
+                            </li>
+                        </menu>
+                    </details>
+                </nav>
+                <h1 class="mt-3 mb-0 | lsp-5 fvs-wght-700 tws-balance " fs-10="md" fs-9="xs,sm">
+                    Modificadores de texto
+                </h1>
+                
+                    <p class="d-flex ai-center fw-wrap gap-2 | pt-5 pl-5 pb-5 m-0 | fvs-wght-400 tws-balance fs-7 lsp-3 lh-5 | blwidth-1 blstyle-dashed bcolor-neutral-500" pt-3="xs" pb-3="xs" fs-6="sm" fs-5="xs">
+                        Parráfos, saltos de línea, encabezados y énfasis en el texto.
+                    </p>
+                
+                
+                    
+                        <nav class="d-flex gap-2 fw-wrap | pl-5 pt-3 pb-5 | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/contenido/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">contenido</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/markdown/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">markdown</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/modificadores/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">modificadores</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/texto/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">texto</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/parráfo/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">parráfo</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/salto de línea/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">salto de línea</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/encabezados/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">encabezados</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/énfasis/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">énfasis</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/cursiva/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">cursiva</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/negrita/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">negrita</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/tachado/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">tachado</span>
+                                    </a>
+                                
+                            
+                                
+                                    <a href="/Documentar_Proyecto/tags/línea horizontal/" class="
+                                        d-flex ai-center gap-1
+                                        pl-2 pr-3 pt-1 pb-1
+                                        fs-2 lsp-2 td-none
+                                        bc-primary-200 bwidth-1 bstyle-solid bcolor-primary-400 brad-1 bradtl-3 bradbl-3">
+                                        <span class="icon-tag-simple"></span>
+                                        <span class="page_tag">línea horizontal</span>
+                                    </a>
+                                
+                            
+                        </nav>
+                    
+                    <div class="d-flex ai-center | m-0 | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                        <div class="pl-5 | bbwidth-1 bbstyle-dashed bcolor-neutral-500"></div>
+                        
+                            <p class="d-flex ai-center gap-2 | m-0 pr-2 | fvs-wght-400 fs-3 lsp-3 lh-3 | c-neutral-700 bc-primary-100" fs-2="xs">
+                                <span class="icon-calendar-dots fs-6"></span>
+                                <time ws-nowrap="sm,md">
+                                    
+                                    
+                                        
+                                        2026-03-27
+                                    
+                                </time>
+                            </p>
+                        
+                        <div class="pl-5 w-100 | bbwidth-1 bbstyle-dashed bcolor-neutral-500"></div>
+                        
+                            <div class="d-flex ai-center gap-3">
+                                <div class="pos-relative | p-5 | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500">
+                                    <div class="icon-user | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-6"></div>
+                                </div>
+                                <p class="d-flex fd-column | m-0 | fvs-wght-400 fs-3 lsp-3 lh-3 | c-neutral-700 bc-primary-100" fs-2="xs" ws-nowrap="sm,md">
+                                    Juan Pedro Perianes
+                                </p>
+                            </div>
+                        
+                    </div>
+                
+                
+                    <details id="toc_main" open="">
+                        <summary class="d-flex ai-center | pt-5 pb-5 | fvs-wght-500 fs-3 | bwidth-1 bstyle-dashed bcolor-neutral-500 btwidth-0 brwidth-0 cur-pointer">
+                            <span class="pl-5 | bbwidth-1 bbstyle-dashed bcolor-neutral-500"></span>
+                            <span class="d-flex ai-center gap-1 | lsp-2">
+                                <span class="icon-minus-circle | fs-6 | c-primary-500"></span>
+                                <span class="icon-plus-circle | fs-6 | c-primary-500"></span>
+                                Tabla de contenido
+                            </span>
+                        </summary>
+                        
+                    <ol class="cgap-3em | m-0 pl-0 pb-5 o-auto | lh-1 | ls-none bwidth-1 bstyle-dashed bcolor-neutral-500 btwidth-0 brwidth-0" d-flex="xs,sm" fd-column="xs,sm" fw-wrap="xs,sm" columns-3="md" columns-2="sm" maxh-300px="sm" maxh-200px="xs">
+                        <li class="d-flex">
+                            <a href="#parrafo-y-salto-de-linea" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Párrafo y salto de línea
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#encabezados" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Encabezados
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#enfasis-en-el-texto" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Énfasis en el texto
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#linea-de-separacion-horizontal" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Línea de separación horizontal
+                            </a>
+                        </li></ol>
+                    </details>
+                
+            </header>
+            <noscript>
+                
+                
+                <aside class="widget widget-alert">
+                    <div class="alert ">
+                        Parece que JavaScript está desactivado en tu navegador, LibDoc está en modo de reserva con funciones reducidas.
+                    </div>
+                </aside>
+            
+            </noscript>
+            
+                        <h1 id="parrafo-y-salto-de-linea" pl-9="xs,sm">
+                            <a href="#parrafo-y-salto-de-linea" title="Párrafo y salto de línea" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Párrafo y salto de línea</h1>
+<p>Un <strong>doble salto de línea</strong> genera un nuevo párrafo, mientras que <strong>un solo salto de línea</strong> se interpreta como parte del mismo párrafo.</p>
+
+                        <h1 id="encabezados" pl-9="xs,sm">
+                            <a href="#encabezados" title="Encabezados" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Encabezados</h1>
+<p>Las etiquetas de encabezado tienen 6 niveles: de <strong>&lt;h1&gt;</strong> a <strong>&lt;h6&gt;</strong>.</p>
+<p><picture class="eleventy-image"><source type="image/avif" srcset="/Documentar_Proyecto/img/assets-encabezados-krtcLEJ76E-__265__.avif 265w"><img loading="lazy" decoding="async" src="/Documentar_Proyecto/img/assets-encabezados-krtcLEJ76E-__265__.webp" alt="Encabezados" width="265" height="350"></picture></p>
+<p>Los encabezados generan automáticamente las tablas de contenido principal y flotante.</p>
+<p>En la página web resultado, los distintos niveles de encabezados se muestran con distinto tamaño de fuente, pero no generan una jerarquía en la tabla de contenido, todos los encabezados tienen el mismo nivel de importancia.</p>
+
+                        <h1 id="enfasis-en-el-texto" pl-9="xs,sm">
+                            <a href="#enfasis-en-el-texto" title="Énfasis en el texto" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Énfasis en el texto</h1>
+<ul>
+<li><strong>Cursiva</strong> ( * )
+<br> Se consigue con un asterisco (*) o guión bajo (_) al inicio y al final del <em>texto</em>.</li>
+<li><strong>Negrita</strong> ( ** )
+<br> Se consigue con dos asteriscos (**) o guiones bajos (__) al inicio y al final del <strong>texto</strong>.</li>
+<li><strong>Negrita y cursiva</strong> ( *** )
+<br> Se consigue con tres asteriscos (***) o guiones bajos (___) al inicio y al final del <em><strong>texto</strong></em>.</li>
+<li><strong>Tachado</strong> ( ~~ )
+<br> Se consigue con dos virgulillas (~) al inicio y al final del <s>texto</s>.</li>
+</ul>
+
+                        <h1 id="linea-de-separacion-horizontal" pl-9="xs,sm">
+                            <a href="#linea-de-separacion-horizontal" title="Línea de separación horizontal" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Línea de separación horizontal</h1>
+<p>Se crea con tres guiones (---), asteriscos (***) o guiones bajos (___) en una línea sin ningún otro texto.</p>
+<hr>
+
+            <footer class="minh-100vh">
+                <div class="pt-11 | blwidth-1 blstyle-dashed bcolor-neutral-500"></div>
+                <nav class="d-flex ai-center rgap-7 | blwidth-1 blstyle-dashed bcolor-neutral-500" fw-wrap="xs">
+                    <div class="pl-5 | bbwidth-1 bbstyle-dashed bcolor-neutral-500"></div>
+                    
+                    <div class="w-100" d-none="sm,md"></div>
+                    <div class="pl-5 | bbwidth-1 bbstyle-dashed bcolor-neutral-500" w-100="sm,md"></div>
+                    <!-- JP V1. Footer quito esta parte para que no salga la versión de libdoc con la que se ha hecho.--                    <a  href="https://github.com/ita-design-system/eleventy-libdoc"
+                        target="_blank"
+                        class="d-flex ai-center gap-2 | pl-2 pr-2 | fvs-wght-400 fs-2 lsp-3 lh-3 td-none ws-nowrap">
+                        11ty LibDoc 1.0
+                    </a>
+                    -->
+                </nav>
+            </footer>
+            
+        </main>
+    </div>
+    
+    <script src="/Documentar_Proyecto/core/assets/js/sandbox.js"></script>
+    <script src="/Documentar_Proyecto/core/assets/js/hljs/highlight.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/xml.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/html.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/javascript.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/json.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/yml.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/yaml.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/liquid.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/markdown.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/liquid.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/css.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/arduino.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/bash.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/python.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/cpp.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/c.min.js"></script>
+    
+        <script src="/Documentar_Proyecto/core/assets/js/hljs/languages/gcode.min.js"></script>
+    
+    <script src="/Documentar_Proyecto/core/assets/js/ui.js"></script>
+    
+        <link rel="stylesheet" href="/Documentar_Proyecto/core/assets/css/autocomplete.css">
+        <script src="/Documentar_Proyecto/core/assets/js/autocomplete.min.js"></script>
+        <script src="/Documentar_Proyecto/core/assets/js/fuse.js"></script>
+        <script src="/Documentar_Proyecto/core/assets/js/fuzzy.js"></script>
+        <script src="/Documentar_Proyecto/core/assets/js/hotkeys.min.js"></script>
+    
+</body>
+</html>
