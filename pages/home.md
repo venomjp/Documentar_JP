@@ -7,7 +7,7 @@ tags:
     - home
 ---
 
-<img src="/assets/myFavicon.png" 
+<img src="/assets/myfavicon.png" 
      alt="Documentar un Proyecto" 
      style="width: 128px; height: 128px; display: block; margin: 0 auto;">
 
