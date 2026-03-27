@@ -636,72 +636,81 @@
                         <span class="icon-arrow-square-out"></span>
                         Ir atrás
                     </a>  -->
+                    <!-- JP V1. He reescrito el código del botón de volver atrás para que suba un nivel real en función de la ruta, y si no se puede subir más, se desactive el botón. -->
                     <a id="backBtn" class="btn btn-primary-light">
                         <span class="icon-arrow-square-out"></span>
                         Ir atrás
                     </a>
                     <script>
-                    const backBtn = document.getElementById("backBtn");
+                    document.addEventListener("DOMContentLoaded", function() {
+                        const backBtn = document.getElementById("backBtn");
 
-                    // Obtener pathname normalizado
-                    let path = window.location.pathname;
-                    path = path.replace(/\/+$/, ""); // Quitar slash final excepto si solo es "/"
+                        let path = window.location.pathname;
 
-                    // Detectar base del proyecto: "/NombreProyecto"
-                    const parts = path.split("/").filter(Boolean);
+                        console.log("PATH:", path);
 
-                    // Caso especial: si estamos en home, parts = ["Documentar_Proyecto"]
-                    // Base = "/Documentar_Proyecto"
-                    let base = "/";
-                    if (parts.length > 0) {
-                        base = "/" + parts[0];
-                    }
-
-                    // Detectar ruta de /pages/
-                    const pagesRoot = base + "/pages";
-
-                    // 👍 CASO 1 → Si estamos en la home (exactamente la base)
-                    if (path === base) {
-                        backBtn.classList.add("disabled");
-                        backBtn.style.pointerEvents = "none";
-                        backBtn.style.opacity = "0.5";
-                        backBtn.removeAttribute("href");
-                        console.log("BackButton: Estamos en la home, desactivado.");
-                        return;
-                    }
-
-                    // 👍 CASO 2 → Estamos dentro de /pages/
-                    if (path.startsWith(pagesRoot)) {
-
-                        // Obtener el padre directo quitando el último segmento
-                        const parent = path.substring(0, path.lastIndexOf("/"));
-
-                        // Si el padre ES /pages/<nivel1>
-                        // Ej: /Documentar_Proyecto/pages/n1-crear-contenido
-                        const segments = parent.split("/").filter(Boolean);
-
-                        if (segments.length === 3) {
-                            // 0 = proyecto
-                            // 1 = pages
-                            // 2 = nivel1
-                            // → VOLVER a la home real
-                            backBtn.href = base + "/";
-                        } else {
-                            // Para niveles 2 y 3 → subir normalmente
-                            backBtn.href = parent + "/";
+                        // Normalizar quitando / final (menos si es "/")
+                        if (path.length > 1 && path.endsWith("/")) {
+                            path = path.slice(0, -1);
                         }
 
-                        console.log("BackButton → Navega a:", backBtn.href);
-                        return;
-                    }
+                        console.log("NORMALIZADO:", path);
 
-                    // 👍 Cualquier otra ruta rara → desactivar por seguridad
-                    backBtn.classList.add("disabled");
-                    backBtn.style.pointerEvents = "none";
-                    backBtn.style.opacity = "0.5";
-                    backBtn.removeAttribute("href");
-                    console.log("BackButton: Ruta desconocida, desactivado.");
+                        const segments = path.split("/").filter(Boolean);
+                        console.log("SEGMENTOS:", segments);
+
+                        // BASE siempre es el primer segmento → /NombreProyecto
+                        const base = "/" + segments[0];
+                        const pagesRoot = base + "/pages";
+
+                        console.log("BASE:", base);
+                        console.log("PAGES ROOT:", pagesRoot);
+
+                        // ========== HOME ==========
+                        if (path === base) {
+                            console.log("HOME -> desactivar");
+                            disableBtn();
+                            return;
+                        }
+
+                        // ========== DENTRO DE /pages/ ==========
+                        if (path.startsWith(pagesRoot)) {
+
+                            // EJEMPLO:
+                            // /P/pages/n1/n2/n3 → ["P", "pages", "n1", "n2", "n3"]
+                            const depth = segments.length - 2; // quitamos [proyecto, pages]
+
+                            console.log("DEPTH:", depth);
+
+                            if (depth === 1) {
+                                // Nivel 1 → volver a home
+                                backBtn.href = base + "/";
+                                console.log("Nivel 1 → Home:", backBtn.href);
+                            } else {
+                                // Subir un nivel real usando path original
+                                const parent = path.split("/").slice(0, -1).join("/") + "/";
+                                backBtn.href = parent;
+                                console.log("Subir nivel:", backBtn.href);
+                            }
+                            return;
+                        }
+
+                        // ========== CUALQUIER OTRA COSA ==========
+                        console.log("Ruta desconocida → desactivar");
+                        disableBtn();
+
+
+                        function disableBtn() {
+                            backBtn.classList.add("disabled");
+                            backBtn.style.pointerEvents = "none";
+                            backBtn.style.opacity = "0.30";
+                            backBtn.style.cursor = "default";
+                            backBtn.style.filter = "grayscale(100%)";
+                            backBtn.removeAttribute("href");
+                        }
+                    });
                     </script>
+
                 </nav>
             </footer>
             
