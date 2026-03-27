@@ -10,6 +10,13 @@ eleventyNavigation:
 tags:
     - contenido
     - html
+    - abreviatura
+    - cita en línea
+    - entrada de teclado
+    - salto de línea
+    - enlaces internos
+    - énfasis en texto
+    - variables
 date: 2026-03-27
 ---
 
