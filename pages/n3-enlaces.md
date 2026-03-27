@@ -18,6 +18,7 @@ date: 2026-03-27
     <dd>En el encabezado (front matter) de las plantillas que luego se convertirán en páginas web podemos utilizar la funcionalidad de <b>permalink</b> que define la ruta URL final de salida del archivo generado, sobreescribiendo la estructura de directorios predeterminada. </dd>
 </dl>
 
+---
 
 * **Enlace EXTERNO** es aquel que apunta a una URL fuera del sitio web.
 * **Enlace INTERNO** es aquel que apunta a otra página dentro del mismo sitio web.  
@@ -26,7 +27,7 @@ date: 2026-03-27
 
 * Se crean con corchetes [] para el texto del enlace y paréntesis () para la URL o el permalink de la página interna.
 
-    ``` markdown
-    [Enlace a Google](https://www.google.com)
-    [Enlace a página interna](./n2-html.md).
-    ```
+``` markdown
+[Enlace a Google](https://www.google.com)
+[Enlace a página interna](./n2-html.md)
+```

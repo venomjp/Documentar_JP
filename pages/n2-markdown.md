@@ -1,6 +1,6 @@
 ---
 title: Markdown
-description: Ejemplo de las etiquetas Markdown disponibles.
+description: Dónde usar las etiquetas Markdown.
 layout: libdoc_page.liquid
 permalink: /pages/n1-crear-contenido/n2-markdown/index.html
 eleventyNavigation:
@@ -12,7 +12,12 @@ tags:
     - markdown
 date: 2026-03-27
 ---
-**Markdown** es un lenguaje de marcado ligero que se utiliza para formatear texto de manera sencilla y legible. **LibDoc** soporta una amplia variedad de etiquetas Markdown para ayudarte a estructurar tu documentación de manera efectiva. 
+<dl>
+    <dt>Markdown</dt>
+    <dd>Es un lenguaje de marcado ligero que se utiliza para formatear texto de manera sencilla y legible. <b>LibDoc</b> soporta una amplia variedad de etiquetas Markdown para ayudarte a estructurar tu documentación de manera efectiva.  </dd>
+</dl>
+
+---
 
 {% alertAlt 'info','Imporante' %}
 Hay que prestar mucha atención a la sintaxis de Markdown, ya que un pequeño error puede afectar la visualización del contenido:

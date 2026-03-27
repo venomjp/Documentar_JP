@@ -102,7 +102,7 @@
         {
             "url": "/Documentar_Proyecto/pages/n1-crear-contenido/",
             "title": "Crear contenido",
-            "description": "Como escribir mi documentación con Markdown y HTML y añadirle widgets. crear contenido"
+            "description": "Como escribir mi documentación con Markdown y HTML, además se puede mejorar la experiencia añadiendo widgets. crear contenido markdown html widgets"
         },
         {
             "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-html/",
@@ -112,7 +112,7 @@
         {
             "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/",
             "title": "Markdown",
-            "description": "Ejemplo de las etiquetas Markdown disponibles. contenido markdown"
+            "description": "Dónde usar las etiquetas Markdown. contenido markdown"
         },
         {
             "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/",

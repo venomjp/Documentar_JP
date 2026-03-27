@@ -351,5 +351,11 @@
 		"fr": "Largeur",
 		"it": "Larghezza",
 		"es": "Ancho"
+	},
+	"goBack": {
+		"en": "Go back",
+		"fr": "Retour",
+		"it": "Indietro",
+		"es": "Ir atrás"
 	}
 }

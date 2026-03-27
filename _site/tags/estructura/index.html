@@ -141,6 +141,7 @@
                 top: `Arriba`,
                 userPreferences: `Preferencias del usuario`,
                 width: `Ancho`,
+                goBack: `Ir atrás`,
         }
         const libdocConfig = {
             htmlBasePathPrefix: `/Documentar_Proyecto/`,
@@ -425,6 +426,82 @@
                         11ty LibDoc 1.0
                     </a>
                     -->
+                    <!--
+                    <a href="#" class="btn btn-primary-light" onclick="
+                        const path = window.location.pathname.replace(/\/$/, '');
+                        const parent = path.substring(0, path.lastIndexOf('/')) || '/';
+                        window.location.href = parent + '/';
+                        return false;
+                    ">
+                        <span class="icon-arrow-square-out"></span>
+                        Ir atrás
+                    </a>  -->
+                    <a id="backBtn" class="btn btn-primary-light">
+                        <span class="icon-arrow-square-out"></span>
+                        Ir atrás
+                    </a>
+                    <script>
+                    const backBtn = document.getElementById("backBtn");
+
+                    // Obtener pathname normalizado
+                    let path = window.location.pathname;
+                    path = path.replace(/\/+$/, ""); // Quitar slash final excepto si solo es "/"
+
+                    // Detectar base del proyecto: "/NombreProyecto"
+                    const parts = path.split("/").filter(Boolean);
+
+                    // Caso especial: si estamos en home, parts = ["Documentar_Proyecto"]
+                    // Base = "/Documentar_Proyecto"
+                    let base = "/";
+                    if (parts.length > 0) {
+                        base = "/" + parts[0];
+                    }
+
+                    // Detectar ruta de /pages/
+                    const pagesRoot = base + "/pages";
+
+                    // 👍 CASO 1 → Si estamos en la home (exactamente la base)
+                    if (path === base) {
+                        backBtn.classList.add("disabled");
+                        backBtn.style.pointerEvents = "none";
+                        backBtn.style.opacity = "0.5";
+                        backBtn.removeAttribute("href");
+                        console.log("BackButton: Estamos en la home, desactivado.");
+                        return;
+                    }
+
+                    // 👍 CASO 2 → Estamos dentro de /pages/
+                    if (path.startsWith(pagesRoot)) {
+
+                        // Obtener el padre directo quitando el último segmento
+                        const parent = path.substring(0, path.lastIndexOf("/"));
+
+                        // Si el padre ES /pages/<nivel1>
+                        // Ej: /Documentar_Proyecto/pages/n1-crear-contenido
+                        const segments = parent.split("/").filter(Boolean);
+
+                        if (segments.length === 3) {
+                            // 0 = proyecto
+                            // 1 = pages
+                            // 2 = nivel1
+                            // → VOLVER a la home real
+                            backBtn.href = base + "/";
+                        } else {
+                            // Para niveles 2 y 3 → subir normalmente
+                            backBtn.href = parent + "/";
+                        }
+
+                        console.log("BackButton → Navega a:", backBtn.href);
+                        return;
+                    }
+
+                    // 👍 Cualquier otra ruta rara → desactivar por seguridad
+                    backBtn.classList.add("disabled");
+                    backBtn.style.pointerEvents = "none";
+                    backBtn.style.opacity = "0.5";
+                    backBtn.removeAttribute("href");
+                    console.log("BackButton: Ruta desconocida, desactivado.");
+                    </script>
                 </nav>
             </footer>
             
