@@ -19,3 +19,4 @@ date: 2026-03-27
 * [Iconos](./n3-iconos.md) - Iconos disponibles.
 * [Embebido](./n3-embebido.md) - Código para embeber contenido externo.
 * [Imagen](./n3-imagen.md) - Código para insertar imágenes.
+Cambio
