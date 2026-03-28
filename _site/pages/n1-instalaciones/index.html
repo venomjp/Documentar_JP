@@ -267,7 +267,8 @@
                 
 
                 <div id="nav_primary" class="pos-relative | fg-1 o-auto">
-                    <ol class="d-flex fd-column | m-0 pl-0 pt-3 pb-3 | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-instalaciones/" aria-current="page" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Instalaciones necesarias</a></li>
+                    <ol class="d-flex fd-column | m-0 pl-0 pt-3 pb-3 | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-estructuraDoc/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Estructura de las páginas de la Documentación</a></li>
+<li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-instalaciones/" aria-current="page" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Instalaciones necesarias</a></li>
 <li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-configuracion/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Configuraciones</a></li>
 <li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Crear contenido</a><ol class="d-flex fd-column fg-1 order-1 | m-0 pl-5 o-hidden | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Markdown</a><ol class="d-flex fd-column fg-1 order-1 | m-0 pl-5 o-hidden | ls-none"><li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Modificadores de texto</a></li>
 <li class="d-flex fw-wrap ai-center"><a href="/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-listas/" class="d-flex ai-center fg-1 | pos-relative | w-100 pt-2 pb-2 pr-6 | fs-3 td-none lh-5 tws-balance fvs-wght-500 | c-neutral-900 nav_primary__anchor">Listas</a></li>
@@ -470,6 +471,34 @@
                     </div>
                 
                 
+                    <details id="toc_main" open="">
+                        <summary class="d-flex ai-center | pt-5 pb-5 | fvs-wght-500 fs-3 | bwidth-1 bstyle-dashed bcolor-neutral-500 btwidth-0 brwidth-0 cur-pointer">
+                            <span class="pl-5 | bbwidth-1 bbstyle-dashed bcolor-neutral-500"></span>
+                            <span class="d-flex ai-center gap-1 | lsp-2">
+                                <span class="icon-minus-circle | fs-6 | c-primary-500"></span>
+                                <span class="icon-plus-circle | fs-6 | c-primary-500"></span>
+                                Tabla de contenido
+                            </span>
+                        </summary>
+                        
+                    <ol class="cgap-3em | m-0 pl-0 pb-5 o-auto | lh-1 | ls-none bwidth-1 bstyle-dashed bcolor-neutral-500 btwidth-0 brwidth-0" d-flex="xs,sm" fd-column="xs,sm" fw-wrap="xs,sm" columns-3="md" columns-2="sm" maxh-300px="sm" maxh-200px="xs">
+                        <li class="d-flex">
+                            <a href="#instalaciones-previas" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Instalaciones previas
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#pasos-iniciales" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Pasos iniciales
+                            </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#funcionamiento-general" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Funcionamiento general
+                            </a>
+                        </li></ol>
+                    </details>
+                
             </header>
             <noscript>
                 
@@ -481,7 +510,13 @@
                 </aside>
             
             </noscript>
-            <p>Partimos de la base de que el ordenador que se utilice deberá tener instalado previamente:</p>
+            
+                        <h1 id="instalaciones-previas" pl-9="xs,sm">
+                            <a href="#instalaciones-previas" title="Instalaciones previas" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Instalaciones previas</h1>
+<p>Partimos de la base de que el ordenador que se utilice deberá tener instalado previamente:</p>
 <ul>
 <li><a href="https://git-scm.com/">Git</a></li>
 <li><a href="https://desktop.github.com/">GitHub Desktop</a></li>
@@ -497,42 +532,88 @@
 <li><a href="https://nodejs.org/">NodeJS</a></li>
 </ul>
 <hr>
-<p>Además, para que funcione cualquier proyecto basado en la plantilla de proyectos con documentación en formato web alojada en GitHub Pages, se necesitan los siguientes <strong>pasos iniciales</strong>:</p>
+
+                        <h1 id="pasos-iniciales" pl-9="xs,sm">
+                            <a href="#pasos-iniciales" title="Pasos iniciales" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Pasos iniciales</h1>
+<p>Para que funcione cualquier proyecto basado en la plantilla de proyectos con documentación integrada en formato web y alojada en GitHub Pages, se deben seguir los siguientes <strong>pasos iniciales</strong>:</p>
 <ol>
-<li>Clonar el repositorio de la <a href="https://github.com/venomjp/Plantilla_Proyecto">plantilla para proyectos</a> y cambiarle el nombre.
+<li>Crear un <strong>nuevo repositorio en GitHub</strong> con el nombre que le queramos dar.
 <ul>
-<li>Borrar la carpte oculta .git para desvincularlo del repositorio original.</li>
+<li><strong>Visibilidad: pública</strong> para que se visualice la página web en GitHub Pages.</li>
+<li><strong>Add README: no</strong>, personalizamos el README.md de la plantilla con la información del nuevo proyecto.</li>
+<li><strong>Add .gitignore: no</strong>, la plantilla ya incluye un archivo .gitignore personalizado.</li>
+<li><strong>Add license: no</strong>, la plantilla ya incluye una licencia personalizada (CC BY-NC-SA 4.0) que se puede mantener para todos los proyectos.</li>
 </ul>
 </li>
-<li>Instalar <strong>Eleventy</strong> en el repositorio clonado:
+<li><strong>Clonar el repositorio nuevo utilizando GitHub Desktop</strong>, para que descargue el proyecto vacío en el ordenador.</li>
+<li><strong>Descargar la</strong> <a href="https://github.com/venomjp/Plantilla_Proyecto">plantilla para proyectos</a> de mi cuenta de GitHub.
 <ul>
-<li><code>npm install @11ty/eleventy</code> - instalar Eleventy</li>
-<li><code>npm audit fix</code> - corregir vulnerabilidades de seguridad</li>
+<li>Borrar la carpeta oculta .git para desvincularlo del repositorio original.</li>
+<li>Mover el contenido de la plantilla en la carpeta del nuevo proyecto que se ha clonado, para que tenga la estructura y archivos necesarios para generar la documentación (borrar la carpeta de la plantilla).</li>
+<li>Modificar el pathPrefix en el archivo <code>.eleventy.js</code> con el nombre del repositorio nuevo.</li>
 </ul>
 </li>
-<li>Comprobar que el proyecto funciona en modo local:
+<li><strong>Abrir el proyecto con Visual Studio Code</strong>.</li>
+<li><strong>Instalar Eleventy en el proyecto</strong>, abrir una terminal integrada (PowerShell 7 preferiblemente) y escribir los siguientes comandos en la terminal:
 <ul>
-<li><code>npm run clean</code> - script para limpiar la carpeta de salida</li>
+<li><code>npm install @11ty/eleventy</code> - instala Eleventy en la carpeta del proyecto</li>
+<li><code>npm audit fix</code> - correge vulnerabilidades de seguridad</li>
+<li><code>npm i - D rimraf</code> - instala una herramienta de Node.js para borrar archivos y carpetas de forma recursiva, sin tener que preocuparte por el sistema operativo ni el shell que utilices.</li>
+</ul>
+</li>
+<li><strong>Comprobar que el proyecto funciona en modo local</strong>
+<ul>
+<li><code>npm run clean</code> - script para limpiar (borra la carpeta de salida y la caché) antes de generar la documentación.</li>
 <li><code>npm run start</code> - script para iniciar el servidor local y comprobar que se visualiza la documentación en <a href="http://localhost:8080/">localhost</a></li>
 </ul>
 </li>
-<li>Subir el proyecto a un repositorio nuevo en <strong>GitHub</strong>:
+<li><strong>Configurar GitHub Pages para el proyecto</strong>
 <ul>
-<li>Crear un nuevo repositorio en GitHub con el mismo nombre que el proyecto.</li>
-<li>Subir el proyecto al nuevo repositorio utilizando GitHub Desktop.</li>
-<li>Modificar el pathPrefix (.eleventy.js) con el nombre del repositorio nuevo.</li>
-<li><code>npm run clean</code> - script para limpiar la carpeta de salida antes de subir los cambios.</li>
-<li><code>npm run build-ghpages</code> - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.</li>
+<li><strong>Settings &gt; Pages &gt; Build &amp; Deploy: GitHub Actions &gt; Save</strong> - permite generar la página web automáticamente cada vez que se suben cambios al repositorio.</li>
 </ul>
 </li>
-<li>Activar <strong>GitHub Pages</strong> en el repositorio nuevo y comprobar que se visualiza la documentación.
-<ul>
-<li>Settings &gt; Pages &gt; Build &amp; Deploy: GitHub Actions &gt; Save - genera la página web automáticamente cada vez que se suben cambios al repositorio.</li>
-<li>Hacer algún cambio, generar un <strong>commit</strong> y subirlo con <strong>push</strong> para comprobar que se actualiza la página web.</li>
-<li>Recuerda que el repositorio tiene que ser público para que se visualice la página web.</li>
-</ul>
+<li><strong>Subir el proyecto a GitHub</strong>
+<ol>
+<li><code>npm run clean</code> - script para limpiar la carpeta de salida y la caché antes de subir los cambios.</li>
+<li><code>npm run build-ghpages</code> - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.</li>
+<li>Subir el proyecto al nuevo repositorio utilizando GitHub Desktop que permite subir muchos archivos a la vez. También se puede hacer con la terminal integrada de Visual Studio Code utilizando los comandos de Git.</li>
+<li>Comprobar que se visualiza la documentación en la URL del repositorio <code>https://&lt;nombreUsuario&gt;.github.io/&lt;nombreRepositorio&gt;/</code></li>
+</ol>
 </li>
 </ol>
+
+                        <h1 id="funcionamiento-general" pl-9="xs,sm">
+                            <a href="#funcionamiento-general" title="Funcionamiento general" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Funcionamiento general</h1>
+<p>El control de versiones con GitHub se puede utilizar tanto para gestionar el código fuente de un proyecto de software como para generar la documentación del propio proyecto. Estas son las indicaciones para generar la documentación.</p>
+<p>Una vez que se ha creado el proyecto y realizado los pasos iniciales, el proceso para generar la documentación puede tener dos modos de funcionamiento:</p>
+<ul>
+<li>
+<p><strong>MODO LOCAL</strong></p>
+<p>Es el modo <strong>normal de funcionamiento para generar la documentación</strong>, creando los archivos de la documentación y visualizándolos en localhost.</p>
+<ol>
+<li>Realizar cambios en los archivos de la documentación.</li>
+<li><code>npm run clean</code> - script para limpiar la carpeta de salida y la caché</li>
+<li><code>npm run start</code> - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhost.</li>
+</ol>
+</li>
+<li>
+<p><strong>MODO WEB</strong></p>
+<p>Es el modo para <strong>publicar la documentación en GitHub Pages</strong>. También se debe utilizar <strong>al final de cada sesión de trabajo para actualizar los cambios realizados</strong> a la documentación y que se actualice la página web.</p>
+<ol>
+<li>Realizar cambios en los archivos de la documentación.</li>
+<li><code>npm run clean</code> - script para limpiar la carpeta de salida y la caché</li>
+<li><code>npm run build-ghpages</code> - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.</li>
+<li>Realizar un commit y subir los cambios al repositorio de GitHub utilizando GitHub Desktop o la terminal integrada de Visual Studio Code.</li>
+</ol>
+</li>
+</ul>
+<p>Cada vez que se suben los cambios al repositorio de GitHub, gracias a GitHub Actions se genera automáticamente la página web. Los cambios en la página web de GitHub Pages no se generan al instante, según lo extensa y complicada que sea la documentación, tardará un tiempo en actualizarse <em>(generalmente pocos minutos)</em>.</p>
 
             <footer class="minh-100vh">
                 <div class="pt-11 | blwidth-1 blstyle-dashed bcolor-neutral-500"></div>

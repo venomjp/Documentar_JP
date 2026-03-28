@@ -5,6 +5,36 @@
             "description": "Nivel 1 de navegación entre páginas nivel 1 etiqueta 2"
         },
         {
+            "url": "/Documentar_Proyecto/posts/",
+            "title": "./core/libdoc_blog.liquid",
+            "description": " "
+        },
+        {
+            "url": "/Documentar_Proyecto/tags/",
+            "title": "./core/libdoc_tags.liquid",
+            "description": " "
+        },
+        {
+            "url": "/Documentar_Proyecto/",
+            "title": "Documentar un Proyecto",
+            "description": "Página HOME del proyecto home"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/",
+            "title": "Primera página de nivel 2",
+            "description": "Soy una página de nivel 2 nivel 2 blockquote"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/n3-primera/",
+            "title": "Página de nivel 3",
+            "description": "Soy una página de nivel 3 nivel 3"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-primera/n2-segunda/",
+            "title": "Segunda página de nivel 2",
+            "description": "Soy una página de nivel 2 nivel 2 segunda"
+        },
+        {
             "url": "/Documentar_Proyecto/posts/cuaderno-de-bitacora/",
             "title": "Cuaderno de bitácora",
             "description": "Cómo lo voy a utilizar, qué tipo de contenido voy a incluir, cómo lo voy a organizar, etc. post bitácora"
@@ -18,6 +48,11 @@
             "url": "/Documentar_Proyecto/pages/n1-estructura-ficheros/",
             "title": "Estructura de ficheros",
             "description": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/n1-estructuraDoc/",
+            "title": "Estructura de las páginas de la Documentación",
+            "description": "Formato de las páginas de la documentación y del cuaderno de bitácora. estructura"
         },
         {
             "url": "/Documentar_Proyecto/pages/n1-instalaciones/",
@@ -168,35 +203,5 @@
             "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-tablas/",
             "title": "Tablas",
             "description": "Creación y formato de tablas. contenido markdown tablas"
-        },
-        {
-            "url": "/Documentar_Proyecto/posts/",
-            "title": "./core/libdoc_blog.liquid",
-            "description": " "
-        },
-        {
-            "url": "/Documentar_Proyecto/tags/",
-            "title": "./core/libdoc_tags.liquid",
-            "description": " "
-        },
-        {
-            "url": "/Documentar_Proyecto/",
-            "title": "Documentar un Proyecto",
-            "description": "Página HOME del proyecto home"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/",
-            "title": "Primera página de nivel 2",
-            "description": "Soy una página de nivel 2 nivel 2 blockquote"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-segunda/",
-            "title": "Segunda página de nivel 2",
-            "description": "Soy una página de nivel 2 nivel 2 segunda"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/n3-primera/",
-            "title": "Página de nivel 3",
-            "description": "Soy una página de nivel 3 nivel 3"
         }
 ]
