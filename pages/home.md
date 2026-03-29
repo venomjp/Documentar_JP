@@ -27,21 +27,25 @@ Mi idea es **integrar el proyecto y la documentación en un mismo repositorio**,
 * Puedo acceder a la documentación desde cualquier dispositivo, lo que facilita su consulta en cualquier momento y lugar.
 * Al estar alojada en GitHub Pages, las páginas tienen que ser públicas y estáticas, es fácil de actualizar, mantener y no necesito un servidor propio.
 
+# Estructura de las páginas
+
+{% iconCard 'Estructura de las páginas', 'Formato de las páginas y los distintos elementos que las componen.<br>[Estructura de las páginas de la Documentación](./1-estructuraDoc.md/).', 'copy-simple' %}
+
 # Instalaciones necesarias
 
-{% iconCard 'Instalaciones Previas y Pasos Iniciales', 'Lo que se necesita para que funcione.<br>[Instalaciones necesarias](./n1-instalaciones.md/).', 'plus-circle' %}
+{% iconCard 'Instalaciones Previas y Pasos Iniciales', 'Lo que se necesita para que funcione.<br>[Instalaciones necesarias](./2-instalaciones.md/).', 'plus-circle' %}
 
-# Configuración
-{% iconCard 'Haciendo que funcione', '¿Qué hay que cambiar y en qué archivos se cambia?<br>[Configuración](./n1-configuracion.md/).', 'faders' %}
+# Configuraciones
+{% iconCard 'Haciendo que funcione', '¿Qué hay que cambiar y en qué archivos se cambia?<br>[Configuración](./3-configuracion.md/).', 'faders' %}
 
 # Crear contenido
-{% iconCard 'Escribe como quieras', 'Cómo escribir mi documentación con <abbr title="Hyper Text Markup Language"> Markdown y HTML </abbr> y añadirle widgets. <br>[Crear Contenido](./n1-crear-contenido.md/).', 'pen' %}
+{% iconCard 'Escribe como quieras', 'Cómo escribir mi documentación con <abbr title="Hyper Text Markup Language"> Markdown y HTML </abbr> y añadirle widgets. <br>[Crear Contenido](./4-crear-contenido.md/).', 'pen' %}
 
 # Navegación
-{% iconCard 'Recorre el proyecto', 'Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú.<br>[Navegación](./n1-navegacion.md/).', 'list' %}
+{% iconCard 'Recorre el proyecto', 'Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú.<br>[Navegación](./5-navegacion.md/).', 'list' %}
 
 # Estructura de ficheros
-{% iconCard 'FileTree', 'Como es la estructura de ficheros y dónde se guarda cada cosa.<br>[Estructura de Ficheros](./n1-estructura-ficheros.md/).', 'list-dashes' %}
+{% iconCard 'FileTree', 'Como es la estructura de ficheros y dónde se guarda cada cosa.<br>[Estructura de Ficheros](./6-estructura-ficheros.md/).', 'list-dashes' %}
 
 # Cuaderno de bitácora
 {% iconCard 'Blog', 'Es un diario de trabajo y un blog técnico.<br>[Cuaderno de Bitácora](./posts/).', 'sidebar' %}

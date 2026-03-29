@@ -1,10 +1,5 @@
 [
         {
-            "url": "/Documentar_Proyecto/pages/n1-primera/",
-            "title": "Nivel 1",
-            "description": "Nivel 1 de navegación entre páginas nivel 1 etiqueta 2"
-        },
-        {
             "url": "/Documentar_Proyecto/posts/",
             "title": "./core/libdoc_blog.liquid",
             "description": " "
@@ -20,19 +15,29 @@
             "description": "Página HOME del proyecto home"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/",
-            "title": "Primera página de nivel 2",
-            "description": "Soy una página de nivel 2 nivel 2 blockquote"
+            "url": "/Documentar_Proyecto/pages/1-estructuraDoc/",
+            "title": "Estructura de las páginas de la documentación",
+            "description": "Formato de las páginas de la documentación y del cuaderno de bitácora. estructura"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/n3-primera/",
-            "title": "Página de nivel 3",
-            "description": "Soy una página de nivel 3 nivel 3"
+            "url": "/Documentar_Proyecto/pages/2-instalaciones/",
+            "title": "Instalaciones necesarias",
+            "description": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages git github desktop visual studio code"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-segunda/",
-            "title": "Segunda página de nivel 2",
-            "description": "Soy una página de nivel 2 nivel 2 segunda"
+            "url": "/Documentar_Proyecto/pages/3-configuracion/",
+            "title": "Configuraciones",
+            "description": "Pasos previos para que funcione cualquier proyecto. configuración package.json settings.json README.md favicon niveles de páginas bitácora"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/5-navegacion/",
+            "title": "Navegación",
+            "description": "Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú. navegación"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/6-estructura-ficheros/",
+            "title": "Estructura de ficheros",
+            "description": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree"
         },
         {
             "url": "/Documentar_Proyecto/posts/cuaderno-de-bitacora/",
@@ -40,29 +45,9 @@
             "description": "Cómo lo voy a utilizar, qué tipo de contenido voy a incluir, cómo lo voy a organizar, etc. post bitácora"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-configuracion/",
-            "title": "Configuraciones",
-            "description": "Pasos previos para que funcione cualquier proyecto. configuración package.json settings.json README.md favicon niveles de páginas bitácora"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-estructura-ficheros/",
-            "title": "Estructura de ficheros",
-            "description": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-estructuraDoc/",
-            "title": "Estructura de las páginas de la Documentación",
-            "description": "Formato de las páginas de la documentación y del cuaderno de bitácora. estructura"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-instalaciones/",
-            "title": "Instalaciones necesarias",
-            "description": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages git github desktop visual studio code"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/",
-            "title": "Navegación",
-            "description": "Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú. navegación"
+            "url": "/Documentar_Proyecto/pages/7-licencia/",
+            "title": "Licencia",
+            "description": "Información sobre la licencia del proyecto. licencia"
         },
         {
             "url": "/Documentar_Proyecto/posts/modificaciones-respecto-a-libdoc-starter-project/",
@@ -70,39 +55,124 @@
             "description": "Cambios realizados en el proyecto base para adaptarlo a mis necesidades. post modificaciones respecto a LibDic"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-licencia/",
-            "title": "Licencia",
-            "description": "Información sobre la licencia del proyecto. licencia"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-busqueda/",
-            "title": "Entrada de búsqueda",
-            "description": "Modos de entrada de búsqueda estándar y difusa. navegación búsqueda difusa"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-home/",
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_1-home/",
             "title": "Enlace a HOME",
             "description": "Siempre visible, redirige a la raíz del proyecto. navegación home"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-linksPersonalizados/",
-            "title": "Links personalizados",
-            "description": "Muestra enlaces en la barra de navegación. navegación links personalizados"
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_2-busqueda/",
+            "title": "Entrada de búsqueda",
+            "description": "Modos de entrada de búsqueda estándar y difusa. navegación búsqueda difusa"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-listaTags/",
-            "title": "Lista de tags",
-            "description": "Muestra los tags definidos y el número de veces que se utilizan. navegación tags"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-resultadosBusqueda/",
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_3-resultadosBusqueda/",
             "title": "Resultados de la búsqueda",
             "description": "La página de resultados de búsqueda mustra extractos de las ocurrencias. navegación search búsqueda"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-tablaContenidos/",
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_4-linksPersonalizados/",
+            "title": "Links personalizados",
+            "description": "Muestra enlaces en la barra de navegación. navegación links personalizados"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_5-listaTags/",
+            "title": "Lista de tags",
+            "description": "Muestra los tags definidos y el número de veces que se utilizan. navegación tags"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_6-tablaContenidos/",
             "title": "Tabla de contenidos",
             "description": "Puedes navegar por la tabla de contenido principal y la flotante. navegación tabla de contenidos"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/",
+            "title": "Crear contenido",
+            "description": "Como escribir mi documentación con Markdown y HTML, además se puede mejorar la experiencia añadiendo widgets. markdown html widgets"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/",
+            "title": "Markdown",
+            "description": "Dónde usar las etiquetas Markdown. markdown"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_1-modificadoresTexto/",
+            "title": "Modificadores de texto",
+            "description": "Parráfos, saltos de línea, encabezados y énfasis en el texto. contenido markdown modificadores de texto parráfo salto de línea encabezados énfasis cursiva negrita tachado línea horizontal"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_2-listas/",
+            "title": "Listas",
+            "description": "Ordenadas, NO ordenadas y mixtas. contenido markdown listas"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_3-enlaces/",
+            "title": "Enlaces",
+            "description": "Tipos de enlaces. contenido markdown enlaces"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_4-imagenes/",
+            "title": "Imágenes",
+            "description": "Locales y externas, con o sin enlace, pequeñas o grandes. contenido markdown imagen"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_5-codigo/",
+            "title": "Código",
+            "description": "En línea, bloque con resaltado de sintaxis y variables. contenido markdown resaltado de sintaxis"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_6-tablas/",
+            "title": "Tablas",
+            "description": "Creación y formato de tablas. contenido markdown tablas"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_7-citaGrande/",
+            "title": "Cita grande",
+            "description": "Para citas con formato grande. contenido markdown cita"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_2-html/",
+            "title": "HTML en línea",
+            "description": "Ejemplo de las etiquetas HTML disponibles. html abreviatura cita en línea entrada de teclado salto de línea enlaces internos énfasis en texto variables"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_2-html/4_2_1-enfasisTexto/",
+            "title": "Énfasis en texto",
+            "description": "Resaltado, texto de salida, texto pequeño, tachado, subíndices y superíndices. contenido html énfasis resaltado texto de salida texto pequeño tachado subíndice superíndice"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/",
+            "title": "Widgets",
+            "description": "Fragmentos HTML que mejoran la visualización del contenido. contenido widgets"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_2-botones/",
+            "title": "Botones",
+            "description": "Código para crear botones y crear llamadas a la acción. contenido widgets botones"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_3-definicion/",
+            "title": "Definición",
+            "description": "Código para crear términos y definiciones. contenido widgets definición"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_4-acordeon/",
+            "title": "Acordeón",
+            "description": "Código para crear contenido colapsable. contenido widgets acordeón"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_5-iconos/",
+            "title": "Iconos",
+            "description": "Código para crear iconos y mejorar la visualización del contenido. contenido widgets iconos"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_6-embebido/",
+            "title": "Embebido",
+            "description": "Código para embeber contenido externo. contenido widgets embebido"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_7-imagen/",
+            "title": "Imagen",
+            "description": "Código para insertar imágenes. contenido widgets imagen"
         },
         {
             "url": "/Documentar_Proyecto/posts/boton-ir-atras/",
@@ -110,98 +180,8 @@
             "description": "Cambios realizados en el proyecto para incorporar un botón de &#34;ir atrás&#34; en el pie de página de las páginas de documentación. post botón atrás"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/",
-            "title": "Crear contenido",
-            "description": "Como escribir mi documentación con Markdown y HTML, además se puede mejorar la experiencia añadiendo widgets. markdown html widgets"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-html/",
-            "title": "HTML en línea",
-            "description": "Ejemplo de las etiquetas HTML disponibles. html abreviatura cita en línea entrada de teclado salto de línea enlaces internos énfasis en texto variables"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/",
-            "title": "Markdown",
-            "description": "Dónde usar las etiquetas Markdown. markdown"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/",
-            "title": "Widgets",
-            "description": "Fragmentos HTML que mejoran la visualización del contenido. contenido widgets"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-acordeon/",
-            "title": "Acordeón",
-            "description": "Código para crear contenido colapsable. contenido widgets acordeón"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-alertas/",
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_1-alertas/",
             "title": "Alertas",
             "description": "Código para crear alertas y resaltar información importante. contenido widgets alertas"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-botones/",
-            "title": "Botones",
-            "description": "Código para crear botones y crear llamadas a la acción. contenido widgets botones"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-citaGrande/",
-            "title": "Cita grande",
-            "description": "Para citas con formato grande. contenido markdown cita"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-codigo/",
-            "title": "Código",
-            "description": "En línea, bloque con resaltado de sintaxis y variables. contenido markdown resaltado de sintaxis"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-definicion/",
-            "title": "Definición",
-            "description": "Código para crear términos y definiciones. contenido widgets definición"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-embebido/",
-            "title": "Embebido",
-            "description": "Código para embeber contenido externo. contenido widgets embebido"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-html/n3-enfasisTexto/",
-            "title": "Énfasis en texto",
-            "description": "Resaltado, texto de salida, texto pequeño, tachado, subíndices y superíndices. contenido html resaltado texto de salida texto pequeño tachado subíndice superíndice"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-enlaces/",
-            "title": "Enlaces",
-            "description": "Tipos de enlaces. contenido markdown enlaces"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-iconos/",
-            "title": "Iconos",
-            "description": "Código para crear iconos y mejorar la visualización del contenido. contenido widgets iconos"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-imagen/",
-            "title": "Imagen",
-            "description": "Código para insertar imágenes. contenido widgets imagen"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-imagenes/",
-            "title": "Imágenes",
-            "description": "Locales y externas, con o sin enlace, pequeñas o grandes. contenido markdown imagen"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-listas/",
-            "title": "Listas",
-            "description": "Ordenadas, NO ordenadas y mixtas. contenido markdown listas"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/",
-            "title": "Modificadores de texto",
-            "description": "Parráfos, saltos de línea, encabezados y énfasis en el texto. contenido markdown modificadores de texto parráfo salto de línea encabezados énfasis cursiva negrita tachado línea horizontal"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-tablas/",
-            "title": "Tablas",
-            "description": "Creación y formato de tablas. contenido markdown tablas"
         }
 ]

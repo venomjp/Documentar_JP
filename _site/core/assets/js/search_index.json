@@ -30,14 +30,14 @@
                 "content": " bitácora "
             },
             {
-                "url": "/Documentar_Proyecto/tags/imagen",
-                "title": "Tag imagen",
-                "content": " imagen "
-            },
-            {
                 "url": "/Documentar_Proyecto/tags/salto de línea",
                 "title": "Tag salto de línea",
                 "content": " salto de línea "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/énfasis",
+                "title": "Tag énfasis",
+                "content": " énfasis "
             },
             {
                 "url": "/Documentar_Proyecto/tags/tachado",
@@ -45,9 +45,9 @@
                 "content": " tachado "
             },
             {
-                "url": "/Documentar_Proyecto/tags/búsqueda",
-                "title": "Tag búsqueda",
-                "content": " búsqueda "
+                "url": "/Documentar_Proyecto/tags/imagen",
+                "title": "Tag imagen",
+                "content": " imagen "
             },
             {
                 "url": "/Documentar_Proyecto/tags/home",
@@ -55,9 +55,44 @@
                 "content": " home "
             },
             {
-                "url": "/Documentar_Proyecto/tags/nivel 2",
-                "title": "Tag nivel 2",
-                "content": " nivel 2 "
+                "url": "/Documentar_Proyecto/tags/búsqueda",
+                "title": "Tag búsqueda",
+                "content": " búsqueda "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/estructura",
+                "title": "Tag estructura",
+                "content": " estructura "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/instalación",
+                "title": "Tag instalación",
+                "content": " instalación "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/nodejs",
+                "title": "Tag nodejs",
+                "content": " nodejs "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/github pages",
+                "title": "Tag github pages",
+                "content": " github pages "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/git",
+                "title": "Tag git",
+                "content": " git "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/github desktop",
+                "title": "Tag github desktop",
+                "content": " github desktop "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/visual studio code",
+                "title": "Tag visual studio code",
+                "content": " visual studio code "
             },
             {
                 "url": "/Documentar_Proyecto/tags/configuración",
@@ -90,26 +125,6 @@
                 "content": " niveles de páginas "
             },
             {
-                "url": "/Documentar_Proyecto/tags/cita",
-                "title": "Tag cita",
-                "content": " cita "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/resaltado de sintaxis",
-                "title": "Tag resaltado de sintaxis",
-                "content": " resaltado de sintaxis "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/enlaces",
-                "title": "Tag enlaces",
-                "content": " enlaces "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/listas",
-                "title": "Tag listas",
-                "content": " listas "
-            },
-            {
                 "url": "/Documentar_Proyecto/tags/modificadores de texto",
                 "title": "Tag modificadores de texto",
                 "content": " modificadores de texto "
@@ -123,11 +138,6 @@
                 "url": "/Documentar_Proyecto/tags/encabezados",
                 "title": "Tag encabezados",
                 "content": " encabezados "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/énfasis",
-                "title": "Tag énfasis",
-                "content": " énfasis "
             },
             {
                 "url": "/Documentar_Proyecto/tags/cursiva",
@@ -145,9 +155,29 @@
                 "content": " línea horizontal "
             },
             {
+                "url": "/Documentar_Proyecto/tags/listas",
+                "title": "Tag listas",
+                "content": " listas "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/enlaces",
+                "title": "Tag enlaces",
+                "content": " enlaces "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/resaltado de sintaxis",
+                "title": "Tag resaltado de sintaxis",
+                "content": " resaltado de sintaxis "
+            },
+            {
                 "url": "/Documentar_Proyecto/tags/tablas",
                 "title": "Tag tablas",
                 "content": " tablas "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/cita",
+                "title": "Tag cita",
+                "content": " cita "
             },
             {
                 "url": "/Documentar_Proyecto/tags/abreviatura",
@@ -205,11 +235,6 @@
                 "content": " superíndice "
             },
             {
-                "url": "/Documentar_Proyecto/tags/acordeón",
-                "title": "Tag acordeón",
-                "content": " acordeón "
-            },
-            {
                 "url": "/Documentar_Proyecto/tags/alertas",
                 "title": "Tag alertas",
                 "content": " alertas "
@@ -225,9 +250,9 @@
                 "content": " definición "
             },
             {
-                "url": "/Documentar_Proyecto/tags/embebido",
-                "title": "Tag embebido",
-                "content": " embebido "
+                "url": "/Documentar_Proyecto/tags/acordeón",
+                "title": "Tag acordeón",
+                "content": " acordeón "
             },
             {
                 "url": "/Documentar_Proyecto/tags/iconos",
@@ -235,59 +260,19 @@
                 "content": " iconos "
             },
             {
-                "url": "/Documentar_Proyecto/tags/estructura ficheros",
-                "title": "Tag estructura ficheros",
-                "content": " estructura ficheros "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/file tree",
-                "title": "Tag file tree",
-                "content": " file tree "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/estructura",
-                "title": "Tag estructura",
-                "content": " estructura "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/instalación",
-                "title": "Tag instalación",
-                "content": " instalación "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/nodejs",
-                "title": "Tag nodejs",
-                "content": " nodejs "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/github pages",
-                "title": "Tag github pages",
-                "content": " github pages "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/git",
-                "title": "Tag git",
-                "content": " git "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/github desktop",
-                "title": "Tag github desktop",
-                "content": " github desktop "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/visual studio code",
-                "title": "Tag visual studio code",
-                "content": " visual studio code "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/licencia",
-                "title": "Tag licencia",
-                "content": " licencia "
+                "url": "/Documentar_Proyecto/tags/embebido",
+                "title": "Tag embebido",
+                "content": " embebido "
             },
             {
                 "url": "/Documentar_Proyecto/tags/difusa",
                 "title": "Tag difusa",
                 "content": " difusa "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/search",
+                "title": "Tag search",
+                "content": " search "
             },
             {
                 "url": "/Documentar_Proyecto/tags/links personalizados",
@@ -300,24 +285,24 @@
                 "content": " tags "
             },
             {
-                "url": "/Documentar_Proyecto/tags/search",
-                "title": "Tag search",
-                "content": " search "
-            },
-            {
                 "url": "/Documentar_Proyecto/tags/tabla de contenidos",
                 "title": "Tag tabla de contenidos",
                 "content": " tabla de contenidos "
             },
             {
-                "url": "/Documentar_Proyecto/tags/nivel 1",
-                "title": "Tag nivel 1",
-                "content": " nivel 1 "
+                "url": "/Documentar_Proyecto/tags/estructura ficheros",
+                "title": "Tag estructura ficheros",
+                "content": " estructura ficheros "
             },
             {
-                "url": "/Documentar_Proyecto/tags/etiqueta 2",
-                "title": "Tag etiqueta 2",
-                "content": " etiqueta 2 "
+                "url": "/Documentar_Proyecto/tags/file tree",
+                "title": "Tag file tree",
+                "content": " file tree "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/licencia",
+                "title": "Tag licencia",
+                "content": " licencia "
             },
             {
                 "url": "/Documentar_Proyecto/tags/botón atrás",
@@ -329,26 +314,6 @@
                 "title": "Tag modificaciones respecto a LibDic",
                 "content": " modificaciones respecto a LibDic "
             },
-            {
-                "url": "/Documentar_Proyecto/tags/blockquote",
-                "title": "Tag blockquote",
-                "content": " blockquote "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/segunda",
-                "title": "Tag segunda",
-                "content": " segunda "
-            },
-            {
-                "url": "/Documentar_Proyecto/tags/nivel 3",
-                "title": "Tag nivel 3",
-                "content": " nivel 3 "
-            },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-primera/",
-            "title": "Nivel 1",
-            "content": "Nivel 1 de navegación entre páginas nivel 1 etiqueta 2 Hola soy una página de nivel 1.Vamos a una página hijo con referencia a la plantilla de origen Nivel 2.Este otro enlace se hace con referencia a la ruta relativa (que ya lleva pathPrefix) Nivel 2.Para bajar un nivel, se puede hacer referenciando la plantilla de origen[página nivel 2](n2-segunda.md &amp;quot;También cambia a nivel inferior&amp;quot;)."
-        },
         {
             "url": "/Documentar_Proyecto/posts/",
             "title": "./core/libdoc_blog.liquid",
@@ -357,27 +322,37 @@
         {
             "url": "/Documentar_Proyecto/tags/",
             "title": "./core/libdoc_tags.liquid",
-            "content": "  contenido 16 páginas markdown 9 páginas widgets 9 páginas navegación 7 páginas html 3 páginas bitácora 2 páginas imagen 2 páginas salto de línea 2 páginas tachado 2 páginas búsqueda 2 páginas home 2 páginas nivel 2 2 páginas configuración 1 página package.json 1 página settings.json 1 página README.md 1 página favicon 1 página niveles de páginas 1 página cita 1 página resaltado de sintaxis 1 página enlaces 1 página listas 1 página modificadores de texto 1 página parráfo 1 página encabezados 1 página énfasis 1 página cursiva 1 página negrita 1 página línea horizontal 1 página tablas 1 página abreviatura 1 página cita en línea 1 página entrada de teclado 1 página enlaces internos 1 página énfasis en texto 1 página variables 1 página resaltado 1 página texto de salida 1 página texto pequeño 1 página subíndice 1 página superíndice 1 página acordeón 1 página alertas 1 página botones 1 página definición 1 página embebido 1 página iconos 1 página estructura ficheros 1 página file tree 1 página estructura 1 página instalación 1 página nodejs 1 página github pages 1 página git 1 página github desktop 1 página visual studio code 1 página licencia 1 página difusa 1 página links personalizados 1 página tags 1 página search 1 página tabla de contenidos 1 página nivel 1 1 página etiqueta 2 1 página botón atrás 1 página modificaciones respecto a LibDic 1 página blockquote 1 página segunda 1 página nivel 3 1 página"
+            "content": "  contenido 16 páginas markdown 9 páginas widgets 9 páginas navegación 7 páginas html 3 páginas bitácora 2 páginas salto de línea 2 páginas énfasis 2 páginas tachado 2 páginas imagen 2 páginas home 2 páginas búsqueda 2 páginas estructura 1 página instalación 1 página nodejs 1 página github pages 1 página git 1 página github desktop 1 página visual studio code 1 página configuración 1 página package.json 1 página settings.json 1 página README.md 1 página favicon 1 página niveles de páginas 1 página modificadores de texto 1 página parráfo 1 página encabezados 1 página cursiva 1 página negrita 1 página línea horizontal 1 página listas 1 página enlaces 1 página resaltado de sintaxis 1 página tablas 1 página cita 1 página abreviatura 1 página cita en línea 1 página entrada de teclado 1 página enlaces internos 1 página énfasis en texto 1 página variables 1 página resaltado 1 página texto de salida 1 página texto pequeño 1 página subíndice 1 página superíndice 1 página alertas 1 página botones 1 página definición 1 página acordeón 1 página iconos 1 página embebido 1 página difusa 1 página search 1 página links personalizados 1 página tags 1 página tabla de contenidos 1 página estructura ficheros 1 página file tree 1 página licencia 1 página botón atrás 1 página modificaciones respecto a LibDic 1 página"
         },
         {
             "url": "/Documentar_Proyecto/",
             "title": "Documentar un Proyecto",
-            "content": "Página HOME del proyecto home IntroducciónLa documentación de un proyecto es una parte fundamental, permite entender el proyecto, su estructura, su funcionamiento, las decisiones tomadas y como reutilizarlo en otros proyectos.Este proyecto es una guía de uso de mi plantilla de documentación para proyectos que está basada en el generador de sitios estáticos Eleventy y en el starter project LibDoc, adaptado para satisfacer mis necesidades y gustos.Mi idea es integrar el proyecto y la documentación en un mismo repositorio, de esta forma se puede versionar tanto la documentación como el código del proyecto y se puede integrar también más documentación, diseños 3D, electrónicos, etc.Una documentación con formato web me permite más flexibilidad que la documentación tradicional.Las funcionalidades de búsqueda y navegación me permiten acceder fácilmente a la información que necesito.He creado una estructura de ficheros propia que quiero estandarizar en todos mis proyectos.Esta integración permite desarrollar el proyecto y generar una documentación elegante y adaptable, también incluye un cuaderno de bitácora en formato blog para poder registrar progresos, problemas, decisiones...Puedo acceder a la documentación desde cualquier dispositivo, lo que facilita su consulta en cualquier momento y lugar.Al estar alojada en GitHub Pages, las páginas tienen que ser públicas y estáticas, es fácil de actualizar, mantener y no necesito un servidor propio.Instalaciones necesariasInstalaciones Previas y Pasos InicialesLo que se necesita para que funcione.Instalaciones necesarias.ConfiguraciónHaciendo que funcione¿Qué hay que cambiar y en qué archivos se cambia?Configuración.Crear contenidoEscribe como quierasCómo escribir mi documentación con Markdown y HTML y añadirle widgets. Crear Contenido.NavegaciónRecorre el proyectoTabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú.Navegación.Estructura de ficherosFileTreeComo es la estructura de ficheros y dónde se guarda cada cosa.Estructura de Ficheros.Cuaderno de bitácoraBlogEs un diario de trabajo y un blog técnico.Cuaderno de Bitácora.Créditos y referenciasEste proyecto no sería posible sin el trabajo de otras personas, aquí dejo una lista de las herramientas y recursos que he utilizado:Node.js Es un entorno de ejecución de JavaScript, necesario para ejecutar Eleventy.Eleventy Es un generador de sitios estáticos, es decir, la herramienta que permite generar el sitio web a partir de plantillas fuente.LibDoc Es un starter project de 11ty (Eleventy) que me permite crear documentación elegante y adaptable.LicenciaAquí encontrarás información sobre la licencia del proyecto y de la documentación: LicenciaDocumentar un Proyecto © 2026 by Juan Pedro Perianes is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
+            "content": "Página HOME del proyecto home IntroducciónLa documentación de un proyecto es una parte fundamental, permite entender el proyecto, su estructura, su funcionamiento, las decisiones tomadas y como reutilizarlo en otros proyectos.Este proyecto es una guía de uso de mi plantilla de documentación para proyectos que está basada en el generador de sitios estáticos Eleventy y en el starter project LibDoc, adaptado para satisfacer mis necesidades y gustos.Mi idea es integrar el proyecto y la documentación en un mismo repositorio, de esta forma se puede versionar tanto la documentación como el código del proyecto y se puede integrar también más documentación, diseños 3D, electrónicos, etc.Una documentación con formato web me permite más flexibilidad que la documentación tradicional.Las funcionalidades de búsqueda y navegación me permiten acceder fácilmente a la información que necesito.He creado una estructura de ficheros propia que quiero estandarizar en todos mis proyectos.Esta integración permite desarrollar el proyecto y generar una documentación elegante y adaptable, también incluye un cuaderno de bitácora en formato blog para poder registrar progresos, problemas, decisiones...Puedo acceder a la documentación desde cualquier dispositivo, lo que facilita su consulta en cualquier momento y lugar.Al estar alojada en GitHub Pages, las páginas tienen que ser públicas y estáticas, es fácil de actualizar, mantener y no necesito un servidor propio.Estructura de las páginasEstructura de las páginasFormato de las páginas y los distintos elementos que las componen.Estructura de las páginas de la Documentación.Instalaciones necesariasInstalaciones Previas y Pasos InicialesLo que se necesita para que funcione.Instalaciones necesarias.ConfiguracionesHaciendo que funcione¿Qué hay que cambiar y en qué archivos se cambia?Configuración.Crear contenidoEscribe como quierasCómo escribir mi documentación con Markdown y HTML y añadirle widgets. Crear Contenido.NavegaciónRecorre el proyectoTabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú.Navegación.Estructura de ficherosFileTreeComo es la estructura de ficheros y dónde se guarda cada cosa.Estructura de Ficheros.Cuaderno de bitácoraBlogEs un diario de trabajo y un blog técnico.Cuaderno de Bitácora.Créditos y referenciasEste proyecto no sería posible sin el trabajo de otras personas, aquí dejo una lista de las herramientas y recursos que he utilizado:Node.js Es un entorno de ejecución de JavaScript, necesario para ejecutar Eleventy.Eleventy Es un generador de sitios estáticos, es decir, la herramienta que permite generar el sitio web a partir de plantillas fuente.LibDoc Es un starter project de 11ty (Eleventy) que me permite crear documentación elegante y adaptable.LicenciaAquí encontrarás información sobre la licencia del proyecto y de la documentación: LicenciaDocumentar un Proyecto © 2026 by Juan Pedro Perianes is licensed under Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/",
-            "title": "Primera página de nivel 2",
-            "content": "Soy una página de nivel 2 nivel 2 blockquote A continuación una cita:Hola! soy una página de nivel 2, hija de una de nivel 1― ChildVamos hacia atrás Nivel 1 o hacia adelante Nivel 3A continuación un texto en Markdown:&amp;gt; Así se escriben las citas en Markdown.&amp;gt; &amp;gt; ― **Cita**Ir hacia atrás con rutas relativas (..):[página de nivel 1](../ &amp;quot;Hacia atrás&amp;quot;)[Nivel 1]( ./n1-primera.md &amp;quot;Hacia atrás = padre&amp;quot;)Ir hacia adelante con ruta relativa:[página de nivel 3](./pagina-siguiente/ &amp;quot;Hacia adelante&amp;quot;)[Nivel 3]( ./n3-primera.md &amp;quot;Hacia adelante = hija&amp;quot;)"
+            "url": "/Documentar_Proyecto/pages/1-estructuraDoc/",
+            "title": "Estructura de las páginas de la documentación",
+            "content": "Formato de las páginas de la documentación y del cuaderno de bitácora. estructura Esta documentación tiene un formato común en todas las páginas, con distintas secciones y elementos que permiten una navegación fácil y una presentación clara de la información.En Eleventy, las plantillas son los archivos *.md con el contenido que se mostrará en las páginas que se generan. He decidido organizar las plantillas en 3 niveles.Zona de NavegaciónSituada a la izquierda de la página y ocupa un 30% del ancho de la página. Título del Proyecto - Es el nombre del archivo home.md y la página de inicio del sitio webBarra de búsqueda - Permite buscar contenido dentro del sitio web. Su atajo de teclado es SLinks personalizados - Enlaces a sitios web externos, como mi perfil de GitHubBitácora - Es un blog que utilizaré como cuaderno de bitácoraLista de tags - Muestra las etiquetas utilizadas en el sitio web para organizar el contenido Zona de ContenidoEs la zona principal y ocupa un 70% del ancho de la página. Miga de Pan - Muestra la ruta actual dentro del sitio web y es navegable Selector de esquema de color - Situado arriba a la derecha, permite cambiar el esquema de colores del sitio web Título de la página - es el título de cada plantilla y su descripción (subtitulo) Lista de tags de la página - Muestra las etiquetas asociadas a cada página para organizar el contenido Tabla de Contenido - Proporciona un índice de los temas tratados en la página. Se puede contraer y es navegable Contenido Principal - Es la sección donde se presenta el contenido principal de la página Botón de Ir Atrás - Situado al final del contenido, permite regresar a la página anterior en la navegación. Se desactiva en el Home y la lista de Tags Elementos automáticosEstos elementos aparecen automáticamente en el lado derecho de la página. Contenido Flotante - Es un botón desplegable que muestra los encabezados (h1 a h6) de cada plantilla, tiene función ScrollSpy que resalta automáticamente la sección actual a medida que el usuario se desplaza por la página Ir al Principio - Es un botón que aparece al desplazarse hacia abajo en la página, permite regresar rápidamente al principio de la página"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-primera/n3-primera/",
-            "title": "Página de nivel 3",
-            "content": "Soy una página de nivel 3 nivel 3 &amp;lt;! comentario &amp;gt;Hola! Soy la página hija del nivel 2, estoy en el nivel 3― GrandchildVamos a subir al nivel 2.Los enlaces se referencian al nombre de la página. En ella tiene que haber un permalink con la dirección real."
+            "url": "/Documentar_Proyecto/pages/2-instalaciones/",
+            "title": "Instalaciones necesarias",
+            "content": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages git github desktop visual studio code Instalaciones previasPartimos de la base de que el ordenador que se utilice deberá tener instalado previamente:GitGitHub DesktopVisual Studio Code. Extensiones:Markdown All in OneGitHub ActionsGitHub Copilot ChatGit HistoryLiquidNodeJSPasos inicialesPara que funcione cualquier proyecto basado en la plantilla de proyectos con documentación integrada en formato web y alojada en GitHub Pages, se deben seguir los siguientes pasos iniciales:Crear un nuevo repositorio en GitHub con el nombre que le queramos dar.Visibilidad: pública para que se visualice la página web en GitHub Pages.Add README: no, personalizamos el README.md de la plantilla con la información del nuevo proyecto.Add .gitignore: no, la plantilla ya incluye un archivo .gitignore personalizado.Add license: no, la plantilla ya incluye una licencia personalizada (CC BY-NC-SA 4.0) que se puede mantener para todos los proyectos.Clonar el repositorio nuevo utilizando GitHub Desktop, para que descargue el proyecto vacío en el ordenador.Descargar la plantilla para proyectos de mi cuenta de GitHub.Borrar la carpeta oculta .git para desvincularlo del repositorio original.Mover el contenido de la plantilla en la carpeta del nuevo proyecto que se ha clonado, para que tenga la estructura y archivos necesarios para generar la documentación (borrar la carpeta de la plantilla).Modificar el pathPrefix en el archivo .eleventy.js con el nombre del repositorio nuevo.Abrir el proyecto con Visual Studio Code.Instalar Eleventy en el proyecto, abrir una terminal integrada (PowerShell 7 preferiblemente) y escribir los siguientes comandos en la terminal:npm install @11ty/eleventy - instala Eleventy en la carpeta del proyectonpm audit fix - correge vulnerabilidades de seguridadnpm i - D rimraf - instala una herramienta de Node.js para borrar archivos y carpetas de forma recursiva, sin tener que preocuparte por el sistema operativo ni el shell que utilices.Comprobar que el proyecto funciona en modo localnpm run clean - script para limpiar (borra la carpeta de salida y la caché) antes de generar la documentación.npm run start - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhostConfigurar GitHub Pages para el proyectoSettings &amp;gt; Pages &amp;gt; Build &amp;amp; Deploy: GitHub Actions &amp;gt; Save - permite generar la página web automáticamente cada vez que se suben cambios al repositorio.Subir el proyecto a GitHubnpm run clean - script para limpiar la carpeta de salida y la caché antes de subir los cambios.npm run build-ghpages - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.Subir el proyecto al nuevo repositorio utilizando GitHub Desktop que permite subir muchos archivos a la vez. También se puede hacer con la terminal integrada de Visual Studio Code utilizando los comandos de Git.Comprobar que se visualiza la documentación en la URL del repositorio https://&amp;lt;nombreUsuario&amp;gt;.github.io/&amp;lt;nombreRepositorio&amp;gt;/Funcionamiento generalEl control de versiones con GitHub se puede utilizar tanto para gestionar el código fuente de un proyecto de software como para generar la documentación del propio proyecto. Estas son las indicaciones para generar la documentación.Una vez que se ha creado el proyecto y realizado los pasos iniciales, el proceso para generar la documentación puede tener dos modos de funcionamiento:MODO LOCALEs el modo normal de funcionamiento para generar la documentación, creando los archivos de la documentación y visualizándolos en localhost.Realizar cambios en los archivos de la documentación.npm run clean - script para limpiar la carpeta de salida y la cachénpm run start - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhost.MODO WEBEs el modo para publicar la documentación en GitHub Pages. También se debe utilizar al final de cada sesión de trabajo para actualizar los cambios realizados a la documentación y que se actualice la página web.Realizar cambios en los archivos de la documentación.npm run clean - script para limpiar la carpeta de salida y la cachénpm run build-ghpages - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.Realizar un commit y subir los cambios al repositorio de GitHub utilizando GitHub Desktop o la terminal integrada de Visual Studio Code.Cada vez que se suben los cambios al repositorio de GitHub, gracias a GitHub Actions se genera automáticamente la página web. Los cambios en la página web de GitHub Pages no se generan al instante, según lo extensa y complicada que sea la documentación, tardará un tiempo en actualizarse (generalmente pocos minutos)."
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-primera/n2-segunda/",
-            "title": "Segunda página de nivel 2",
-            "content": "Soy una página de nivel 2 nivel 2 segunda A continuación una cita:Hola! soy una SEGUNDA página de nivel 2, hija de una de nivel 1― ChildVamos hacia atrás página de nivel 1 o hacia adelante página de nivel 3.A continuación un texto en Markdown:&amp;gt; Así se escriben las citas en Markdown.&amp;gt; &amp;gt; ― **Cita**Esto es texto normal en markdown"
+            "url": "/Documentar_Proyecto/pages/3-configuracion/",
+            "title": "Configuraciones",
+            "content": "Pasos previos para que funcione cualquier proyecto. configuración package.json settings.json README.md favicon niveles de páginas bitácora Qué cambiar al iniciar un nuevo proyectoUna vez que hemos realizado las instalaciones necesarias, nuestro proyecto ya funciona en modo local y su website funciona en GitHub, hemos de realizar algunos cambios en los archivos de configuración para adaptarlos al nuevo proyecto:Nombre del proyecto y descripción.Icono del sitio web (myfavicon.png).Custom links de la barra de navegación.PathPrefix para GitHub Pages (repositorio).Resaltado de sintaxis para los lenguajes de programación relevantes para el proyecto.Archivos de configuraciónpackage.json - archivo de configuración de NodeJS con los scripts para generar la documentación.Nombre del proyecto - debe coincidir con el nombre del repositorio en GitHub.Versión - para indicar la versión inicial del proyecto.Descripción - para proporcionar una breve descripción del proyecto, es como un subtítulo.main: &amp;quot;index.js&amp;quot; aunque no se utiliza un archivo index.js en este proyecto, es necesario mantener esta propiedad para que NodeJS no genere errores al ejecutar los scripts.Licencia - CC BY-NC-SA 4.0 para que coincida con la licencia del proyecto.Scripts:start para iniciar el servidor local y comprobar que se visualiza la documentación en localhost. (&amp;quot;npx @11ty/eleventy --serve&amp;quot;)build-ghpages para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages. (&amp;quot;npx @11ty/eleventy --pathprefix&amp;quot;)clean para limpiar la carpeta de salida antes de generar la documentación. (&amp;quot;rimraf _site .cache&amp;quot;)settings.json - este archivo contiene la configuración del home y general del sitio web, sobreescribe los valores por defecto de LibDoc.Título del sitio web - para darle un título personalizado al sitio web.Descripción del sitio web - para proporcionar una breve descripción del sitio web, es como un subtítulo.Autor - para mostrar el nombre del autor en las entradas del blog (bitácora).Ubicación del favicon - para mostrar un favicon personalizado en la pestaña del navegador.Título del blog - para darle un título personalizado a la sección del blog, que en este caso es el cuaderno de bitácora donde se registran los cambios realizados en el proyecto.Descripción del blog - para proporcionar una breve descripción de la sección del blog (bitácora).customLinks para agregar enlaces personalizados en la barra de navegación, como el enlace a mi perfil de GitHub.Lenguaje - para establecer el idioma del sitio web, en este caso español (&amp;quot;es&amp;quot;).htmlBasePathPrefix para que los enlaces a los archivos y recursos funcionen correctamente en GitHub Pages, ya que el sitio web se alojará en una subcarpeta con el nombre del repositorio.hljsLanguages para incluir lenguajes de programación relevantes para el tipo de documentación que estoy creando, como arduino, python, c y gcode.tocEnabled para mostrar una tabla de contenidos en cada página de la documentación (en el blog no aparecía).README.md - archivo de presentación del proyecto con información general y enlaces a la documentación. Recuerda cambiarlo en cada proyecto.myfavicon.png - archivo de imagen para el favicon del sitio web. Recomendado usar una imagen PNG de 512x512 pixeles. [./assets/myfavicon.png]Niveles de PlantillasEn Eleventy las plantillas son los archivos con el contenido de las páginas. He decidido organizar las plantillas en 3 niveles.home.md - Esta es la plantilla para la página de inicio del sitio web (nivel 0).x-nivel_1.md - Este es el formato de las páginas de nivel 1, secciones principales.x_y-nivel_2.md - Este es el formato de las páginas de nivel 2, subsecciones dentro de las secciones principales.x_y_z-nivel_3.md - Este es el formato de las páginas de nivel 3, sub-subsecciones dentro de las subsecciones de nivel 2.Cuaderno de Bitácorabit-nombreEntrada.md - Este es el formato de las entradas del cuaderno de bitácora (blog), con información sobre los cambios realizados en el proyecto, problemas encontrados, soluciones implementadas, etc."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/5-navegacion/",
+            "title": "Navegación",
+            "content": "Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú. navegación La navegación es un aspecto crucial en cualquier sitio web, ya que permite a los usuarios encontrar fácilmente la información que buscan. En esta sección, exploraremos diferentes técnicas de navegación, incluyendo tablas de contenidos, navegación inteligente, búsqueda difusa y estándar. Además, aprenderás cómo crear items en el menú para mejorar la experiencia del usuario.Enlace a HOMEEntrada de búsquedaResultados de búsquedaLinks personalizadosLista de tagsTabla de contenidos"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/6-estructura-ficheros/",
+            "title": "Estructura de ficheros",
+            "content": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree En esta sección se muestra la estructura de ficheros y archivos más significativos de la plantilla de proyecto, con una breve descripción.He modificado la estructura original de LibDocLas plantillas que serán transformadas en páginas web se han movido a la carpeta pages.El blog (bitácora) lo he incluido dentro de la carpeta pages/bitacora.Hay una nueva carpeta .github para almacenar los archivos de configuración de GitHub Actions.Los proyectos disponen de unas carpetas para organizar los archivos3dDesign: para diseños 3Dfieles: para archivos del proyectosourceCode: para el código fuente del proyectoRAIZ DEL PROYECTO¦ .eleventy.js -&amp;gt; Configuración de Eleventy¦ .eleventyignore -&amp;gt; Indica a Eleventy qué ignorar¦ .gitattributes -&amp;gt; Configurar atributos específicos para Git¦ .gitignore -&amp;gt; Indica a Git qué archivos o carpetas ignorar¦ LICENSE -&amp;gt; Licencia del proyecto¦ package-lock.json -&amp;gt; Versiones de las dependencias instaladas¦ package.json -&amp;gt; Configuración de NodeJS¦ README.md -&amp;gt; Resumen del proyecto¦ settings.json -&amp;gt; Configuración general del proyecto¦ +---.github¦ +---workflows¦ build.yml -&amp;gt; GHAction automatiza la construcción de la web¦ +---3dDesign -&amp;gt; Carpeta para almacenar diseños 3D¦ ¦ readme.md¦ ¦ ¦ +---3mf¦ +---gcode¦ +---stl+---assets -&amp;gt; Recursos estáticos como imágenes, íconos...¦ logo-11ty.png¦ myfavicon.png -&amp;gt; Favicon del proyecto¦ +---core -&amp;gt; Archivos del núcleo del proyecto¦ ¦ feed.njk¦ ¦ libdoc_blog.liquid¦ ¦ libdoc_fuzzy_index.liquid¦ ¦ libdoc_search.html¦ ¦ libdoc_search_index.liquid¦ ¦ libdoc_tag.liquid¦ ¦ libdoc_tags.liquid¦ ¦ ¦ +---assets -&amp;gt; Recursos específicos del núcleo¦ +---css¦ ¦ ¦ +---fonts¦ ¦ ¦ +---icons¦ ¦ ¦ +---js¦ +---files -&amp;gt; Carpeta para archivos del proyecto¦ ¦ readme.md¦ ¦ ¦ +---audio¦ +---images¦ +---text¦ +---video¦ +---node_modules -&amp;gt; Dependencias del proyecto¦ +---pages -&amp;gt; Páginas web del proyecto¦ ¦ home.md¦ ¦ 1-nivel_1.md¦ ¦ 1_1-nivel_2.md¦ ¦ 1_1_1-nivel_3.md¦ ¦ 1_2-nivel_2.md¦ ¦ ¦ +---bitacora -&amp;gt; Páginas del Blog = bitácora del proyecto¦ bit-bitacora1.md¦ bit-ejemplo.md¦ +---sandboxes -&amp;gt; (No usado) Proyectos experimentales¦ +---sourceCode -&amp;gt; Carpeta para almacener el Código fuente¦ ¦ readme.md¦ ¦ ¦ +---proyectoX1¦ +---proyectoX2+---_data -&amp;gt; Datos globales para el proyecto¦ libdocConfig.js¦ libdocFunctions.js¦ libdocMessages.json¦ libdocSystem.json¦ libdocUtils.js¦ +---_includes -&amp;gt; Estructura de las páginas libdoc_before_html.liquid libdoc_breadcrumb.liquid libdoc_page.liquid sandbox.liquid"
         },
         {
             "url": "/Documentar_Proyecto/posts/cuaderno-de-bitacora/",
@@ -385,29 +360,9 @@
             "content": "Cómo lo voy a utilizar, qué tipo de contenido voy a incluir, cómo lo voy a organizar, etc. post bitácora Imagen principal del postEsto es un cuaderno de bitácora. Me gusta insertar una imagen principal en cada post, justo debajo se puede incluir una descripción más detallada del contenido del post o una introducción.Cómo lo voy a utilizarVoy a utilizar el BLOG como un cuaderno de BITÁCORA, un blog técnico o un diario de trabajo.Cada entrada del blog será un post de cualquier cosa que me parezca relevante para el proyecto y que me gustaría tener documentada.Qué tipo de Contenido incluirAvances en el proyectoCambios importantes que surgen durante el desarrolloProblemas encontrados en el procesoSoluciones aplicadas a esos problemasDistintas Versiones de firmware o softwareNotas técnicasDecisiones de diseñoAclaraciones sobre el proyectoCosas aprendidasRecordatorios de aciertos y errores que me gustaría no olvidarCómo organizarloEn principio, todos los posts se organizan cronológicamente con el post más reciente en la parte superior.Para facilitar la organización y búsqueda de los posts, es recomendable utilizar tags relacionados con el contenido del post.Ubicación de las plantillasLas plantillas de los posts se encuentran en la subcarpeta pages/bitacora.Formato de los nombres los postsEl formato de los nombres de plantilla de los posts es:bit- + &amp;lt;nombre del post&amp;gt;.mdSin embargo el formato de salida de los posts es:posts/ + &amp;lt;nombre del post&amp;gt;/+index.htmlCabecera de los postsLo más importante es que cada post contenga el tag post que sirve para identificarlo como una entrada del (blog) cuaderno de bitácora. Además, es recomendable incluir otros tags relacionados con el contenido del post para facilitar su organización y búsqueda.---title: Título del postdescription: Subtítulo del post o brevedescripción del postlayout: libdoc_page.liquidpermalink: &amp;quot;posts/cuaderno-de-bitacora/index.html&amp;quot;tags: - post - tag relacionado con el contenido del postdate: 2026-03-26---![Imagen del post](/assets/cuadernoBitacora.jpg)Aqui va el contenido del post..."
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-configuracion/",
-            "title": "Configuraciones",
-            "content": "Pasos previos para que funcione cualquier proyecto. configuración package.json settings.json README.md favicon niveles de páginas bitácora Qué cambiar al iniciar un nuevo proyectoUna vez que hemos realizado las instalaciones necesarias, nuestro proyecto ya funciona en modo local y su website funciona en GitHub, hemos de realizar algunos cambios en los archivos de configuración para adaptarlos al nuevo proyecto:Nombre del proyecto y descripción.Icono del sitio web (myfavicon.png).Custom links de la barra de navegación.PathPrefix para GitHub Pages (repositorio).Resaltado de sintaxis para los lenguajes de programación relevantes para el proyecto.Archivos de configuraciónpackage.json - archivo de configuración de NodeJS con los scripts para generar la documentación.Nombre del proyecto - debe coincidir con el nombre del repositorio en GitHub.Versión - para indicar la versión inicial del proyecto.Descripción - para proporcionar una breve descripción del proyecto, es como un subtítulo.main: &amp;quot;index.js&amp;quot; aunque no se utiliza un archivo index.js en este proyecto, es necesario mantener esta propiedad para que NodeJS no genere errores al ejecutar los scripts.Licencia - CC BY-NC-SA 4.0 para que coincida con la licencia del proyecto.Scripts:start para iniciar el servidor local y comprobar que se visualiza la documentación en localhost. (&amp;quot;npx @11ty/eleventy --serve&amp;quot;)build-ghpages para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages. (&amp;quot;npx @11ty/eleventy --pathprefix&amp;quot;)clean para limpiar la carpeta de salida antes de generar la documentación. (&amp;quot;rimraf _site .cache&amp;quot;)settings.json - este archivo contiene la configuración del home y general del sitio web, sobreescribe los valores por defecto de LibDoc.Título del sitio web - para darle un título personalizado al sitio web.Descripción del sitio web - para proporcionar una breve descripción del sitio web, es como un subtítulo.Autor - para mostrar el nombre del autor en las entradas del blog (bitácora).Ubicación del favicon - para mostrar un favicon personalizado en la pestaña del navegador.Título del blog - para darle un título personalizado a la sección del blog, que en este caso es el cuaderno de bitácora donde se registran los cambios realizados en el proyecto.Descripción del blog - para proporcionar una breve descripción de la sección del blog (bitácora).customLinks para agregar enlaces personalizados en la barra de navegación, como el enlace a mi perfil de GitHub.Lenguaje - para establecer el idioma del sitio web, en este caso español (&amp;quot;es&amp;quot;).htmlBasePathPrefix para que los enlaces a los archivos y recursos funcionen correctamente en GitHub Pages, ya que el sitio web se alojará en una subcarpeta con el nombre del repositorio.hljsLanguages para incluir lenguajes de programación relevantes para el tipo de documentación que estoy creando, como arduino, python, c y gcode.tocEnabled para mostrar una tabla de contenidos en cada página de la documentación (en el blog no aparecía).README.md - archivo de presentación del proyecto con información general y enlaces a la documentación. Recuerda cambiarlo en cada proyecto.myfavicon.png - archivo de imagen para el favicon del sitio web. Recomendado usar una imagen PNG de 512x512 pixeles. [./assets/myfavicon.png]Niveles de PlantillasEn Eleventy las plantillas son los archivos con el contenido de las páginas. He decidido organizar las plantillas en 3 niveles.home.md - Esta es la plantilla para la página de inicio del sitio web (nivel 0).n1-nombreN1.md - Este es el formato de las páginas de nivel 1, secciones principales.n2-nombreN2.md - Este es el formato de las páginas de nivel 2, subsecciones dentro de las secciones principales.n3-nombreN3.md - Este es el formato de las páginas de nivel 3, sub-subsecciones dentro de las subsecciones de nivel 2.Cuaderno de Bitácorabit-nombreEntrada.md - Este es el formato de las entradas del cuaderno de bitácora (blog), con información sobre los cambios realizados en el proyecto, problemas encontrados, soluciones implementadas, etc."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-estructura-ficheros/",
-            "title": "Estructura de ficheros",
-            "content": "Como es la estructura de ficheros y dónde se guarda cada cosa. estructura ficheros file tree En esta sección se muestra la estructura de ficheros y archivos más significativos de la plantilla de proyecto, con una breve descripción.He modificado la estructura original de LibDocLas plantillas que serán transformadas en páginas web se han movido a la carpeta pages.El blog (bitácora) lo he incluido dentro de la carpeta pages/bitacora.Hay una nueva carpeta .github para almacenar los archivos de configuración de GitHub Actions.Los proyectos disponen de unas carpetas para organizar los archivos3dDesign: para diseños 3Dfieles: para archivos del proyectosourceCode: para el código fuente del proyectoRAIZ DEL PROYECTO¦ .eleventy.js -&amp;gt; Configuración de Eleventy¦ .eleventyignore -&amp;gt; Indica a Eleventy qué ignorar¦ .gitattributes -&amp;gt; Configurar atributos específicos para Git¦ .gitignore -&amp;gt; Indica a Git qué archivos o carpetas ignorar¦ LICENSE -&amp;gt; Licencia del proyecto¦ package-lock.json -&amp;gt; Versiones de las dependencias instaladas¦ package.json -&amp;gt; Configuración de NodeJS¦ README.md -&amp;gt; Resumen del proyecto¦ settings.json -&amp;gt; Configuración general del proyecto¦ +---.github¦ +---workflows¦ build.yml -&amp;gt; GHAction automatiza la construcción de la web¦ +---3dDesign -&amp;gt; Carpeta para almacenar diseños 3D¦ ¦ readme.md¦ ¦ ¦ +---3mf¦ +---gcode¦ +---stl+---assets -&amp;gt; Recursos estáticos como imágenes, íconos...¦ logo-11ty.png¦ myfavicon.png -&amp;gt; Favicon del proyecto¦ +---core -&amp;gt; Archivos del núcleo del proyecto¦ ¦ feed.njk¦ ¦ libdoc_blog.liquid¦ ¦ libdoc_fuzzy_index.liquid¦ ¦ libdoc_search.html¦ ¦ libdoc_search_index.liquid¦ ¦ libdoc_tag.liquid¦ ¦ libdoc_tags.liquid¦ ¦ ¦ +---assets -&amp;gt; Recursos específicos del núcleo¦ +---css¦ ¦ ¦ +---fonts¦ ¦ ¦ +---icons¦ ¦ ¦ +---js¦ +---files -&amp;gt; Carpeta para archivos del proyecto¦ ¦ readme.md¦ ¦ ¦ +---audio¦ +---images¦ +---text¦ +---video¦ +---node_modules -&amp;gt; Dependencias del proyecto¦ +---pages -&amp;gt; Páginas web del proyecto¦ ¦ home.md¦ ¦ n1-primera.md¦ ¦ n2-primera.md¦ ¦ n2-segunda.md¦ ¦ n3-primera.md¦ ¦ ¦ +---bitacora -&amp;gt; Páginas del Blog = bitácora del proyecto¦ bit-bitacora1.md¦ bit-ejemplo.md¦ +---sandboxes -&amp;gt; (No usado) Proyectos experimentales¦ +---sourceCode -&amp;gt; Carpeta para almacener el Código fuente¦ ¦ readme.md¦ ¦ ¦ +---proyectoX1¦ +---proyectoX2+---_data -&amp;gt; Datos globales para el proyecto¦ libdocConfig.js¦ libdocFunctions.js¦ libdocMessages.json¦ libdocSystem.json¦ libdocUtils.js¦ +---_includes -&amp;gt; Estructura de las páginas libdoc_before_html.liquid libdoc_breadcrumb.liquid libdoc_page.liquid sandbox.liquid"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-estructuraDoc/",
-            "title": "Estructura de las páginas de la Documentación",
-            "content": "Formato de las páginas de la documentación y del cuaderno de bitácora. estructura Esta documentación tiene un formato común en todas las páginas, con distintas secciones y elementos que permiten una navegación fácil y una presentación clara de la información.En Eleventy, las plantillas son los archivos *.md con el contenido que se mostrará en las páginas que se generan. He decidido organizar las plantillas en 3 niveles.Zona de NavegaciónSituada a la izquierda de la página y ocupa un 30% del ancho de la página. Título del Proyecto - Es el nombre del archivo home.md y la página de inicio del sitio webBarra de búsqueda - Permite buscar contenido dentro del sitio web. Su atajo de teclado es SLinks personalizados - Enlaces a sitios web externos, como mi perfil de GitHubBitácora - Es un blog que utilizaré como cuaderno de bitácoraLista de tags - Muestra las etiquetas utilizadas en el sitio web para organizar el contenido Zona de ContenidoEs la zona principal y ocupa un 70% del ancho de la página. Miga de Pan - Muestra la ruta actual dentro del sitio web y es navegable Selector de esquema de color - Situado arriba a la derecha, permite cambiar el esquema de colores del sitio web Título de la página - es el título de cada plantilla y su descripción (subtitulo) Lista de tags de la página - Muestra las etiquetas asociadas a cada página para organizar el contenido Tabla de Contenido - Proporciona un índice de los temas tratados en la página. Se puede contraer y es navegable Contenido Principal - Es la sección donde se presenta el contenido principal de la página Botón de Ir Atrás - Situado al final del contenido, permite regresar a la página anterior en la navegación. Se desactiva en el Home y la lista de Tags Elementos automáticosEstos elementos aparecen automáticamente en el lado derecho de la página. Contenido Flotante - Es un botón desplegable que muestra los encabezados (h1 a h6) de cada plantilla, tiene función ScrollSpy que resalta automáticamente la sección actual a medida que el usuario se desplaza por la página Ir al Principio - Es un botón que aparece al desplazarse hacia abajo en la página, permite regresar rápidamente al principio de la página"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-instalaciones/",
-            "title": "Instalaciones necesarias",
-            "content": "Pasos previos para que funcione cualquier proyecto. instalación nodejs github pages git github desktop visual studio code Instalaciones previasPartimos de la base de que el ordenador que se utilice deberá tener instalado previamente:GitGitHub DesktopVisual Studio Code. Extensiones:Markdown All in OneGitHub ActionsGitHub Copilot ChatGit HistoryLiquidNodeJSPasos inicialesPara que funcione cualquier proyecto basado en la plantilla de proyectos con documentación integrada en formato web y alojada en GitHub Pages, se deben seguir los siguientes pasos iniciales:Crear un nuevo repositorio en GitHub con el nombre que le queramos dar.Visibilidad: pública para que se visualice la página web en GitHub Pages.Add README: no, personalizamos el README.md de la plantilla con la información del nuevo proyecto.Add .gitignore: no, la plantilla ya incluye un archivo .gitignore personalizado.Add license: no, la plantilla ya incluye una licencia personalizada (CC BY-NC-SA 4.0) que se puede mantener para todos los proyectos.Clonar el repositorio nuevo utilizando GitHub Desktop, para que descargue el proyecto vacío en el ordenador.Descargar la plantilla para proyectos de mi cuenta de GitHub.Borrar la carpeta oculta .git para desvincularlo del repositorio original.Mover el contenido de la plantilla en la carpeta del nuevo proyecto que se ha clonado, para que tenga la estructura y archivos necesarios para generar la documentación (borrar la carpeta de la plantilla).Modificar el pathPrefix en el archivo .eleventy.js con el nombre del repositorio nuevo.Abrir el proyecto con Visual Studio Code.Instalar Eleventy en el proyecto, abrir una terminal integrada (PowerShell 7 preferiblemente) y escribir los siguientes comandos en la terminal:npm install @11ty/eleventy - instala Eleventy en la carpeta del proyectonpm audit fix - correge vulnerabilidades de seguridadnpm i - D rimraf - instala una herramienta de Node.js para borrar archivos y carpetas de forma recursiva, sin tener que preocuparte por el sistema operativo ni el shell que utilices.Comprobar que el proyecto funciona en modo localnpm run clean - script para limpiar (borra la carpeta de salida y la caché) antes de generar la documentación.npm run start - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhostConfigurar GitHub Pages para el proyectoSettings &amp;gt; Pages &amp;gt; Build &amp;amp; Deploy: GitHub Actions &amp;gt; Save - permite generar la página web automáticamente cada vez que se suben cambios al repositorio.Subir el proyecto a GitHubnpm run clean - script para limpiar la carpeta de salida y la caché antes de subir los cambios.npm run build-ghpages - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.Subir el proyecto al nuevo repositorio utilizando GitHub Desktop que permite subir muchos archivos a la vez. También se puede hacer con la terminal integrada de Visual Studio Code utilizando los comandos de Git.Comprobar que se visualiza la documentación en la URL del repositorio https://&amp;lt;nombreUsuario&amp;gt;.github.io/&amp;lt;nombreRepositorio&amp;gt;/Funcionamiento generalEl control de versiones con GitHub se puede utilizar tanto para gestionar el código fuente de un proyecto de software como para generar la documentación del propio proyecto. Estas son las indicaciones para generar la documentación.Una vez que se ha creado el proyecto y realizado los pasos iniciales, el proceso para generar la documentación puede tener dos modos de funcionamiento:MODO LOCALEs el modo normal de funcionamiento para generar la documentación, creando los archivos de la documentación y visualizándolos en localhost.Realizar cambios en los archivos de la documentación.npm run clean - script para limpiar la carpeta de salida y la cachénpm run start - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhost.MODO WEBEs el modo para publicar la documentación en GitHub Pages. También se debe utilizar al final de cada sesión de trabajo para actualizar los cambios realizados a la documentación y que se actualice la página web.Realizar cambios en los archivos de la documentación.npm run clean - script para limpiar la carpeta de salida y la cachénpm run build-ghpages - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.Realizar un commit y subir los cambios al repositorio de GitHub utilizando GitHub Desktop o la terminal integrada de Visual Studio Code.Cada vez que se suben los cambios al repositorio de GitHub, gracias a GitHub Actions se genera automáticamente la página web. Los cambios en la página web de GitHub Pages no se generan al instante, según lo extensa y complicada que sea la documentación, tardará un tiempo en actualizarse (generalmente pocos minutos)."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/",
-            "title": "Navegación",
-            "content": "Tabla de contenidos, navegación inteligente, búsqueda difusa y estándar. Además aprende a cómo crear items en el menú. navegación La navegación es un aspecto crucial en cualquier sitio web, ya que permite a los usuarios encontrar fácilmente la información que buscan. En esta sección, exploraremos diferentes técnicas de navegación, incluyendo tablas de contenidos, navegación inteligente, búsqueda difusa y estándar. Además, aprenderás cómo crear items en el menú para mejorar la experiencia del usuario.Enlace a HOMEEntrada de búsquedaResultados de búsquedaLinks personalizadosLista de tagsTabla de contenidos"
+            "url": "/Documentar_Proyecto/pages/7-licencia/",
+            "title": "Licencia",
+            "content": "Información sobre la licencia del proyecto. licencia Es importante definir la licencia de un proyecto para que los usuarios sepan cómo pueden usar, modificar y distribuir el proyecto. La licencia también protege los derechos del autor y establece las condiciones de uso del proyecto.Licencia del ProyectoWeb documentación = proyecto público Para disponer de la documentación del proyecto en una web estática a través de GitHub Pages, el proyecto debe ser público y debe incluir un archivo de licencia en la raíz del proyecto.Hay un archivo de texto llamado LICENSE que contiene el texto completo de la licencia del proyecto en castellano y en inglés.RecuerdaCambiar el nombre del proyecto.Licencia en la documentaciónWeb del proyecto La documentación del proyecto también incluye una referencia a la licencia del mismo. En el pie del HOME, al final, se encuentra la licencia.El texto de la licencia se puede generar en la página de Creative Commons con su generador, que permite personalizarlo indicando:El nombre del proyecto y su webEl autor y su webEl tipo de licencia (incorpora el enlace a la web que lo explica y sus logos) Recuerda Cambiar el nombre del proyecto y el enlace a su web."
         },
         {
             "url": "/Documentar_Proyecto/posts/modificaciones-respecto-a-libdoc-starter-project/",
@@ -415,39 +370,124 @@
             "content": "Cambios realizados en el proyecto base para adaptarlo a mis necesidades. post modificaciones respecto a LibDic libdocMessages.jsEste archivo contiene los mensajes personalizados del proyecto.Incluí el lenguaje español &amp;quot;es&amp;quot; (LibDoc no tiene soporte para español), con las traducciones necesarias.libdocConfig.jsEste archivo contiene la configuración personalizada del proyecto LibDoc por defecto.Lenguaje- lang: &amp;quot;es&amp;quot;Lenguajes de resaltado de código- hljsLanguages: incluyendo lenguajes como arduino, python, c y gcode que son relevantes para el tipo de documentación que estoy creando.libdoc_page.liquidEste archivo contiene el layout para las páginas de documentación, es común para las páginas y los posts del blog.Elimine la parte del pie de página (Footer) que mostraba la versión de libdoc en la que se basa el proyecto o el botón de editar está página. Incorporo botón &amp;quot;ir atrás&amp;quot; para mejorar la navegación entre páginas.libdocSystem.jsonEste archivo contiene la configuración del sistema de navegación y diseño del proyecto.Cambié el ancho de la barra lateral a 250px y el ancho del contenido a 750px para darle un diseño más compacto y enfocado en el contenido.myfavicon.pngEste archivo es el favicon personalizado del proyecto, se muestra en la pestaña del navegador.Cambie el favicos por el tipico &amp;quot;under construction&amp;quot; para darle un toque divertido al proyecto, ya que es una documentación en construcción.build.ymlEste archivo contiene la configuración para el workflow de GitHub Actions que genera la documentación automáticamente al hacer push a la rama main.Tuve que crear la carpeta .github/workflows y el archivo build.yml para configurar el workflow de GitHub Actions, ya que el proyecto base no incluía esta configuración. El workflow se ejecuta cada vez que se hace push a la rama main, generando la documentación y publicándola en GitHub Pages automáticamente.Está basado en las instrucciones de 11ty Deploy an Eleventy project to GitHub pages Modifiqué la versión de cada acción por las actuales a 25/03/2026.Carpetas para las plantillas11ty utiliza las llamadas plantillas para generar las páginas web. LibDoc no tiene una estructura de carpetas para las plantillas y las almacenaba en la raíz del proyecto. Comprobé que daba igual que estuvieran en la raíz del proyecto o en una carpeta.Cree una carpeta llamada pages para almacenar las páginas de la documentación (home y niveles 1, 2 y 3).Cree una subcarpeta dentro de pages llamada bitacora para almacenar las entradas del cuaderno de bitácora.La página HOME se llama home.md.Las páginas de nivel 1 se llaman n1-nombreN1.md.Las páginas de nivel 2 se llaman n2-nombreN2.md.Las páginas de nivel 3 se llaman n3-nombreN3.md.Las entradas del cuaderno de bitácora se llaman bit-nombreEntrada.md.Carpetas para los proyectosLa estructura de ficheros que he creado para almacenar los proyectos es la siguiente:3dDesign - para almacenar los proyectos relacionados con el diseño 3D.files - para almacenar los archivos relacionados con el proyecto, como imágenes, archivos varios, etc.sourceCode - para almacenar el código fuente de los proyectos.LICENSECambie el archivo LICENSE original por uno nuevo con la licencia Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) para proteger el contenido de la documentación y permitir su uso bajo ciertas condiciones, como atribución, uso no comercial y compartir bajo la misma licencia. Esta licencia es adecuada para proyectos de documentación que se quieren compartir pero no se quieren usar con fines comerciales sin permiso.README.mdEste archivo contiene la presentación del proyecto, con información general y enlaces a la documentación..eleventyignoreEste archivo contiene la configuración de archivos y carpetas que Eleventy debe ignorar al generar el sitio web.README.md - para evitar que se genere una página web a partir del README, ya que es un archivo de presentación para el repositorio y no forma parte de la documentación en sí.sandboxes/ - para evitar que se generen páginas web a partir de los proyectos de prueba.3dDesign/ - para evitar que se generen páginas web a partir de los proyectos de diseño 3D.archivos/ - para evitar que se generen páginas web a partir de los archivos relacionados con los proyectos.sourceCode/ - para evitar que se generen páginas web a partir del código fuente de los proyectos..gitignoreEste archivo contiene la configuración de archivos y carpetas que Git debe ignorar al hacer commits en el repositorio.Ignorar la carpeta node_modules necesaria para generar el sitio web local, ya que GitHub Actions instala automáticamente lo necesario para generar el sitio web en GitHub Pages..eleventy.jsEn principio cambié el directorio de salida a docs para que GitHub Pages lo detectara automáticamente, pero muchas de los elementos dejarón de funcionar pues no tiene en cuenta el pathPrefix. Dejé el directorio de salida por defeto _site, añadí el pathPrefix con el nombre del repositorio para que funcione correctamente en GitHub Pages y utilice GitHub Actions para la generación del sitio web en GitHub Pages. Así que este archivo es identico al original.package.jsonEste archivo contiene la configuración de NodeJS, con los scripts para generar la documentación.Cambié la licencia a CC BY-NC-SA 4.0 para que coincida con la licencia del proyecto.Eliminé el script de test, ya que no se han especificado tests para este proyecto y no es necesario tener un script de test que no se utiliza.Creé varios scripts:start para iniciar el servidor local y comprobar que se visualiza la documentación en localhost.build-ghpages para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.clean para limpiar la carpeta de salida antes de subir los cambios a GitHub Pages, ya que GitHub Pages no borra los archivos antiguos automáticamente y pueden quedar archivos obsoletos si no se limpia la carpeta de salida antes de generar la nueva versión del sitio web.settings.jsonEste archivo contiene la configuración del home y general del sitio web, sobreescribe los valores por defecto de LibDoc.Lenguaje - lang: &amp;quot;es&amp;quot;Habilitar la tabla de contenidos - tocEnabled: true para mostrar una tabla de contenidos en cada página de la documentación (en el blog no aparecía).hljsLanguages: incluyendo lenguajes como arduino, python, c y gcode que son relevantes para el tipo de documentación que estoy creando.htmlBasePathPrefix: &amp;quot;/Documentar_Proyecto/&amp;quot; para que los enlaces a los archivos y recursos funcionen correctamente en GitHub Pages, ya que el sitio web se alojará en una subcarpeta con el nombre del repositorio.blogTitle: &amp;quot;Bitácora de Modificaciones&amp;quot; para darle un título personalizado a la sección del blog, que en este caso es el cuaderno de bitácora donde se registran los cambios realizados en el proyecto.Autor - author: &amp;quot;Juan Pedro Perianes&amp;quot; para mostrar el nombre del autor en las entradas del blog (bitácora).faviconUrl: &amp;quot;/myfavicon.png&amp;quot; para mostrar el favicon personalizado en la pestaña del navegador.customLinks: para agregar enlaces personalizados en la barra de navegación, como el enlace a mi perfil de GitHub."
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-licencia/",
-            "title": "Licencia",
-            "content": "Información sobre la licencia del proyecto. licencia Es importante definir la licencia de un proyecto para que los usuarios sepan cómo pueden usar, modificar y distribuir el proyecto. La licencia también protege los derechos del autor y establece las condiciones de uso del proyecto.Licencia del ProyectoWeb documentación = proyecto público Para disponer de la documentación del proyecto en una web estática a través de GitHub Pages, el proyecto debe ser público y debe incluir un archivo de licencia en la raíz del proyecto.Hay un archivo de texto llamado LICENSE que contiene el texto completo de la licencia del proyecto en castellano y en inglés.RecuerdaCambiar el nombre del proyecto.Licencia en la documentaciónWeb del proyecto La documentación del proyecto también incluye una referencia a la licencia del mismo. En el pie del HOME, al final, se encuentra la licencia.El texto de la licencia se puede generar en la página de Creative Commons con su generador, que permite personalizarlo indicando:El nombre del proyecto y su webEl autor y su webEl tipo de licencia (incorpora el enlace a la web que lo explica y sus logos) Recuerda Cambiar el nombre del proyecto y el enlace a su web."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-busqueda/",
-            "title": "Entrada de búsqueda",
-            "content": "Modos de entrada de búsqueda estándar y difusa. navegación búsqueda difusa La entrada de búqueda soporta la búsqueda estándar y la difusa.Presiona 🆂 para saltar a la entrada de búsqueda.Búsqueda estándarPermite encontrar la coincidencia exacta de la consulta escrita en el campo de entrada. Use Enter para enviar una búsqueda estándar. La función de búsqueda estándar permite encontrar cualquier consulta de texto de más de 3 caracteres en todas las páginas creadas en el proyecto.Búsqueda difusaEstá diseñada para una navegación sencilla mediante teclado.Permite encontrar rápidamente cualquier página escribiendo algunos caracteres, incluso en el orden incorrecto. La búsqueda difusa facilita la navegación mediante el teclado. Use las flechas arriba ↑y abajo ↓para Enterenviar.Dispositivos pequeñosEn dispositivos pequeños, la página de búsqueda y la página de resultados se fusionan, y se muestra un botón de búsqueda como un elemento más en la barra de navegación situada en la parte inferior de la página."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-home/",
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_1-home/",
             "title": "Enlace a HOME",
             "content": "Siempre visible, redirige a la raíz del proyecto. navegación home El enlace a HOME está siempre visible y redirige a la raíz del proyecto. Está visible en la barra de navegación y es el valor &amp;quot;siteTitle&amp;quot;: &amp;quot;Mi proyecto&amp;quot; en el archivo de configuración settings.json.En los dispositivos pequeños, el enlace a la página de inicio se muestra como el primer elemento de la barra de navegación situada en la parte inferior de la página."
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-linksPersonalizados/",
-            "title": "Links personalizados",
-            "content": "Muestra enlaces en la barra de navegación. navegación links personalizados Los links personalizados permiten mostrar enlaces en la barra de navegación. En general los voy a utilizar para enlazar con lo que puede estar relacionado con el proyecto:Trello - tablero de gestión del proyecto.OneNote - borradores y preparación del proyecto.Nube - carpeta con los archivos del proyecto.Fusion - enlace a la página de fusión del proyecto.GitHub - repositorio del proyecto o enlace a mi GitHub.En este proyecto he eliminado alguno de los enlaces personalizados.Crear link personalizadoSe crean en el archivo de configuración settings.jsonPara crear un link personalizado, añade a la propiedad customLinks:{ &amp;quot;url&amp;quot;: &amp;quot;https://ejemplo.com&amp;quot;, &amp;quot;text&amp;quot;: &amp;quot;Texto del enlace&amp;quot; }"
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_2-busqueda/",
+            "title": "Entrada de búsqueda",
+            "content": "Modos de entrada de búsqueda estándar y difusa. navegación búsqueda difusa La entrada de búqueda soporta la búsqueda estándar y la difusa.Presiona 🆂 para saltar a la entrada de búsqueda.Búsqueda estándarPermite encontrar la coincidencia exacta de la consulta escrita en el campo de entrada. Use Enter para enviar una búsqueda estándar. La función de búsqueda estándar permite encontrar cualquier consulta de texto de más de 3 caracteres en todas las páginas creadas en el proyecto.Búsqueda difusaEstá diseñada para una navegación sencilla mediante teclado.Permite encontrar rápidamente cualquier página escribiendo algunos caracteres, incluso en el orden incorrecto. La búsqueda difusa facilita la navegación mediante el teclado. Use las flechas arriba ↑y abajo ↓para Enterenviar.Dispositivos pequeñosEn dispositivos pequeños, la página de búsqueda y la página de resultados se fusionan, y se muestra un botón de búsqueda como un elemento más en la barra de navegación situada en la parte inferior de la página."
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-listaTags/",
-            "title": "Lista de tags",
-            "content": "Muestra los tags definidos y el número de veces que se utilizan. navegación tags La lista de tags muestra los tags definidos y el número de veces que se utilizan. Se muestra en la barra lateral. Al hacer clic en un tag, se mostrarán todas las páginas o entradas asociadas a ese tag específico, facilitando así la exploración del contenido relacionado. Los tags se definen en el front matter de cada plantilla.Los tags se utilizan para categorizar el contenido. Es importante mantener una lista de tags consistente, no demasiado amplia ni demasiado específica ya que disponemos de la opción de búsqueda directa y difusa para encontrar contenido específico.Enlace a la lista de Tags"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-resultadosBusqueda/",
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_3-resultadosBusqueda/",
             "title": "Resultados de la búsqueda",
             "content": "La página de resultados de búsqueda mustra extractos de las ocurrencias. navegación search búsqueda En la imagen se muestra una página de resultados de búsqueda.Al final de la página aparecen unos botones para poder navegar entre las distintas ocurrencias o desactivar la búsqueda."
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-navegacion/n2-tablaContenidos/",
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_4-linksPersonalizados/",
+            "title": "Links personalizados",
+            "content": "Muestra enlaces en la barra de navegación. navegación links personalizados Los links personalizados permiten mostrar enlaces en la barra de navegación. En general los voy a utilizar para enlazar con lo que puede estar relacionado con el proyecto:Trello - tablero de gestión del proyecto.OneNote - borradores y preparación del proyecto.Nube - carpeta con los archivos del proyecto.Fusion - enlace a la página de fusión del proyecto.GitHub - repositorio del proyecto o enlace a mi GitHub.En este proyecto he eliminado alguno de los enlaces personalizados.Crear link personalizadoSe crean en el archivo de configuración settings.jsonPara crear un link personalizado, añade a la propiedad customLinks:{ &amp;quot;url&amp;quot;: &amp;quot;https://ejemplo.com&amp;quot;, &amp;quot;text&amp;quot;: &amp;quot;Texto del enlace&amp;quot; }"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_5-listaTags/",
+            "title": "Lista de tags",
+            "content": "Muestra los tags definidos y el número de veces que se utilizan. navegación tags La lista de tags muestra los tags definidos y el número de veces que se utilizan. Se muestra en la barra lateral. Al hacer clic en un tag, se mostrarán todas las páginas o entradas asociadas a ese tag específico, facilitando así la exploración del contenido relacionado. Los tags se definen en el front matter de cada plantilla.Los tags se utilizan para categorizar el contenido. Es importante mantener una lista de tags consistente, no demasiado amplia ni demasiado específica ya que disponemos de la opción de búsqueda directa y difusa para encontrar contenido específico.Enlace a la lista de Tags"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/5-navegacion/5_6-tablaContenidos/",
             "title": "Tabla de contenidos",
             "content": "Puedes navegar por la tabla de contenido principal y la flotante. navegación tabla de contenidos Basándose en la estructura del contenido de las etiquetas de nivel de encabezado ( &amp;lt;h1&amp;gt; a &amp;lt;h6&amp;gt; ) de cada plantilla, se generan automáticamente dos tablas de contenido: una principal y otra flotante.En la página web resultado, los distintos niveles de encabezados se muestran con distinto tamaño de fuente, pero no generan una jerarquía en la tabla de contenido, todos los encabezados tienen el mismo nivel de importancia.Los enlaces resultantespermiten desplazarse rápidamente a las diferentes secciones del contenido.Tabla de contenido principalLocalizado en el encabezado de cada página.Se genera a partir del proceso de compilación de cada plantilla.Es plegable.Tabla de contenido flotanteLocalizado en el lateral derecho de cada página, fuera del área de contenido principal y visible solo en pantallas grandes.Tiene función ScrollSpy, lo que significa que resalta automáticamente la sección actual a medida que el usuario se desplaza por la página.Es plegable.Generado desde el lado del cliente, requiere que JavaScript esté habilitado en el navegador del usuario para funcionar correctamente. Si JavaScript está deshabilitado, la tabla de contenido flotante no se mostrará ni funcionará, pero la tabla de contenido principal seguirá siendo accesible y funcional."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/",
+            "title": "Crear contenido",
+            "content": "Como escribir mi documentación con Markdown y HTML, además se puede mejorar la experiencia añadiendo widgets. markdown html widgets LibDoc se desarrolló para facilitar la creación de documentación, por lo que se recomienda usar Markdown .md y html.Los archivos Markdown se pueden combinar con HTML.Además, hay disponible una colección de código HTML predefinido como widgets que podemos copiar y reutilizar.Markdown para semántica y sintaxis comunes.HTML en línea para mejorar la semántica no compatible con Markdown.Widgets para usos avanzados y específicos."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/",
+            "title": "Markdown",
+            "content": "Dónde usar las etiquetas Markdown. markdown Markdown Es un lenguaje de marcado ligero que se utiliza para formatear texto de manera sencilla y legible. LibDoc soporta una amplia variedad de etiquetas Markdown para ayudarte a estructurar tu documentación de manera efectiva. Hay que prestar mucha atención a la sintaxis de Markdown, ya que un pequeño error puede afectar la visualización del contenido:Las sangrías incorrectas pueden afectar la estructura de las listas.El uso incorrecto de los caracteres especiales puede generar resultados inesperados.Un salto de línea se puede hacer con dos espacios al final de la línea (o un salto de línea adicional), por eso un espacio adicional puede cambiar completamente el formato del texto.Modificadores de texto - Párrafos, saltos de línea, encabezados y énfasis en el texto.Listas - Ordenadas, NO ordenadas y mixtas.Enlaces - Tipos de enlaces.Imágenes - Locales y externas, con o sin enlace, pequeñas o grandes.Código - En línea, bloque con resaltado de sintaxis y variables.Tablas - Creación y formato de tablas.Cita grande - Para citas con formato grande."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_1-modificadoresTexto/",
+            "title": "Modificadores de texto",
+            "content": "Parráfos, saltos de línea, encabezados y énfasis en el texto. contenido markdown modificadores de texto parráfo salto de línea encabezados énfasis cursiva negrita tachado línea horizontal Párrafo y salto de líneaUn doble salto de línea ...... genera un nuevo párrafo.Mientras que un solo salto de línea se interpreta como parte del mismo párrafo.EncabezadosLas etiquetas de encabezado tienen 6 niveles: de &amp;lt;h1&amp;gt; a &amp;lt;h6&amp;gt;.Los encabezados generan automáticamente las tablas de contenido principal y flotante.En la página web resultado, los distintos niveles de encabezados se muestran con distinto tamaño de fuente, pero no generan una jerarquía en la tabla de contenido, todos los encabezados tienen el mismo nivel de importancia.Énfasis en el textoCursiva ( * ) Se consigue con un asterisco (*) o guión bajo (_) al inicio y al final del texto.Negrita ( ** ) Se consigue con dos asteriscos (**) o guiones bajos (__) al inicio y al final del texto.Negrita y cursiva ( *** ) Se consigue con tres asteriscos (***) o guiones bajos (___) al inicio y al final del texto.Tachado ( ~~ ) Se consigue con dos virgulillas (~) al inicio y al final del texto.Línea de separación horizontalSe crea con tres guiones (---), asteriscos (***) o guiones bajos (___) en una línea sin ningún otro texto."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_2-listas/",
+            "title": "Listas",
+            "content": "Ordenadas, NO ordenadas y mixtas. contenido markdown listas Listas NO ordenadas Se crean con asteriscos (*), guiones (-) o signos de más (+), seguido de un espacio al inicio de cada elemento de la lista. Usando sangrías, se pueden crear sublistas anidadas.Listas ordenadas Se crean con números seguidos de un punto (.) y un espacio al inicio de cada elemento de la lista. Ni siquiera es necesario que los números estén en orden, el resultado siempre será una lista ordenada. Usando sangrías, se pueden crear sublistas anidadas.Listas mixtas Se pueden combinar listas ordenadas y no ordenadas para crear listas mixtas. Usando sangrías, se pueden crear sublistas anidadas."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_3-enlaces/",
+            "title": "Enlaces",
+            "content": "Tipos de enlaces. contenido markdown enlaces Permalink En el encabezado (front matter) de las plantillas que luego se convertirán en páginas web podemos utilizar la funcionalidad de permalink que define la ruta URL final de salida del archivo generado, sobreescribiendo la estructura de directorios predeterminada. Enlace EXTERNO es aquel que apunta a una URL fuera del sitio web.Enlace INTERNO es aquel que apunta a otra página dentro del mismo sitio web.Pueden ser estáticos (permalink).O dinámicos (usando el nombre de la plantilla *.md).Se crean con corchetes [] para el texto del enlace y paréntesis () para la URL o el permalink de la página interna.[Enlace a Google](https://www.google.com)[Enlace a página interna](./n2-html.md)"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_4-imagenes/",
+            "title": "Imágenes",
+            "content": "Locales y externas, con o sin enlace, pequeñas o grandes. contenido markdown imagen Para optimizar el rendimiento de la página y el ancho de banda, las imágenes rasterizadas como PNG, JPEG y GIF se transcodifican a los formatos AVIF y WEBP mediante el plugin de imágenes de Eleventy . Además, para garantizar la adaptabilidad, cada imagen rasterizada se transcodifica en varios archivos con diferentes anchos para ajustarse a los dispositivos de destino.Las imágenes vectoriales SVG se utilizan tal cual.El formato para la imágenes locales o externas es el mismo, pero las imágenes locales se optimizan automáticamente, mientras que las externas no se optimizan y se muestran tal cual.ImagenPara insertar una imagen se utiliza la admiración (!) seguida de corchetes [] para el texto alternativo y paréntesis () para la URL o el permalink de la página interna.![Texto imagen](/assets/imagen.png)Imagen con enlacePara insertar una imagen que también funcione como enlace, se coloca el código de la imagen dentro de los paréntesis de un enlace.[![TextImagenConEnlace](/assets/imagenConEnlace.png)] (enlace o permalink &amp;quot;Texto del enlace&amp;quot;)Imagen pequeña o grandeLas imágenes rasterizadas más pequeñas que el ancho del contenido principal no se visualizan correctametne en pantallas de alta densidad como Retina. Se puede solucionar usando HTML: aplicando style con width y height en pixeles.La imagen anterior tiene 256x256 pixeles y vamos a hacer que se vea como si tuviera 64x64 pixeles y la vamos a centrar. También se puede hacer al contrario y que una imagen pequeña se vea más grande. &amp;lt;img src=&amp;quot;/assets/imagenPequena.png&amp;quot; alt=&amp;quot;Imagen pequeña&amp;quot; style=&amp;quot;width: 64px; height: 64px; display: block; margin: 0 auto;&amp;quot;&amp;gt;"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_5-codigo/",
+            "title": "Código",
+            "content": "En línea, bloque con resaltado de sintaxis y variables. contenido markdown resaltado de sintaxis Código en líneaSe crea con una sola comilla invertida ( ` ) al inicio y al final del texto que se desea formatear como código.Para ver trozos de código pequeños en la misma línea código en línea.Para ver trozos de `código pequeños` en la misma línea código en línea.Bloque con resaltado de sintaxisPuedes utilizar el resaltado de sintaxis, que permitirá que muestre el resaltado en los lenguajes de programación que hayas incorporado en settings.json.Introduce tres comillas invertidas (```) seguido del alias del lenguaje de programaciónEscribe el código que quieres resaltar.Finaliza con otras tres comillas invertidas (```) en una nueva línea.Por ejemplo, para resaltar código HTML:&amp;lt;h1&amp;gt;Hello World!&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;This is a &amp;lt;a href=&amp;quot;/link/&amp;quot;&amp;gt;link&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_6-tablas/",
+            "title": "Tablas",
+            "content": "Creación y formato de tablas. contenido markdown tablas Las tablas en Markdown fueron creadas por Github Flavoured Markdown como una extensión de las especificaciones de Markdown.Las tablas son responsivas y tienen desplazamiento horizontal habilitado si su contenido es más ancho que el ancho máximo del contenedor principal.Primera columnaSegundaTerceraLa columna 3 estáalineada a la derecha1600La columna 2 estácentrada12Líneas alternativasestán ordenadas1AñoPelículaDirectorCompositor2001Harry Potter and the Philosopher&#39;s StoneChris ColumbusJohn Williams2002Harry Potter and the Chamber of SecretsChris ColumbusJohn Williams2004Harry Potter and the Prisoner of AzkabanAlfonso CuarónJohn Williams2005Harry Potter and the Goblet of FireMike NewellPatrick Doyle2007Harry Potter and the Order of the PhoenixDavid YatesNicholas Hooper2009Harry Potter and the Half-Blood PrinceDavid YatesNicholas Hooper2010Harry Potter and the Deathly Hallows – Part 1David YatesAlexandre Desplat2011Harry Potter and the Deathly Hallows – Part 2David YatesAlexandre DesplatDebe de haber al menos 3 guiones separando cada celda de encabezado.Las barras verticales (|) son opcionales, y no necesitas hacer que la línea de Markdown raw se vea bonita. También puedes usar Markdown en línea dentro de las celdas de la tabla.MarkdownEs menosbonitoAúnrenderizabien123| Primera columna | Segunda | Tercera || ------------- |:-------------: | -------:|| La columna 3 está | alineada a la derecha | 1600 || La columna 2 está | centrada | 12 || Líneas alternativas | están ordenadas | 1 || Año | Película | Director | Compositor ||------|-----------------------------------------------|----------------|-------------------|| 2001 | Harry Potter and the Philosopher&#39;s Stone | Chris Columbus | John Williams || 2002 | Harry Potter and the Chamber of Secrets | Chris Columbus | John Williams || 2004 | Harry Potter and the Prisoner of Azkaban | Alfonso Cuarón | John Williams || 2005 | Harry Potter and the Goblet of Fire | Mike Newell | Patrick Doyle || 2007 | Harry Potter and the Order of the Phoenix | David Yates | Nicholas Hooper || 2009 | Harry Potter and the Half-Blood Prince | David Yates | Nicholas Hooper || 2010 | Harry Potter and the Deathly Hallows – Part 1 | David Yates | Alexandre Desplat || 2011 | Harry Potter and the Deathly Hallows – Part 2 | David Yates | Alexandre Desplat |Markdown | Es menos | bonito--- | --- | ---*Aún* | `renderiza` | **bien**1 | 2 | 3"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_1-markdown/4_1_7-citaGrande/",
+            "title": "Cita grande",
+            "content": "Para citas con formato grande. contenido markdown cita Empieza cada línea con &amp;gt; + espacio.Esa es tu elección, Harry, que muestra lo que realmente somos, mucho más que nuestras habilidades.— Albus DumbledoreTodos tenemos luz y oscuridad dentro de nosotros. Lo que importa es la parte que elegimos actuar. Esa es la persona que realmente somos.— Sirius Black&amp;gt; Esa es tu elección, Harry, que muestra lo que realmente somos, mucho más que nuestras habilidades.&amp;gt; &amp;gt; — **Albus Dumbledore**&amp;gt; Todos tenemos luz y oscuridad dentro de nosotros. Lo que importa es la parte que elegimos actuar. Esa es la persona que realmente somos.&amp;gt; &amp;gt; — **Sirius Black**"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_2-html/",
+            "title": "HTML en línea",
+            "content": "Ejemplo de las etiquetas HTML disponibles. html abreviatura cita en línea entrada de teclado salto de línea enlaces internos énfasis en texto variables Además del formato Markdown habitual , es posible utilizar algunas etiquetas HTML sin formato.AbreviaturaCon 11ty puedes usar CSS para dar estilo a tu HTML. El atributo title es opcional pero si se establece, las etiquetas &amp;lt;abbr&amp;gt; son clicables y se expanden una vez hacen clic. En Eleventy LibDoc, los elementos de abreviatura con atributo de título son clicables como este: E.G. &amp;lt;abbr title=&amp;quot;Eleventy&amp;quot;&amp;gt;11ty&amp;lt;/abbr&amp;gt;Cita en línea (para citar fuentes)Y entonces Albus dijo a Harry Son nuestras decisiones, Harry, las que muestran quiénes somos realmente, mucho más que nuestras habilidades..Y entonces Albus dijo a Harry &amp;lt;q cite=&amp;quot;https://www.harrypotter.com/fr/features/pearls-of-wisdom-from-professor-dumbledore&amp;quot;&amp;gt; Son nuestras decisiones, Harry, las que muestran quiénes somos realmente, mucho más que nuestras habilidades.&amp;lt;/q&amp;gt;.Este tipo de citas se utiliza para marcar una referencia, título de una obra (libro, película, web...) y no la cita en sí misma. Se muestra el contenido de la cita entre comillas y en cursiva. El atributo cite se utiliza para proporcionar la URL de la fuente de la cita (aunque no se puede acceder a ella ni es un enlace).Este tipo de cita es diferente a la cita en bloque, sobre todo en el tamaño del texto, que es más pequeño. La cita en bloque se utiliza para citas más largas y se muestra en un bloque grande separado del texto principal.Lo puedo utilizar sin incluir una url en el atributo cite y que me sirva como una cita en línea normal.Lo puedo utilizar sin incluir una url en el atributo `cite` &amp;lt;q cite=&amp;quot;&amp;quot;&amp;gt;y que me sirva como una cita en línea normal&amp;lt;/q&amp;gt;.Entrada de tecladoPuedes usar Ctrl + Shift + R para actualizar la página y vaciar la caché.Puedes usar &amp;lt;kbd&amp;gt;Ctrl&amp;lt;/kbd&amp;gt; + &amp;lt;kbd&amp;gt;Shift&amp;lt;/kbd&amp;gt; + &amp;lt;kbd&amp;gt;R&amp;lt;/kbd&amp;gt; para actualizar la página y vaciar la caché.Salto de líneaSoy un punto importante.A veces necesitamos romper la línea dentro del markdown.Soy otro punto importante.Aquí no se ha roto la línea.* Soy un punto importante.&amp;lt;br&amp;gt; A veces necesitamos romper la línea dentro del markdown.* Soy otro punto importante.Aquí no se ha roto la línea aunque lo he escrito en otra línea.Enlaces internosAl igual que los enlaces internos de Markdown, también puedes usar enlaces internos con HTML.ESTÁTICOS - Son los que apuntan a una página interna en el _site, referencian a la página index.html (se puede omitir index.html).Vamos a la página Markdown con un enlace estático.Vamos a la página &amp;lt;a href=&amp;quot;/pages/4-crear-contenido/4_1-markdown/index.html&amp;quot;&amp;gt;Markdown&amp;lt;/a&amp;gt; con un enlace estático.DINÁMICOS - Son los que apuntan a un permalink y referencian siempre a una plantilla *.md.Si el permalink cambia, los enlaces internos se actualizan automáticamente.Vamos a la página Markdown con un enlace dinámico.Vamos a la página &amp;lt;a href=&amp;quot;/pages/4_1-markdown.md&amp;quot;&amp;gt;Markdown&amp;lt;/a&amp;gt; con un enlace dinámico.Énfasis en textoHay cosas que Markdown no puede hacer, como el resaltado de texto en amarillo, simular texto de salida, texto de tamaño reducido, tachado, subíndices (H2O) y superíndices (E=mc2), para eso tenemos el HTML.Énfasis en textoVariablesSe utilizan para marcar texto que se refiere a una variable, se muestra con una fuente monoespaciada.El volumen de una caja (Vol) donde l es la longitud, w es el ancho y h es la altura es: Vol=l × w × hEl volumen de una caja **(Vol)** donde &amp;lt;var&amp;gt;l&amp;lt;/var&amp;gt; es la longitud, &amp;lt;var&amp;gt;w&amp;lt;/var&amp;gt; es el ancho y &amp;lt;var&amp;gt;h&amp;lt;/var&amp;gt; es la altura es: **Vol**=&amp;lt;var&amp;gt;l&amp;lt;/var&amp;gt; × &amp;lt;var&amp;gt;w&amp;lt;/var&amp;gt; × &amp;lt;var&amp;gt;h&amp;lt;/var&amp;gt;"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_2-html/4_2_1-enfasisTexto/",
+            "title": "Énfasis en texto",
+            "content": "Resaltado, texto de salida, texto pequeño, tachado, subíndices y superíndices. contenido html énfasis resaltado texto de salida texto pequeño tachado subíndice superíndice Resaltado de textoEsto es un fragmento de texto resaltado con la etiqueta &amp;lt;mark&amp;gt;.Esto es un fragmento de &amp;lt;mark&amp;gt;texto resaltado&amp;lt;/mark&amp;gt; con la etiqueta `&amp;lt;mark&amp;gt;`.Simular Salida de textoEsto es un fragmento que simula una Salida de texto con la etiqueta &amp;lt;samp&amp;gt;.Esto es un fragmento que simula una &amp;lt;samp&amp;gt;Salida de texto&amp;lt;/samp&amp;gt; con la etiqueta `&amp;lt;samp&amp;gt;`.Texto pequeñoEsto es un fragmento de texto pequeño con la etiqueta &amp;lt;small&amp;gt;.&amp;lt;small&amp;gt;Esto es un fragmento de texto pequeño&amp;lt;/small&amp;gt; con la etiqueta `&amp;lt;small&amp;gt;`.Texto tachadoEsto es un fragmento de texto tachado con la etiqueta &amp;lt;s&amp;gt;.Esto es un fragmento &amp;lt;s&amp;gt; de texto tachado&amp;lt;/s&amp;gt; con la etiqueta `&amp;lt;s&amp;gt;`.SubíndicePara poder utilizar subíndices, como en la fórmula del agua, utilizamos la etiqueta &amp;lt;sub&amp;gt;: H2O.Para poder utilizar subíndices, como en la fórmula del agua, utilizamos la etiqueta `&amp;lt;sub&amp;gt;`: **H**&amp;lt;sub&amp;gt;2&amp;lt;/sub&amp;gt;**O**.SuperíndicePara poder utilizar superíndices, como en la fórmula de la energía, utilizamos la etiqueta &amp;lt;sup&amp;gt;: E=mc2.Para poder utilizar superíndices, como en la fórmula de la energía, utilizamos la etiqueta `&amp;lt;sup&amp;gt;`: **E**=**mc**&amp;lt;sup&amp;gt;2&amp;lt;/sup&amp;gt;."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/",
+            "title": "Widgets",
+            "content": "Fragmentos HTML que mejoran la visualización del contenido. contenido widgets Alertas - Párrafos sencillos para resaltar información.Botones - Botones para crear llamadas a la acción.Definición - Término y definición.Acordeón - Contenido colapsable para organizar información.Iconos - Iconos disponibles.Embebido - Código para embeber contenido externo.Imagen - Código para insertar imágenes."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_2-botones/",
+            "title": "Botones",
+            "content": "Código para crear botones y crear llamadas a la acción. contenido widgets botones "
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_3-definicion/",
+            "title": "Definición",
+            "content": "Código para crear términos y definiciones. contenido widgets definición "
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_4-acordeon/",
+            "title": "Acordeón",
+            "content": "Código para crear contenido colapsable. contenido widgets acordeón "
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_5-iconos/",
+            "title": "Iconos",
+            "content": "Código para crear iconos y mejorar la visualización del contenido. contenido widgets iconos H1Aquí se escribe todo lo que queramos incluir en la página web.H3Con los encabezados de H1 a H6 se crean secciones en la página, cualquier Hx genera un encablezado de sección, no se distinguen jerarquías entre niveles de encabezados, solo cambia el tamaño del texto.H6Las secciones se muestran en la tabla de contenido y en el botón flotante de contenido."
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_6-embebido/",
+            "title": "Embebido",
+            "content": "Código para embeber contenido externo. contenido widgets embebido "
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_7-imagen/",
+            "title": "Imagen",
+            "content": "Código para insertar imágenes. contenido widgets imagen "
         },
         {
             "url": "/Documentar_Proyecto/posts/boton-ir-atras/",
@@ -455,98 +495,8 @@
             "content": "Cambios realizados en el proyecto para incorporar un botón de &#34;ir atrás&#34; en el pie de página de las páginas de documentación. post botón atrás libdocMessajes.jsonPara que el botón de &amp;quot;ir atrás&amp;quot; tenga un texto personalizado, añadí el mensaje &amp;quot;Ir atrás&amp;quot; al archivo libdocMessages.json bajo la clave goBack. Esto permite que el botón muestre el texto correcto en cualquiera de los idiomas soportados.&amp;quot;goBack&amp;quot;: { &amp;quot;en&amp;quot;: &amp;quot;Go back&amp;quot;, &amp;quot;fr&amp;quot;: &amp;quot;Retour&amp;quot;, &amp;quot;it&amp;quot;: &amp;quot;Indietro&amp;quot;, &amp;quot;es&amp;quot;: &amp;quot;Ir atrás&amp;quot;}libdoc_page.liquidEn la plantilla libdoc_page.liquid, añadí un nuevo bloque de código HTML para el botón de &amp;quot;ir atrás&amp;quot; dentro del pie de página (Footer), en la parte derecha donde el LibDoc original muestra la versión. Este bloque utiliza el mensaje definido en libdocMessages.json para mostrar el texto del botón.Tiene en cuenta la estructura de ficheros que he decidido utilizar:Plantillas de cualquier nivel en el directorio de salida _site/pagesPublicaciones del blog en el directorio de salida _site/postsLa página de inicio (HOME) en el directorio de salida _site/Funciona en los 3 niveles de anidamiento de las páginas y en el blog (bitácora) y su índice.No generar más niveles de anidamiento para las páginas.Funciona independientemente del nombre del proyecto, lo que facilita no tener que modificar el código en los archivos de configuración.El bloque de código para el botón de &amp;quot;ir atrás&amp;quot; es el siguiente:&amp;lt;a id=&amp;quot;backBtn&amp;quot; class=&amp;quot;btn btn-primary-light&amp;quot;&amp;gt; &amp;lt;span class=&amp;quot;icon-arrow-square-out&amp;quot;&amp;gt;&amp;lt;/span&amp;gt; Ir atrás&amp;lt;/a&amp;gt; &amp;lt;script&amp;gt;document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function() { const backBtn = document.getElementById(&amp;quot;backBtn&amp;quot;); let path = window.location.pathname; // Normalizar quitando / final (excepto si es solo &amp;quot;/&amp;quot;) if (path.length &amp;gt; 1 &amp;amp;&amp;amp; path.endsWith(&amp;quot;/&amp;quot;)) { path = path.slice(0, -1); } const segments = path.split(&amp;quot;/&amp;quot;).filter(Boolean); // Seguridad básica if (segments.length === 0) { disableBtn(); return; } // Base automática: /NombreProyecto const base = &amp;quot;/&amp;quot; + segments[0]; const pagesRoot = base + &amp;quot;/pages&amp;quot;; const postsRoot = base + &amp;quot;/posts&amp;quot;; // ========== HOME ========== if (path === base) { disableBtn(); return; } // ========== PÁGINAS /pages/ ========== if (path.startsWith(pagesRoot)) { const depth = segments.length - 2; // quitamos [proyecto, pages] if (depth === 1) { // /Proyecto/pages/nivel1 -&amp;gt; home backBtn.href = base + &amp;quot;/&amp;quot;; } else { // /Proyecto/pages/n1/n2 -&amp;gt; /Proyecto/pages/n1/ const parent = path.split(&amp;quot;/&amp;quot;).slice(0, -1).join(&amp;quot;/&amp;quot;) + &amp;quot;/&amp;quot;; backBtn.href = parent; } return; } // ========== BLOG /posts/ ========== if (path.startsWith(postsRoot)) { const depth = segments.length - 2; // quitamos [proyecto, posts] if (depth === 1) { // /Proyecto/posts/post-slug -&amp;gt; /Proyecto/posts/ backBtn.href = postsRoot + &amp;quot;/&amp;quot;; } else if (depth === 0) { // /Proyecto/posts -&amp;gt; home backBtn.href = base + &amp;quot;/&amp;quot;; } else { // Por si en el futuro hubiera más profundidad dentro de posts const parent = path.split(&amp;quot;/&amp;quot;).slice(0, -1).join(&amp;quot;/&amp;quot;) + &amp;quot;/&amp;quot;; backBtn.href = parent; } return; } // ========== CUALQUIER OTRA RUTA ========== disableBtn(); function disableBtn() { backBtn.classList.add(&amp;quot;disabled&amp;quot;); backBtn.style.pointerEvents = &amp;quot;none&amp;quot;; backBtn.style.opacity = &amp;quot;0.20&amp;quot;; backBtn.style.cursor = &amp;quot;default&amp;quot;; backBtn.style.filter = &amp;quot;grayscale(100%)&amp;quot;; backBtn.removeAttribute(&amp;quot;href&amp;quot;); }});&amp;lt;/script&amp;gt;"
         },
         {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/",
-            "title": "Crear contenido",
-            "content": "Como escribir mi documentación con Markdown y HTML, además se puede mejorar la experiencia añadiendo widgets. markdown html widgets LibDoc se desarrolló para facilitar la creación de documentación, por lo que se recomienda usar Markdown .md y html.Los archivos Markdown se pueden combinar con HTML.Además, hay disponible una colección de código HTML predefinido como widgets que podemos copiar y reutilizar.Markdown para semántica y sintaxis comunes.HTML en línea para mejorar la semántica no compatible con Markdown.Widgets para usos avanzados y específicos."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-html/",
-            "title": "HTML en línea",
-            "content": "Ejemplo de las etiquetas HTML disponibles. html abreviatura cita en línea entrada de teclado salto de línea enlaces internos énfasis en texto variables Además del formato Markdown habitual , es posible utilizar algunas etiquetas HTML sin formato.AbreviaturaCon 11ty puedes usar CSS para dar estilo a tu HTML. El atributo title es opcional pero si se establece, las etiquetas &amp;lt;abbr&amp;gt; son clicables y se expanden una vez hacen clic. En Eleventy LibDoc, los elementos de abreviatura con atributo de título son clicables como este: E.G. &amp;lt;abbr title=&amp;quot;Eleventy&amp;quot;&amp;gt;11ty&amp;lt;/abbr&amp;gt;Cita en línea (para citar fuentes)Y entonces Albus dijo a Harry Son nuestras decisiones, Harry, las que muestran quiénes somos realmente, mucho más que nuestras habilidades..Y entonces Albus dijo a Harry &amp;lt;q cite=&amp;quot;https://www.harrypotter.com/fr/features/pearls-of-wisdom-from-professor-dumbledore&amp;quot;&amp;gt; Son nuestras decisiones, Harry, las que muestran quiénes somos realmente, mucho más que nuestras habilidades.&amp;lt;/q&amp;gt;.Este tipo de citas se utiliza para marcar una referencia, título de una obra (libro, película, web...) y no la cita en sí misma. Se muestra el contenido de la cita entre comillas y en cursiva. El atributo cite se utiliza para proporcionar la URL de la fuente de la cita (aunque no se puede acceder a ella ni es un enlace).Este tipo de cita es diferente a la cita en bloque, sobre todo en el tamaño del texto, que es más pequeño. La cita en bloque se utiliza para citas más largas y se muestra en un bloque grande separado del texto principal.Lo puedo utilizar sin incluir una url en el atributo cite y que me sirva como una cita en línea normal.Lo puedo utilizar sin incluir una url en el atributo `cite` &amp;lt;q cite=&amp;quot;&amp;quot;&amp;gt;y que me sirva como una cita en línea normal&amp;lt;/q&amp;gt;.Entrada de tecladoPuedes usar Ctrl + Shift + R para actualizar la página y vaciar la caché.Puedes usar &amp;lt;kbd&amp;gt;Ctrl&amp;lt;/kbd&amp;gt; + &amp;lt;kbd&amp;gt;Shift&amp;lt;/kbd&amp;gt; + &amp;lt;kbd&amp;gt;R&amp;lt;/kbd&amp;gt; para actualizar la página y vaciar la caché.Salto de líneaSoy un punto importante.A veces necesitamos romper la línea dentro del markdown.Soy otro punto importante.Aquí no se ha roto la línea.* Soy un punto importante.&amp;lt;br&amp;gt; A veces necesitamos romper la línea dentro del markdown.* Soy otro punto importante.Aquí no se ha roto la línea aunque lo he escrito en otra línea.Enlaces internosEstáticos (una página interna)Dinámicos (permalink).Énfasis en textoHay cosas que Markdown no puede hacer, como el resaltado de texto en amarillo, texto de salida, texto de tamaño reducido, tachado, subíndices (H2O2) y superíndices (E=mc2). Para eso tenemos el HTML.Modificadores de textoVariables"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/",
-            "title": "Markdown",
-            "content": "Dónde usar las etiquetas Markdown. markdown Markdown Es un lenguaje de marcado ligero que se utiliza para formatear texto de manera sencilla y legible. LibDoc soporta una amplia variedad de etiquetas Markdown para ayudarte a estructurar tu documentación de manera efectiva. Hay que prestar mucha atención a la sintaxis de Markdown, ya que un pequeño error puede afectar la visualización del contenido:Las sangrías incorrectas pueden afectar la estructura de las listas.El uso incorrecto de los caracteres especiales puede generar resultados inesperados.Un salto de línea se puede hacer con dos espacios al final de la línea (o un salto de línea adicional), por eso un espacio adicional puede cambiar completamente el formato del texto.Modificadores de texto - Párrafos, saltos de línea, encabezados y énfasis en el texto.Listas - Ordenadas, NO ordenadas y mixtas.Enlaces - Tipos de enlaces.Imágenes - Locales y externas, con o sin enlace, pequeñas o grandes.Código - En línea, bloque con resaltado de sintaxis y variables.Tablas - Creación y formato de tablas.Cita grande - Para citas con formato grande."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/",
-            "title": "Widgets",
-            "content": "Fragmentos HTML que mejoran la visualización del contenido. contenido widgets Alertas - Párrafos sencillos para resaltar información.Botones - Botones para crear llamadas a la acción.Definición - Término y definición.Acordeón - Contenido colapsable para organizar información.Iconos - Iconos disponibles.Embebido - Código para embeber contenido externo.Imagen - Código para insertar imágenes.Cambio"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-acordeon/",
-            "title": "Acordeón",
-            "content": "Código para crear contenido colapsable. contenido widgets acordeón "
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-alertas/",
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_1-alertas/",
             "title": "Alertas",
-            "content": "Código para crear alertas y resaltar información importante. contenido widgets alertas "
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-botones/",
-            "title": "Botones",
-            "content": "Código para crear botones y crear llamadas a la acción. contenido widgets botones "
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-citaGrande/",
-            "title": "Cita grande",
-            "content": "Para citas con formato grande. contenido markdown cita Empieza cada línea con &amp;gt; + espacio.Esa es tu elección, Harry, que muestra lo que realmente somos, mucho más que nuestras habilidades.— Albus DumbledoreTodos tenemos luz y oscuridad dentro de nosotros. Lo que importa es la parte que elegimos actuar. Esa es la persona que realmente somos.— Sirius Black&amp;gt; Esa es tu elección, Harry, que muestra lo que realmente somos, mucho más que nuestras habilidades.&amp;gt; &amp;gt; — **Albus Dumbledore**&amp;gt; Todos tenemos luz y oscuridad dentro de nosotros. Lo que importa es la parte que elegimos actuar. Esa es la persona que realmente somos.&amp;gt; &amp;gt; — **Sirius Black**"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-codigo/",
-            "title": "Código",
-            "content": "En línea, bloque con resaltado de sintaxis y variables. contenido markdown resaltado de sintaxis Código en líneaSe crea con una sola comilla invertida ( ` ) al inicio y al final del texto que se desea formatear como código.Para ver trozos de código pequeños en la misma línea código en línea.Para ver trozos de `código pequeños` en la misma línea código en línea.Bloque con resaltado de sintaxisPuedes utilizar el resaltado de sintaxis, que permitirá que muestre el resaltado en los lenguajes de programación que hayas incorporado en settings.json.Introduce tres comillas invertidas (```) seguido del alias del lenguaje de programaciónEscribe el código que quieres resaltar.Finaliza con otras tres comillas invertidas (```) en una nueva línea.Por ejemplo, para resaltar código HTML:&amp;lt;h1&amp;gt;Hello World!&amp;lt;/h1&amp;gt;&amp;lt;p&amp;gt;This is a &amp;lt;a href=&amp;quot;/link/&amp;quot;&amp;gt;link&amp;lt;/a&amp;gt;.&amp;lt;/p&amp;gt;"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-definicion/",
-            "title": "Definición",
-            "content": "Código para crear términos y definiciones. contenido widgets definición "
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-embebido/",
-            "title": "Embebido",
-            "content": "Código para embeber contenido externo. contenido widgets embebido "
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-html/n3-enfasisTexto/",
-            "title": "Énfasis en texto",
-            "content": "Resaltado, texto de salida, texto pequeño, tachado, subíndices y superíndices. contenido html resaltado texto de salida texto pequeño tachado subíndice superíndice Resaltado de textoTexto de salidaTexto pequeñoTexto tachadoSubíndiceSuperíndice"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-enlaces/",
-            "title": "Enlaces",
-            "content": "Tipos de enlaces. contenido markdown enlaces Permalink En el encabezado (front matter) de las plantillas que luego se convertirán en páginas web podemos utilizar la funcionalidad de permalink que define la ruta URL final de salida del archivo generado, sobreescribiendo la estructura de directorios predeterminada. Enlace EXTERNO es aquel que apunta a una URL fuera del sitio web.Enlace INTERNO es aquel que apunta a otra página dentro del mismo sitio web.Pueden ser estáticos (permalink).O dinámicos (usando el nombre de la plantilla *.md).Se crean con corchetes [] para el texto del enlace y paréntesis () para la URL o el permalink de la página interna.[Enlace a Google](https://www.google.com)[Enlace a página interna](./n2-html.md)"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-iconos/",
-            "title": "Iconos",
-            "content": "Código para crear iconos y mejorar la visualización del contenido. contenido widgets iconos H1Aquí se escribe todo lo que queramos incluir en la página web.H3Con los encabezados de H1 a H6 se crean secciones en la página, cualquier Hx genera un encablezado de sección, no se distinguen jerarquías entre niveles de encabezados, solo cambia el tamaño del texto.H6Las secciones se muestran en la tabla de contenido y en el botón flotante de contenido."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-widgets/n3-imagen/",
-            "title": "Imagen",
-            "content": "Código para insertar imágenes. contenido widgets imagen "
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-imagenes/",
-            "title": "Imágenes",
-            "content": "Locales y externas, con o sin enlace, pequeñas o grandes. contenido markdown imagen Para optimizar el rendimiento de la página y el ancho de banda, las imágenes rasterizadas como PNG, JPEG y GIF se transcodifican a los formatos AVIF y WEBP mediante el plugin de imágenes de Eleventy . Además, para garantizar la adaptabilidad, cada imagen rasterizada se transcodifica en varios archivos con diferentes anchos para ajustarse a los dispositivos de destino.Las imágenes vectoriales SVG se utilizan tal cual.El formato para la imágenes locales o externas es el mismo, pero las imágenes locales se optimizan automáticamente, mientras que las externas no se optimizan y se muestran tal cual.ImagenPara insertar una imagen se utiliza la admiración (!) seguida de corchetes [] para el texto alternativo y paréntesis () para la URL o el permalink de la página interna.![Texto imagen](/assets/imagen.png)Imagen con enlacePara insertar una imagen que también funcione como enlace, se coloca el código de la imagen dentro de los paréntesis de un enlace.[![TextImagenConEnlace](/assets/imagenConEnlace.png)] (enlace o permalink &amp;quot;Texto del enlace&amp;quot;)Imagen pequeña o grandeLas imágenes rasterizadas más pequeñas que el ancho del contenido principal no se visualizan correctametne en pantallas de alta densidad como Retina. Se puede solucionar usando HTML: aplicando style con width y height en pixeles.La imagen anterior tiene 256x256 pixeles y vamos a hacer que se vea como si tuviera 64x64 pixeles y la vamos a centrar. También se puede hacer al contrario y que una imagen pequeña se vea más grande. &amp;lt;img src=&amp;quot;/assets/imagenPequena.png&amp;quot; alt=&amp;quot;Imagen pequeña&amp;quot; style=&amp;quot;width: 64px; height: 64px; display: block; margin: 0 auto;&amp;quot;&amp;gt;"
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-listas/",
-            "title": "Listas",
-            "content": "Ordenadas, NO ordenadas y mixtas. contenido markdown listas Listas NO ordenadas Se crean con asteriscos (*), guiones (-) o signos de más (+), seguido de un espacio al inicio de cada elemento de la lista. Usando sangrías, se pueden crear sublistas anidadas.Listas ordenadas Se crean con números seguidos de un punto (.) y un espacio al inicio de cada elemento de la lista. Ni siquiera es necesario que los números estén en orden, el resultado siempre será una lista ordenada. Usando sangrías, se pueden crear sublistas anidadas.Listas mixtas Se pueden combinar listas ordenadas y no ordenadas para crear listas mixtas. Usando sangrías, se pueden crear sublistas anidadas."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-modificadoresTexto/",
-            "title": "Modificadores de texto",
-            "content": "Parráfos, saltos de línea, encabezados y énfasis en el texto. contenido markdown modificadores de texto parráfo salto de línea encabezados énfasis cursiva negrita tachado línea horizontal Párrafo y salto de líneaUn doble salto de línea genera un nuevo párrafo, mientras que un solo salto de línea se interpreta como parte del mismo párrafo.EncabezadosLas etiquetas de encabezado tienen 6 niveles: de &amp;lt;h1&amp;gt; a &amp;lt;h6&amp;gt;.Los encabezados generan automáticamente las tablas de contenido principal y flotante.En la página web resultado, los distintos niveles de encabezados se muestran con distinto tamaño de fuente, pero no generan una jerarquía en la tabla de contenido, todos los encabezados tienen el mismo nivel de importancia.Énfasis en el textoCursiva ( * ) Se consigue con un asterisco (*) o guión bajo (_) al inicio y al final del texto.Negrita ( ** ) Se consigue con dos asteriscos (**) o guiones bajos (__) al inicio y al final del texto.Negrita y cursiva ( *** ) Se consigue con tres asteriscos (***) o guiones bajos (___) al inicio y al final del texto.Tachado ( ~~ ) Se consigue con dos virgulillas (~) al inicio y al final del texto.Línea de separación horizontalSe crea con tres guiones (---), asteriscos (***) o guiones bajos (___) en una línea sin ningún otro texto."
-        },
-        {
-            "url": "/Documentar_Proyecto/pages/n1-crear-contenido/n2-markdown/n3-tablas/",
-            "title": "Tablas",
-            "content": "Creación y formato de tablas. contenido markdown tablas Las tablas en Markdown fueron creadas por Github Flavoured Markdown como una extensión de las especificaciones de Markdown.Las tablas son responsivas y tienen desplazamiento horizontal habilitado si su contenido es más ancho que el ancho máximo del contenedor principal.Primera columnaSegundaTerceraLa columna 3 estáalineada a la derecha1600La columna 2 estácentrada12Líneas alternativasestán ordenadas1AñoPelículaDirectorCompositor2001Harry Potter and the Philosopher&#39;s StoneChris ColumbusJohn Williams2002Harry Potter and the Chamber of SecretsChris ColumbusJohn Williams2004Harry Potter and the Prisoner of AzkabanAlfonso CuarónJohn Williams2005Harry Potter and the Goblet of FireMike NewellPatrick Doyle2007Harry Potter and the Order of the PhoenixDavid YatesNicholas Hooper2009Harry Potter and the Half-Blood PrinceDavid YatesNicholas Hooper2010Harry Potter and the Deathly Hallows – Part 1David YatesAlexandre Desplat2011Harry Potter and the Deathly Hallows – Part 2David YatesAlexandre DesplatDebe de haber al menos 3 guiones separando cada celda de encabezado.Las barras verticales (|) son opcionales, y no necesitas hacer que la línea de Markdown raw se vea bonita. También puedes usar Markdown en línea dentro de las celdas de la tabla.MarkdownEs menosbonitoAúnrenderizabien123| Primera columna | Segunda | Tercera || ------------- |:-------------: | -------:|| La columna 3 está | alineada a la derecha | 1600 || La columna 2 está | centrada | 12 || Líneas alternativas | están ordenadas | 1 || Año | Película | Director | Compositor ||------|-----------------------------------------------|----------------|-------------------|| 2001 | Harry Potter and the Philosopher&#39;s Stone | Chris Columbus | John Williams || 2002 | Harry Potter and the Chamber of Secrets | Chris Columbus | John Williams || 2004 | Harry Potter and the Prisoner of Azkaban | Alfonso Cuarón | John Williams || 2005 | Harry Potter and the Goblet of Fire | Mike Newell | Patrick Doyle || 2007 | Harry Potter and the Order of the Phoenix | David Yates | Nicholas Hooper || 2009 | Harry Potter and the Half-Blood Prince | David Yates | Nicholas Hooper || 2010 | Harry Potter and the Deathly Hallows – Part 1 | David Yates | Alexandre Desplat || 2011 | Harry Potter and the Deathly Hallows – Part 2 | David Yates | Alexandre Desplat |Markdown | Es menos | bonito--- | --- | ---*Aún* | `renderiza` | **bien**1 | 2 | 3"
+            "content": "Código para crear alertas y resaltar información importante. contenido widgets alertas Las alertas permiten resaltar información importante o advertencias en tu sitio web.PARTES DE LAS ALERTAS&amp;lt;CONTENIDO&amp;gt; - OBLIGATORIO. Es una cadena de texto con el contenido que deseas mostrar dentro, puede ser markdown o HTML.&amp;lt;TIPO&amp;gt; - Opcional. Es una cadena de texto que define el tipo de alerta:info - Color azul de información, valor por defecto si no se especifica el tipo.success - Color verde de éxito.warning - Color amarillo de advertencia.danger - Color rojo de error.&amp;lt;TITULO&amp;gt; - Opcional. Es una cadena de texto que se muestra resaltado y del color del tipo de alerta, luego se muestra una línea horizontal y luego el texto de la alerta.ALERTAS EN UNA LÍNEASe pueden escribir alertas cortas en una sola línea, con el formato:{% alert &amp;quot;&amp;lt;CONTENIDO&amp;gt;&#39;, &amp;quot;&amp;lt;TIPO&amp;gt;&amp;quot;, &amp;quot;&amp;lt;TITULO&amp;gt;&amp;quot; } Esta es una alerta de información, de color AZULEsta es una alerta de éxito, de color VERDEEsta es una alerta de advertencia, de color AMARILLOEsta es una alerta de error, de color ROJO{% alert &amp;quot;Esta es una alerta de **información**, de color AZUL&amp;quot;, &amp;quot;info&amp;quot;, &amp;quot;Alerta de información&amp;quot; %}{% alert &amp;quot;Esta es una alerta de **éxito**, de color VERDE&amp;quot;, &amp;quot;success&amp;quot;, &amp;quot;Alerta de éxito&amp;quot; %}{% alert &amp;quot;Esta es una alerta de **advertencia**, de color AMARILLO&amp;quot;, &amp;quot;warning&amp;quot;, &amp;quot;Alerta de advertencia&amp;quot; %}{% alert &amp;quot;Esta es una alerta de **error**, de color ROJO&amp;quot;, &amp;quot;danger&amp;quot;, &amp;quot;Alerta de error&amp;quot; %} ALERTAS DE VARIAS LÍNEASTambién se pueden escribir alertas más largas que ocupen varias líneas, con el formato:{% alertAlt &amp;quot;&amp;lt;TIPO&amp;gt;&amp;quot;, &amp;quot;&amp;lt;TITULO&amp;gt;&amp;quot; %} CONTENIDOEN VARIAS LÍNEASY CON FORMATO{% endalertAlt %}Este es un ejemplo de alerta de varias líneas:Esta es una alerta de éxito, de color VERDE.Puede ocupar varias líneasContener formato como negritas o cursivasListas como estaO incluso enlacesALERTAS EN HTML PLANOTambién puedes escribir alertas utilizando HTML plano, los &amp;quot;&amp;lt;TIPOS&amp;gt;&amp;quot; son parecidos:alert predeterminado sin color (gris)alert-info para información (azul)alert-success para éxito (verde)alert-warning para advertencia (amarillo)alert-danger para error (rojo)&amp;lt;aside class=&amp;quot;widget widget-alert&amp;quot;&amp;gt; &amp;lt;div class=&amp;quot;TIPO&amp;quot; data-title=&amp;quot;Título de la alerta&amp;quot;&amp;gt; Esta es una alerta con título. Si la quieres sin título, solo hay que eliminar el título &amp;quot;data-title=&amp;quot;Título de la alerta&amp;quot;. Puedes escribir aquí cualquier CONTENIDO en formato HTML. &amp;lt;/div&amp;gt;&amp;lt;/aside&amp;gt; Alerta con titulo y tema de peligro. Aquí puedes escribir cualquier contenido en formato HTML, como este párrafo. Alerta SIN titulo y tema de éxito (verde). Aquí puedes escribir cualquier contenido en formato HTML, como este párrafo."
         }
 ]
