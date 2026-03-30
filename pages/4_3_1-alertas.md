@@ -15,7 +15,7 @@ date: 2026-03-29
 ---
 Las alertas permiten resaltar información importante o advertencias en tu sitio web.
 
-# PARTES DE LAS ALERTAS
+# Formato y tipos de alertas
 
 * ```<CONTENIDO>``` - *OBLIGATORIO*. Es una cadena de texto con el contenido que deseas mostrar dentro, puede ser markdown o HTML.
 * ```<TIPO>``` - *Opcional*. Es una cadena de texto que define el tipo de alerta:  
@@ -25,7 +25,7 @@ Las alertas permiten resaltar información importante o advertencias en tu sitio
   * ```danger``` - Color *rojo* de error.
 * ```<TITULO>``` - *Opcional*. Es una cadena de texto que se muestra resaltado y del color del tipo de alerta, luego se muestra una línea horizontal y luego el texto de la alerta.
 
-# ALERTAS EN UNA LÍNEA
+# Alertas en una sola línea
 
 Se pueden escribir alertas cortas en una sola línea, con el formato: 
 
@@ -45,7 +45,7 @@ Se pueden escribir alertas cortas en una sola línea, con el formato:
 {% alert "Esta es una alerta de **error**, de color ROJO", "danger", "Alerta de error" %} {% endraw %}
 ```
 
-# ALERTAS DE VARIAS LÍNEAS
+# Alertas en varias líneas
 
 También se pueden escribir alertas más largas que ocupen varias líneas, con el formato:
 

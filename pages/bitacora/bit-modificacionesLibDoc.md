@@ -5,7 +5,7 @@ layout: libdoc_page.liquid
 permalink: "{{ libdocConfig.blogSlug }}/{{title | slugify}}/index.html"
 tags:
     - post
-    - modificaciones respecto a LibDic
+    - modificaciones respecto a LibDoc
 date: 2026-03-25
 ---
 
@@ -92,4 +92,20 @@ Este archivo contiene la configuración del home y general del sitio web, sobree
 * Autor - **author:** ***"Juan Pedro Perianes"*** para mostrar el nombre del autor en las entradas del blog (bitácora).
 * **faviconUrl:** ***"/myfavicon.png"*** para mostrar el favicon personalizado en la pestaña del navegador.
 * **customLinks:** para agregar enlaces personalizados en la barra de navegación, como el enlace a mi perfil de GitHub.
+
+# ds__defaults.css
+Este archivo contiene los estilos por defecto de LibDoc, que se aplican a todas las páginas del sitio web.
+* Cambié las rutas de los iconos de los detalles para que funcionen correctamente, ya que los iconos que indican que se puede expandir y colapsar no se mostraban.
+
+``` Markdown
+* Línea 572:
+  mask-image: url('/core/assets/icons/plus-circle.svg');
+Cambiada por:
+  mask-image: url('../icons/plus-circle.svg');
+
+* Línea 584:
+  mask-image: url('/core/assets/icons/minus-circle.svg');
+Cambiada por:
+  mask-image: url('../icons/minus-circle.svg');
+```
 

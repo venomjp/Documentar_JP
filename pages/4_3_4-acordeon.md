@@ -4,12 +4,13 @@ description: Código para crear contenido colapsable.
 layout: libdoc_page.liquid
 permalink: /pages/4-crear-contenido/4_3-widgets/4_3_4-acordeon/index.html
 eleventyNavigation:
-    key: Acordeón
+    key: Detalle y Acordeón
     parent: Widgets
     order: 4
 tags:
     - contenido
     - widgets
+    - detalle
     - acordeón
 date: 2026-03-30
 ---
@@ -38,17 +39,17 @@ El **acordeón** se forma con variois detalles contiguos que tengan el mismo val
 
 <details name="acordeon">
     <summary>UNO</summary>
-    <p> Solo se muestra el contenido del **primer** detalle.</p>
+    <p> Solo se muestra el contenido del <b>primer</b> detalle.</p>
     </p>
 </details>
 <details name="acordeon">
     <summary>DOS</summary>
-    <p> Solo se muestra el contenido del **segundo** detalle.</p>
+    <p> Solo se muestra el contenido del <b>segundo</b> detalle.</p>
     </p>
 </details>
 <details name="acordeon">
     <summary>TRES</summary>
-    <p> Solo se muestra el contenido del **tercer** detalle.</p>
+    <p> Solo se muestra el contenido del <b>tercer</b> detalle.</p>
     </p>
 </details>
 

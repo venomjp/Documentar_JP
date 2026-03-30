@@ -569,7 +569,7 @@ main > details summary::before,
 main > *:not(header) details summary::before {
     content: '';
     background-color: currentColor;
-    mask-image: url('/core/assets/icons/plus-circle.svg');
+    mask-image: url('../icons/plus-circle.svg');
     mask-position: center;
     mask-repeat: no-repeat;
     mask-size: contain;
@@ -581,7 +581,7 @@ main > *:not(header) details summary::before {
 }
 main > details[open] summary::before,
 main > *:not(header) details[open] summary::before {
-    mask-image: url('/core/assets/icons/minus-circle.svg');
+    mask-image: url('../icons/minus-circle.svg');
 }
 main > details:has(+ details) summary,
 main > details + details summary,

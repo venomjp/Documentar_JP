@@ -52,7 +52,7 @@
         {
             "url": "/Documentar_Proyecto/posts/modificaciones-respecto-a-libdoc-starter-project/",
             "title": "Modificaciones respecto a &#34;LibDoc Starter Project&#34;",
-            "description": "Cambios realizados en el proyecto base para adaptarlo a mis necesidades. post modificaciones respecto a LibDic"
+            "description": "Cambios realizados en el proyecto base para adaptarlo a mis necesidades. post modificaciones respecto a LibDoc"
         },
         {
             "url": "/Documentar_Proyecto/pages/5-navegacion/5_1-home/",
@@ -145,11 +145,6 @@
             "description": "Fragmentos HTML que mejoran la visualización del contenido. contenido widgets"
         },
         {
-            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_7-imagen/",
-            "title": "Imagen",
-            "description": "Código para insertar imágenes. contenido widgets imagen"
-        },
-        {
             "url": "/Documentar_Proyecto/posts/boton-ir-atras/",
             "title": "Boton Ir Atrás",
             "description": "Cambios realizados en el proyecto para incorporar un botón de &#34;ir atrás&#34; en el pie de página de las páginas de documentación. post botón atrás"
@@ -172,7 +167,7 @@
         {
             "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_4-acordeon/",
             "title": "Detalle y Acordeón",
-            "description": "Código para crear contenido colapsable. contenido widgets acordeón"
+            "description": "Código para crear contenido colapsable. contenido widgets detalle acordeón"
         },
         {
             "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_5-iconos/",
@@ -183,5 +178,10 @@
             "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_6-embebido/",
             "title": "Embebido",
             "description": "Código para embeber contenido externo. contenido widgets embebido"
+        },
+        {
+            "url": "/Documentar_Proyecto/pages/4-crear-contenido/4_3-widgets/4_3_7-imagen/",
+            "title": "Imagen",
+            "description": "Código para insertar imágenes. contenido widgets imagen"
         }
 ]

@@ -233,6 +233,21 @@ document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function() {
 &lt;li&gt;&lt;strong&gt;faviconUrl:&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;&amp;quot;/myfavicon.png&amp;quot;&lt;/strong&gt;&lt;/em&gt; para mostrar el favicon personalizado en la pestaña del navegador.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;customLinks:&lt;/strong&gt; para agregar enlaces personalizados en la barra de navegación, como el enlace a mi perfil de GitHub.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1&gt;ds__defaults.css&lt;/h1&gt;
+&lt;p&gt;Este archivo contiene los estilos por defecto de LibDoc, que se aplican a todas las páginas del sitio web.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cambié las rutas de los iconos de los detalles para que funcionen correctamente, ya que los iconos que indican que se puede expandir y colapsar no se mostraban.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Markdown&quot;&gt;* Línea 572:
+  mask-image: url(&#39;/core/assets/icons/plus-circle.svg&#39;);
+Cambiada por:
+  mask-image: url(&#39;../icons/plus-circle.svg&#39;);
+
+* Línea 584:
+  mask-image: url(&#39;/core/assets/icons/minus-circle.svg&#39;);
+Cambiada por:
+  mask-image: url(&#39;../icons/minus-circle.svg&#39;);
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         </entry>
         <entry>
