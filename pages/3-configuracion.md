@@ -18,7 +18,7 @@ date: 2026-03-24
 ---
 <img src="/assets/configuraciones.png" 
   alt="Configuraciones" 
-  style="width: 256px; height: 256px; display: block; margin: 0 auto;">
+  style="width: 128px; height: 128px; display: block; margin: 0 auto;">
 
 # Qué cambiar al iniciar un nuevo proyecto
 

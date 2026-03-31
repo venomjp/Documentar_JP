@@ -13,7 +13,7 @@ date: 2026-03-24
 
 <img src="/assets/navegacion.png" 
   alt="Navegación" 
-  style="width: 256px; height: 256px; display: block; margin: 0 auto;">
+  style="width: 128px; height: 128px; display: block; margin: 0 auto;">
 
 La navegación es un aspecto crucial en cualquier sitio web, ya que permite a los usuarios encontrar fácilmente la información que buscan. En esta sección, exploraremos diferentes técnicas de navegación, incluyendo tablas de contenidos, navegación inteligente, búsqueda difusa y estándar. Además, aprenderás cómo crear items en el menú para mejorar la experiencia del usuario.
 

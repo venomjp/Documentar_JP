@@ -14,7 +14,7 @@ date: 2026-03-27
 ---
 <img src="/assets/crearContenido.png" 
   alt="Crear contenido" 
-  style="width: 256px; height: 256px; display: block; margin: 0 auto;">
+  style="width: 128px; height: 128px; display: block; margin: 0 auto;">
 
 **LibDoc** se desarrolló para facilitar la creación de documentación, por lo que se recomienda usar Markdown ```.md``` y ```html``` para escribir las plantillas que se convertirán en páginas web.
 

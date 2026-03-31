@@ -12,7 +12,7 @@ date: 2026-03-24
 ---
 <img src="/assets/estructuraPaginas.png" 
   alt="Estructura de las páginas de la documentación" 
-  style="width: 256px; height: 256px; display: block; margin: 0 auto;">
+  style="width: 128px; height: 128px; display: block; margin: 0 auto;">
 
 
 Esta documentación tiene un formato común en todas las páginas, con distintas secciones y elementos que permiten una navegación fácil y una presentación clara de la información.

@@ -17,7 +17,7 @@ date: 2026-03-24
 ---
 <img src="/assets/instalaciones.png" 
   alt="Instalaciones necesarias" 
-  style="width: 256px; height: 256px; display: block; margin: 0 auto;">
+  style="width: 128px; height: 128px; display: block; margin: 0 auto;">
 
 # Instalaciones previas
 Partimos de la base de que el ordenador que se utilice deberá tener instalado previamente:
