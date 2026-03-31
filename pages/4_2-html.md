@@ -11,10 +11,10 @@ tags:
     - html
     - abreviatura
     - cita en línea
-    - entrada de teclado
+    - entrada por teclado
     - salto de línea
     - enlaces internos
-    - énfasis en texto
+    - énfasis
     - variables
 date: 2026-03-27
 ---
@@ -57,7 +57,7 @@ Lo puedo utilizar sin incluir una url en el atributo `cite` <q cite="">
 y que me sirva como una cita en línea normal</q>.
 ```
 
-# Entrada de teclado
+# Entrada por teclado
 
 Puedes usar <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> para actualizar la página y vaciar la caché.
 

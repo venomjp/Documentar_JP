@@ -64,5 +64,7 @@ Este proyecto no sería posible sin el trabajo de otras personas, aquí dejo una
 
 Aquí encontrarás información sobre la licencia del proyecto y de la documentación: [Licencia](./7-licencia.md)
 
+La licencia de esta documentación y del proyecto es la siguiente:
+
 <br><a href="https://venomjp.github.io/Documentar_Proyecto/">Documentar un Proyecto</a> © 2026 by <a href="https://github.com/venomjp/venomjp">Juan Pedro Perianes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;">
 
