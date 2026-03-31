@@ -330,14 +330,14 @@
                 "content": " botón atrás "
             },
             {
-                "url": "/Documentar_Proyecto/tags/modificaciones respecto a LibDoc",
-                "title": "Tag modificaciones respecto a LibDoc",
-                "content": " modificaciones respecto a LibDoc "
-            },
-            {
                 "url": "/Documentar_Proyecto/tags/colores LibDoc",
                 "title": "Tag colores LibDoc",
                 "content": " colores LibDoc "
+            },
+            {
+                "url": "/Documentar_Proyecto/tags/modificaciones respecto a LibDoc",
+                "title": "Tag modificaciones respecto a LibDoc",
+                "content": " modificaciones respecto a LibDoc "
             },
         {
             "url": "/Documentar_Proyecto/posts/",
@@ -347,7 +347,7 @@
         {
             "url": "/Documentar_Proyecto/tags/",
             "title": "./core/libdoc_tags.liquid",
-            "content": "  contenido 17 páginas widgets 10 páginas markdown 9 páginas navegación 7 páginas html 3 páginas énfasis 3 páginas bitácora 2 páginas salto de línea 2 páginas tachado 2 páginas imagen 2 páginas home 2 páginas búsqueda 2 páginas estructura 1 página instalación 1 página nodejs 1 página github pages 1 página git 1 página github desktop 1 página visual studio code 1 página configuración 1 página package.json 1 página settings.json 1 página README.md 1 página favicon 1 página niveles de páginas 1 página comentarios 1 página modificadores de texto 1 página parráfo 1 página encabezados 1 página cursiva 1 página negrita 1 página línea horizontal 1 página listas 1 página enlaces 1 página resaltado de sintaxis 1 página código 1 página tablas 1 página cita 1 página abreviatura 1 página cita en línea 1 página entrada por teclado 1 página enlaces internos 1 página variables 1 página resaltado 1 página texto de salida 1 página texto pequeño 1 página subíndice 1 página superíndice 1 página alertas 1 página botones 1 página definición 1 página detalle 1 página acordeón 1 página iconos 1 página embebido 1 página tarjeta con icono 1 página icono 1 página difusa 1 página search 1 página links personalizados 1 página tags 1 página tabla de contenidos 1 página estructura ficheros 1 página file tree 1 página licencia 1 página botón atrás 1 página modificaciones respecto a LibDoc 1 página colores LibDoc 1 página"
+            "content": "  contenido 17 páginas widgets 10 páginas markdown 9 páginas navegación 7 páginas html 3 páginas énfasis 3 páginas bitácora 2 páginas salto de línea 2 páginas tachado 2 páginas imagen 2 páginas home 2 páginas búsqueda 2 páginas estructura 1 página instalación 1 página nodejs 1 página github pages 1 página git 1 página github desktop 1 página visual studio code 1 página configuración 1 página package.json 1 página settings.json 1 página README.md 1 página favicon 1 página niveles de páginas 1 página comentarios 1 página modificadores de texto 1 página parráfo 1 página encabezados 1 página cursiva 1 página negrita 1 página línea horizontal 1 página listas 1 página enlaces 1 página resaltado de sintaxis 1 página código 1 página tablas 1 página cita 1 página abreviatura 1 página cita en línea 1 página entrada por teclado 1 página enlaces internos 1 página variables 1 página resaltado 1 página texto de salida 1 página texto pequeño 1 página subíndice 1 página superíndice 1 página alertas 1 página botones 1 página definición 1 página detalle 1 página acordeón 1 página iconos 1 página embebido 1 página tarjeta con icono 1 página icono 1 página difusa 1 página search 1 página links personalizados 1 página tags 1 página tabla de contenidos 1 página estructura ficheros 1 página file tree 1 página licencia 1 página botón atrás 1 página colores LibDoc 1 página modificaciones respecto a LibDoc 1 página"
         },
         {
             "url": "/Documentar_Proyecto/",
