@@ -46,7 +46,7 @@ Partimos de la base de que el ordenador que se utilice deberá tener instalado p
 3. **Descargar la** [plantilla para proyectos](https://github.com/venomjp/Plantilla_Proyecto) de mi cuenta de GitHub.
    * Borrar la carpeta oculta .git para desvincularlo del repositorio original.
    * Mover el contenido de la plantilla en la carpeta del nuevo proyecto que se ha clonado, para que tenga la estructura y archivos necesarios para generar la documentación (borrar la carpeta de la plantilla).
-   * Modificar el pathPrefix en el archivo `.eleventy.js` con el nombre del repositorio nuevo.
+   * Modificar el pathPrefix en el archivo `settings.json` con el nombre del repositorio nuevo.
 4. **Abrir el proyecto con Visual Studio Code**.
 5. **Instalar Eleventy en el proyecto**, abrir una terminal integrada (PowerShell 7 preferiblemente) y escribir los siguientes comandos en la terminal: 
    * `npm install @11ty/eleventy` - instala Eleventy en la carpeta del proyecto
