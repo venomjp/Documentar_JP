@@ -4,11 +4,47 @@
     <subtitle>Guía para documentar un proyecto de forma efectiva y organizada</subtitle>
     <link href="feed.xml" rel="self" />
     <link href="#/feed.xml" />
-    <updated>2026-03-27T00:00:00Z</updated>
+    <updated>2026-03-31T00:00:00Z</updated>
     <id>#/feed.xml</id>
     <author>
         <name>11ty LibDoc</name>
     </author>
+        <entry>
+            <title>Cambiar colores</title>
+            <link href="#/posts/cambiar-colores/" />
+            <updated>2026-03-31T00:00:00Z</updated>
+            <id>#/posts/cambiar-colores/</id>
+            <author>
+                <name>11ty LibDoc</name>
+            </author>
+            <content type="html">
+                &lt;h1&gt;Idea pendiente&lt;/h1&gt;
+&lt;p&gt;Una de las cosas que me gustaría cambiar del proyecto base es el esquema de colores:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;El modo claro tiene un fondo demasiado claro&lt;/li&gt;
+&lt;li&gt;El modo oscuro tiene un fondo demasiado oscuro&lt;/li&gt;
+&lt;li&gt;También me gustaría hacer un par de esquemas de colores completos
+&lt;ul&gt;
+&lt;li&gt;Azul --&amp;gt; Proyectos completos&lt;/li&gt;
+&lt;li&gt;Verde --&amp;gt; Proyectos solo de software&lt;/li&gt;
+&lt;li&gt;Naranja --&amp;gt; Proyectos solo de diseño 3D&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;En el directorio &lt;code&gt;/core/assets/css&lt;/code&gt; se encuentra la gestión de colores.&lt;/p&gt;
+&lt;h1&gt;ds.css&lt;/h1&gt;
+&lt;p&gt;Contiene los colores en modo claro por defecto que se aplican a las plantillas y la definición de las variables CSS para los colores.&lt;/p&gt;
+&lt;h1&gt;ds__colors.css&lt;/h1&gt;
+&lt;p&gt;Contiene la asignación de colores a los distintos elementos que forman la plantilla, como el fondo, el texto, los enlaces, etc.&lt;/p&gt;
+&lt;h1&gt;ds__dark_mode.css&lt;/h1&gt;
+&lt;p&gt;Contiene la definición y asignación de los colores para el modo oscuro.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Body: Contiene el color para el fondo de la página y para los puntitos (radiangradient) que se muestran en el fondo.&lt;/li&gt;
+&lt;li&gt;Nav primary: Contiene el color para el fondo del menú de navegación.&lt;/li&gt;
+&lt;li&gt;Main Content: Contiene el color para el texto del contenido principal.&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
         <entry>
             <title>Boton Ir Atrás</title>
             <link href="#/posts/boton-ir-atras/" />
@@ -233,6 +269,21 @@ document.addEventListener(&amp;quot;DOMContentLoaded&amp;quot;, function() {
 &lt;li&gt;&lt;strong&gt;faviconUrl:&lt;/strong&gt; &lt;em&gt;&lt;strong&gt;&amp;quot;/myfavicon.png&amp;quot;&lt;/strong&gt;&lt;/em&gt; para mostrar el favicon personalizado en la pestaña del navegador.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;customLinks:&lt;/strong&gt; para agregar enlaces personalizados en la barra de navegación, como el enlace a mi perfil de GitHub.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h1&gt;ds__defaults.css&lt;/h1&gt;
+&lt;p&gt;Este archivo contiene los estilos por defecto de LibDoc, que se aplican a todas las páginas del sitio web.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cambié las rutas de los iconos de los detalles para que funcionen correctamente, ya que los iconos que indican que se puede expandir y colapsar no se mostraban.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code class=&quot;language-Markdown&quot;&gt;* Línea 572:
+  mask-image: url(&#39;/core/assets/icons/plus-circle.svg&#39;);
+Cambiada por:
+  mask-image: url(&#39;../icons/plus-circle.svg&#39;);
+
+* Línea 584:
+  mask-image: url(&#39;/core/assets/icons/minus-circle.svg&#39;);
+Cambiada por:
+  mask-image: url(&#39;../icons/minus-circle.svg&#39;);
+&lt;/code&gt;&lt;/pre&gt;
 </content>
         </entry>
         <entry>

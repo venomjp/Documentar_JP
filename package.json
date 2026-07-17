@@ -9,18 +9,28 @@
   "type": "module",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
+<<<<<<< HEAD
     "build-ghpages": "cross-env HTML_BASE_PATH_PREFIX=/Documentar_Proyecto/ npx @11ty/eleventy --pathprefix",
     "clean": "rmdir /s /q _site",
     "build": "cross-env HTML_BASE_PATH_PREFIX=/ npx @11ty/eleventy"
 },
+=======
+    "build-ghpages": "npx @11ty/eleventy --pathprefix",
+    "clean": "rimraf _site .cache"
+  },
+>>>>>>> 4c414133bcbb7bca467d10b7ca36bb761f60f01e
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",
-    "@11ty/eleventy-img": "^6.0.1",
+    "@11ty/eleventy-img": "^6.0.4",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "sharp": "^0.33.5"
   },
   "devDependencies": {
+<<<<<<< HEAD
     "cross-env": "^10.1.0"
+=======
+    "rimraf": "^6.1.3"
+>>>>>>> 4c414133bcbb7bca467d10b7ca36bb761f60f01e
   }
 }
