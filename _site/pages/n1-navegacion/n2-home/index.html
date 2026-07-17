@@ -156,6 +156,9 @@
             blogPostsCount: `3`
         }
     </script>
+    <script>
+        window.LIBDOC_BASE_PATH = "/Documentar_Proyecto/";
+    </script>
 </head>
 <body class="d-flex fd-column ai-center | m-0">
     <div class="d-flex | w-100" fd-column="xs,sm" ai-start="md" ai-center="xs,sm" pl-5="md" style="max-width: var(--ita-widths-main-container-max)">
@@ -492,6 +495,8 @@
                         }
 
                         const segments = path.split("/").filter(Boolean);
+                        //console.log("PATH:", path);
+                        //console.log("SEGMENTS:", segments);
 
                         // Seguridad básica
                         if (segments.length === 0) {
@@ -500,7 +505,8 @@
                         }
 
                         // Base automática: /NombreProyecto
-                        const base = "/" + segments[0];
+                        const base = window.LIBDOC_BASE_PATH === "/" ? "" : window.LIBDOC_BASE_PATH.replace(/\/$/, "");
+                        //const base = "/" + segments[0];
                         const pagesRoot = base + "/pages";
                         const postsRoot = base + "/posts";
 
@@ -512,7 +518,9 @@
 
                         // ========== PÁGINAS /pages/ ==========
                         if (path.startsWith(pagesRoot)) {
-                            const depth = segments.length - 2; // quitamos [proyecto, pages]
+                            const pagesIndex = segments.indexOf("pages");
+                            const depth = segments.length - pagesIndex - 1;
+                            //const depth = segments.length - 2; // quitamos [proyecto, pages]
 
                             if (depth === 1) {
                                 // /Proyecto/pages/nivel1 -> home
@@ -527,7 +535,9 @@
 
                         // ========== BLOG /posts/ ==========
                         if (path.startsWith(postsRoot)) {
-                            const depth = segments.length - 2; // quitamos [proyecto, posts]
+                            const postsIndex = segments.indexOf("posts");
+                            const depth = segments.length - postsIndex - 1;
+                            //const depth = segments.length - 2; // quitamos [proyecto, posts]
 
                             if (depth === 1) {
                                 // /Proyecto/posts/post-slug -> /Proyecto/posts/

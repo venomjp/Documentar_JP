@@ -9,14 +9,18 @@
   "type": "module",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build-ghpages": "npx @11ty/eleventy --pathprefix",
-    "clean": "rmdir /s /q _site"
-  },
+    "build-ghpages": "cross-env HTML_BASE_PATH_PREFIX=/Documentar_Proyecto/ npx @11ty/eleventy --pathprefix",
+    "clean": "rmdir /s /q _site",
+    "build": "cross-env HTML_BASE_PATH_PREFIX=/ npx @11ty/eleventy"
+},
   "dependencies": {
     "@11ty/eleventy": "^3.1.5",
     "@11ty/eleventy-img": "^6.0.1",
     "@11ty/eleventy-navigation": "^0.3.5",
     "@11ty/eleventy-plugin-rss": "^2.0.4",
     "sharp": "^0.33.5"
+  },
+  "devDependencies": {
+    "cross-env": "^10.1.0"
   }
 }
