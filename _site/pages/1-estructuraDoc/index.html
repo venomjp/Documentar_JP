@@ -40,7 +40,7 @@
 
     <meta name="color-scheme" content="light dark">
 
-    <meta name="generator" content="Eleventy v3.1.5">
+    <meta name="generator" content="Eleventy v3.1.6">
 
     <!-- Font fallback -->
     <style>
@@ -155,6 +155,9 @@
             productionUrl: `eleventy-libdoc.netlify.app`,
             blogPostsCount: `4`
         }
+    </script>
+    <script>
+        window.LIBDOC_BASE_PATH = "/Documentar_Proyecto/";
     </script>
 </head>
 <body class="d-flex fd-column ai-center | m-0">
@@ -454,7 +457,7 @@
                 </aside>
             
             </noscript>
-            <p><picture class="eleventy-image"><source type="image/avif" srcset="/Documentar_Proyecto/img/assets-estructurapaginas-GwhFQERF7Z-__512__.avif 512w"><img loading="lazy" decoding="async" src="/Documentar_Proyecto/img/assets-estructurapaginas-GwhFQERF7Z-__512__.webp" alt="Estructura de las páginas de la documentación" style="width: 256px; height: 256px; display: block; margin: 0 auto;" width="512" height="512"></picture></p>
+            <p><picture class="eleventy-image"><source type="image/avif" srcset="/Documentar_Proyecto/img/assets-estructurapaginas-GwhFQERF7Z-__512__.avif 512w"><img loading="lazy" decoding="async" src="/Documentar_Proyecto/img/assets-estructurapaginas-GwhFQERF7Z-__512__.webp" alt="Estructura de las páginas de la documentación" style="width: 128px; height: 128px; display: block; margin: 0 auto;" width="512" height="512"></picture></p>
 <p>Esta documentación tiene un formato común en todas las páginas, con distintas secciones y elementos que permiten una navegación fácil y una presentación clara de la información.
 En Eleventy, las plantillas son los archivos <code>*.md</code> con el contenido que se mostrará en las páginas que se generan. He decidido organizar las plantillas en 3 niveles.</p>
 
@@ -565,6 +568,8 @@ En Eleventy, las plantillas son los archivos <code>*.md</code> con el contenido 
                         }
 
                         const segments = path.split("/").filter(Boolean);
+                        //console.log("PATH:", path);
+                        //console.log("SEGMENTS:", segments);
 
                         // Seguridad básica
                         if (segments.length === 0) {
@@ -573,7 +578,8 @@ En Eleventy, las plantillas son los archivos <code>*.md</code> con el contenido 
                         }
 
                         // Base automática: /NombreProyecto
-                        const base = "/" + segments[0];
+                        const base = window.LIBDOC_BASE_PATH === "/" ? "" : window.LIBDOC_BASE_PATH.replace(/\/$/, "");
+                        //const base = "/" + segments[0];
                         const pagesRoot = base + "/pages";
                         const postsRoot = base + "/posts";
 
@@ -585,7 +591,9 @@ En Eleventy, las plantillas son los archivos <code>*.md</code> con el contenido 
 
                         // ========== PÁGINAS /pages/ ==========
                         if (path.startsWith(pagesRoot)) {
-                            const depth = segments.length - 2; // quitamos [proyecto, pages]
+                            const pagesIndex = segments.indexOf("pages");
+                            const depth = segments.length - pagesIndex - 1;
+                            //const depth = segments.length - 2; // quitamos [proyecto, pages]
 
                             if (depth === 1) {
                                 // /Proyecto/pages/nivel1 -> home
@@ -600,7 +608,9 @@ En Eleventy, las plantillas son los archivos <code>*.md</code> con el contenido 
 
                         // ========== BLOG /posts/ ==========
                         if (path.startsWith(postsRoot)) {
-                            const depth = segments.length - 2; // quitamos [proyecto, posts]
+                            const postsIndex = segments.indexOf("posts");
+                            const depth = segments.length - postsIndex - 1;
+                            //const depth = segments.length - 2; // quitamos [proyecto, posts]
 
                             if (depth === 1) {
                                 // /Proyecto/posts/post-slug -> /Proyecto/posts/

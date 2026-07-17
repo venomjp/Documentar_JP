@@ -51,7 +51,7 @@ Partimos de la base de que el ordenador que se utilice deberá tener instalado p
 5. **Instalar Eleventy en el proyecto**, abrir una terminal integrada (PowerShell 7 preferiblemente) y escribir los siguientes comandos en la terminal: 
    * `npm install @11ty/eleventy` - instala Eleventy en la carpeta del proyecto
    * `npm audit fix` - correge vulnerabilidades de seguridad
-   * `npm i - D rimraf` - instala una herramienta de Node.js para borrar archivos y carpetas de forma recursiva, sin tener que preocuparte por el sistema operativo ni el shell que utilices.
+   * `npm i -D rimraf` - instala una herramienta de Node.js para borrar archivos y carpetas de forma recursiva, sin tener que preocuparte por el sistema operativo ni el shell que utilices.
 6. **Comprobar que el proyecto funciona en modo local**
    * `npm run clean` - script para limpiar (borra la carpeta de salida y la caché) antes de generar la documentación.
    * `npm run start` - script para iniciar el servidor local y comprobar que se visualiza la documentación en [localhost](http://localhost:8080/)
