@@ -28,11 +28,7 @@ export default {
     tocEnabled: userConfig.tocEnabled ?? true,
     tocHtmlTags: userConfig.tocHtmlTags ?? ["h1", "h2", "h3", "h4", "h5", "h6"],
     tocMinTags: userConfig.tocMinTags ?? 1,
-    //htmlBasePathPrefix: userConfig.htmlBasePathPrefix ?? "",
-    htmlBasePathPrefix:
-    process.env.HTML_BASE_PATH_PREFIX ??
-    userConfig.htmlBasePathPrefix ??
-    "",
+    htmlBasePathPrefix: userConfig.htmlBasePathPrefix ?? "",
     sandboxRunSwitch: userConfig.sandboxRunSwitch ?? true,
     searchEnabled: userConfig.searchEnabled ?? true,
     hljsLanguages: userConfig.hljsLanguages ?? [

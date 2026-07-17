@@ -9,9 +9,9 @@
   "type": "module",
   "scripts": {
     "start": "npx @11ty/eleventy --serve",
-    "build-ghpages": "cross-env HTML_BASE_PATH_PREFIX=/Documentar_Proyecto/ npx @11ty/eleventy --pathprefix",
+    "build-ghpages": "npx @11ty/eleventy --pathprefix",
     "clean": "rimraf _site .cache",
-    "build": "cross-env HTML_BASE_PATH_PREFIX=/ npx @11ty/eleventy"
+    "build": "npx @11ty/eleventy"
   },
   "dependencies": {
     "@11ty/eleventy": "^3.1.6",
