@@ -63,6 +63,7 @@ Partimos de la base de que el ordenador que se utilice deberá tener instalado p
     3. Subir el proyecto al nuevo repositorio utilizando GitHub Desktop que permite subir muchos archivos a la vez. También se puede hacer con la terminal integrada de Visual Studio Code utilizando los comandos de Git.
     4. Comprobar que se visualiza la documentación en la URL del repositorio ```https://<nombreUsuario>.github.io/<nombreRepositorio>/```
 
+--- 
 
 # Actualización de Eleventy
 Para actualizar Eleventy a la última versión, se pueden seguir los siguientes pasos:
