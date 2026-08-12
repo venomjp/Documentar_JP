@@ -4,11 +4,311 @@
     <subtitle>Guía para documentar un proyecto de forma efectiva y organizada</subtitle>
     <link href="feed.xml" rel="self" />
     <link href="#/feed.xml" />
-    <updated>2026-03-31T00:00:00Z</updated>
+    <updated>2026-08-12T00:00:00Z</updated>
     <id>#/feed.xml</id>
     <author>
         <name>11ty LibDoc</name>
     </author>
+        <entry>
+            <title>Servidor de páginas web estáticas</title>
+            <link href="#/posts/servidor-de-paginas-web-estaticas/" />
+            <updated>2026-08-12T00:00:00Z</updated>
+            <id>#/posts/servidor-de-paginas-web-estaticas/</id>
+            <author>
+                <name>11ty LibDoc</name>
+            </author>
+            <content type="html">
+                &lt;h1&gt;Usuario y permisos&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;USUARIO webadmin&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Creamos un usuario específico &lt;code&gt;webadmin&lt;/code&gt; para administrar las páginas web:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo adduser webadmin
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;No utilizamos &lt;code&gt;root&lt;/code&gt; para trabajar con las páginas.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;id webadmin&lt;/code&gt; - para comprobar que el usuario se ha creado correctamente.&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;uid=1001(webadmin)
+gid=1001(webadmin)
+groups=1001(webadmin),100(users)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;La finalidad es que &lt;code&gt;webadmin&lt;/code&gt;sea el propietario de: &lt;code&gt;/opt/static-sites&lt;/code&gt; y de todo su contenido.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;DIRECTORIO /opt/static-sites&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Creamos el directorio &lt;code&gt;/opt/static-sites&lt;/code&gt; y le asignamos la propiedad al usuario &lt;code&gt;webadmin&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo mkdir -p /opt/static-sites
+  sudo chown -R webadmin:webadmin /opt/static-sites
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PERMISOS de los sitios&lt;/strong&gt;
+Queremos que:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;webadmin&lt;/code&gt;pueda modificar las páginas&lt;/li&gt;
+&lt;li&gt;Caddy pueda leerlas&lt;/li&gt;
+&lt;li&gt;Los directorios puedan ser atravesados por Caddy&lt;/li&gt;
+&lt;li&gt;Los archivos puedan ser leídos por Caddy&lt;/li&gt;
+&lt;li&gt;Por eso usamos como permisos normales:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre&gt;&lt;code&gt;Directorios -&amp;gt; 755
+Archivos    -&amp;gt; 644
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Para cambiar los permisos de un sitio existente:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo chown -R webadmin:webadmin /opt/static-sites/mi-sitio
+
+  sudo find /opt/static-sites/mi-sitio -type d -exec chmod 755 {} &#92;;
+  sudo find /opt/static-sites/mi-sitio -type f -exec chmod 644 {} &#92;;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;ACL para Caddy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Caddy necesita poder leer los archivos y atravesar los directorios. Para ello, añadimos una ACL al directorio &lt;code&gt;/opt/static-sites&lt;/code&gt; para que el usuario &lt;code&gt;caddy&lt;/code&gt; pueda acceder a él:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo setfacl -R -m u:caddy:rx /opt/static-sites
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Pero esto por sí solo no es suficiente para futuros sitios.
+Necesitamos ACL por defecto en &lt;code&gt;/opt/static-sites&lt;/code&gt; para que todos los nuevos sitios tengan la ACL correcta:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo setfacl -m d:u::rwx,d:u:caddy:rx,d:u:webadmin:rwx,d:g::r-x,d:m::rwx,d:o::r-x /opt/static-sites
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;La consecuencia es que cuando &lt;code&gt;webadmin&lt;/code&gt; crea o copia un nuevo sitio, los nuevos archivos y directorios heredan automáticamente una ACL que permite a Caddy acceder a ellos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Caddy&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;INSTALACIÓN de Caddy&lt;/strong&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo apt install caddy
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;El binario de Caddy se encuentra en &lt;code&gt;/usr/bin/caddy&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;El servicio oficial systemd está en &lt;code&gt;/usr/lib/systemd/system/caddy.service&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;Es recomendable usar la instalación oficial de Caddy:
+&lt;ul&gt;
+&lt;li&gt;Comprobar versión: &lt;code&gt;caddy version&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Comprobar estado del servicio: &lt;code&gt;systemctl status caddy&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;USUARIO utilizado por Caddy&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;La instalación oficial de Caddy crea su propio usuario &lt;code&gt;caddy&lt;/code&gt;. No hacemos que Caddy sea propietario de las páginas. Esto es importante, mantener una separación de responsabilidades y permisos:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;  webadmin  -&amp;gt; propietario / administrador
+  caddy     -&amp;gt; servidor web / lectura
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;CONFIGURACIÓN de Caddy /etc/caddy/Caddyfile&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;La configuración de Caddy se encuentra en &lt;code&gt;/etc/caddy/Caddyfile&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;El siguiente código es el que he utilizado, de manera que Caddy sirve una página principal localizada en el directorio &lt;code&gt;/usr/share/caddy&lt;/code&gt; y la carpeta donde cargaremos nuestros sitios web estáticos, cada uno en un directorio &lt;code&gt;/opt/static-sites/&lt;/code&gt;:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# El archivo Caddyfile es la forma más sencilla de configurar
+# tu Caddy como servidor de páginas web.
+#
+# La primera línea sin comentar será siempre la dirección de
+# tu sitio web.
+:80 {
+
+  # ============================================================
+  # PÁGINA PRINCIPAL
+  # ============================================================
+  # Utilizo la misma ubicación que la página de ejemplo de Caddy.
+  # Nuestra página principal se actualiza cada vez que se crea o
+  # se borra una carpeta de /opt/static-sites.
+  # Se reescribe la página index.html con los enlaces a cada
+  # web estática que subamos.
+
+  route {
+      @principal path /
+      handle @principal {
+          root * /usr/share/caddy
+          file_server
+      }
+
+  # ============================================================
+  # SITIOS
+  # ============================================================
+  # Permite presentar cada sitio web estático sin tener que
+  # reescribir este archivo Caddyfile
+      handle {
+           root * /opt/static-sites
+           file_server
+      }
+  }
+}
+
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Esto indica que Caddy servirá:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;La página principal en: &lt;code&gt;http://pluton/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Los sitios web estáticos en: &lt;code&gt;http://pluton/mi-sitio&lt;/code&gt; donde &lt;code&gt;mi-sitio&lt;/code&gt; es el nombre de la carpeta que contiene los archivos de la página.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Generador auromático del index.html principal&lt;/h1&gt;
+&lt;p&gt;La página principal se encuentra en &lt;code&gt;/usr/share/caddy/index.html&lt;/code&gt;.
+Esta página se reescribe automáticamente cada vez que se crea o borra un sitio web estático en &lt;code&gt;/opt/static-sites&lt;/code&gt;.
+Contiene enlaces a cada uno de los sitios web estáticos disponibles.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;PERMISOS&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Aquí hay una cuestión importante de permisos. El destino es &lt;code&gt;/usr/share/caddy/index.html&lt;/code&gt;, que pertenece al sistema/Caddy, no a &lt;code&gt;webadmin&lt;/code&gt;. Por lo tanto, el script que genera la página principal debe ejecutarse con los permisos necesarios para modificar ese archivo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;AUTOMATIZACIÓN&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Para evitar tener que ejecutar manualmente el script cada vez que se crea o borra un sitio web estático, podemos usar un servicio systemd que observe el directorio &lt;code&gt;/opt/static-sites&lt;/code&gt; y ejecute automáticamente el script cuando haya cambios.&lt;/p&gt;
+&lt;p&gt;La solución está formada por dos unidades:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/etc/systemd/system/generate-static-sites-index.service&lt;/code&gt; - el servicio que ejecuta el script para generar la página principal, define qué hacer.
+&lt;code&gt;sudo nano /etc/systemd/system/generate-static-sites-index.service&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Unit]
+Description=Generar índice de sitios web estáticos
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/generate-static-sites-index.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code&gt;/etc/systemd/system/generate-static-sites-index.path&lt;/code&gt; - la unidad que observa el directorio &lt;code&gt;/opt/static-sites&lt;/code&gt; y activa el servicio cuando hay cambios, define cuándo hacerlo.
+&lt;code&gt;sudo nano /etc/systemd/system/generate-static-sites-index.path&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;[Unit]
+Description=Detectar cambios en los sitios web estáticos
+
+[Path]
+PathChanged=/opt/static-sites
+Unit=generate-static-sites-index.service
+
+[Install]
+WantedBy=multi-user.target
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;SCRIPT para generar la página principal&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;El script &lt;code&gt;/usr/local/bin/generate-static-sites-index.sh&lt;/code&gt; es el que genera la página principal &lt;code&gt;index.html&lt;/code&gt; con los enlaces a cada sitio web estático.
+Este script debe tener permisos de ejecución y ser propiedad de root, ya que modifica un archivo del sistema.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;sudo nano /usr/local/bin/generate-static-sites-index.sh&lt;/code&gt;&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;    #!/bin/bash
+
+    set -e
+
+    SITES_DIR=&amp;quot;/opt/static-sites&amp;quot;
+    INDEX=&amp;quot;/usr/share/caddy/index.html&amp;quot;
+
+    {
+        cat &amp;lt;&amp;lt;&#39;EOF&#39;
+    &amp;lt;!DOCTYPE html&amp;gt;
+    &amp;lt;html lang=&amp;quot;es&amp;quot;&amp;gt;
+    &amp;lt;head&amp;gt;
+        &amp;lt;meta charset=&amp;quot;UTF-8&amp;quot;&amp;gt;
+        &amp;lt;meta name=&amp;quot;viewport&amp;quot; content=&amp;quot;width=device-width, initial-scale=1.0&amp;quot;&amp;gt;
+        &amp;lt;title&amp;gt;Servidor web&amp;lt;/title&amp;gt;
+        &amp;lt;style&amp;gt;
+            body {
+                font-family: Arial, sans-serif;
+                max-width: 900px;
+                margin: 40px auto;
+                padding: 0 20px;
+                background: #f5f5f5;
+                color: #222;
+            }
+
+            .container {
+                background: white;
+                padding: 30px;
+                border-radius: 10px;
+                box-shadow: 0 2px 10px rgba(0,0,0,.1);
+            }
+
+            h1 {
+                margin-top: 0;
+            }
+
+            ul {
+                padding-left: 20px;
+            }
+
+            li {
+                margin: 12px 0;
+            }
+
+            a {
+                color: #1769aa;
+                text-decoration: none;
+            }
+
+            a:hover {
+                text-decoration: underline;
+            }
+        &amp;lt;/style&amp;gt;
+    &amp;lt;/head&amp;gt;
+
+    &amp;lt;body&amp;gt;
+    &amp;lt;div class=&amp;quot;container&amp;quot;&amp;gt;
+
+    &amp;lt;h1&amp;gt;Servidor web&amp;lt;/h1&amp;gt;
+
+    &amp;lt;p&amp;gt;
+        Caddy está funcionando correctamente.
+    &amp;lt;/p&amp;gt;
+
+    &amp;lt;h2&amp;gt;Sitios disponibles&amp;lt;/h2&amp;gt;
+
+    &amp;lt;ul&amp;gt;
+    EOF
+
+        find &amp;quot;$SITES_DIR&amp;quot; -mindepth 1 -maxdepth 1 -type d -printf &#39;%f&#92;n&#39; &#92;
+            | sort -f &#92;
+            | while IFS= read -r site; do
+                printf &#39;    &amp;lt;li&amp;gt;&amp;lt;a href=&amp;quot;/%s/&amp;quot;&amp;gt;%s&amp;lt;/a&amp;gt;&amp;lt;/li&amp;gt;&#92;n&#39; &#92;
+                    &amp;quot;$site&amp;quot; &amp;quot;$site&amp;quot;
+            done
+
+        cat &amp;lt;&amp;lt;&#39;EOF&#39;
+    &amp;lt;/ul&amp;gt;
+
+    &amp;lt;/div&amp;gt;
+    &amp;lt;/body&amp;gt;
+    &amp;lt;/html&amp;gt;
+    EOF
+
+    } &amp;gt; &amp;quot;$INDEX&amp;quot;
+
+    chown root:caddy &amp;quot;$INDEX&amp;quot;
+    chmod 644 &amp;quot;$INDEX&amp;quot;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Guardamos el script y le damos permisos de ejecución:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;  sudo chmod 755 /usr/local/bin/generate-static-sites-index.sh
+&lt;/code&gt;&lt;/pre&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1&gt;Activación del servicio y la unidad de observación&lt;/h1&gt;
+&lt;p&gt;Para que el servicio y la unidad de observación funcionen correctamente, debemos habilitarlos y arrancarlos:&lt;/p&gt;
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;sudo systemctl daemon-reload
+sudo systemctl enable --now  generate-static-sites-index.path
+sudo systemctl start generate-static-sites-index.service
+sudo systemctl status generate-static-sites-index.service
+&lt;/code&gt;&lt;/pre&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Esto asegura que cada vez que se cree o borre un sitio web estático en &lt;code&gt;/opt/static-sites&lt;/code&gt;, el script se ejecutará automáticamente para actualizar la página principal &lt;code&gt;index.html&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No hay que cambiar permisos siempre que &lt;code&gt;webadmin&lt;/code&gt; sea el propietario de &lt;code&gt;/opt/static-sites&lt;/code&gt;, y que Caddy tenga la ACL adecuada para leer los archivos.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Al copiar mediante &lt;code&gt;scp -r&lt;/code&gt;los archivos de un sitio web estático al directorio &lt;code&gt;/opt/static-sites&lt;/code&gt;, se heredan automáticamente los permisos y ACL correctos, gracias a la configuración que hemos hecho.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Con este sistema no debemos añadir nada al &lt;code&gt;Caddyfile&lt;/code&gt;. La nueva web estará automáticamente disponible en &lt;code&gt;http://pluton/nombre-del-sitio/&lt;/code&gt; y la página principal se actualizará con el enlace correspondiente.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;No hace falta reiniciar ni recargar Caddy, ya que el servicio de observación y el script se encargan de actualizar la página principal automáticamente. En caso de necesitarlo la instrucción es: &lt;code&gt;sudo systemctl reload caddy&lt;/code&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+</content>
+        </entry>
         <entry>
             <title>Cambiar colores</title>
             <link href="#/posts/cambiar-colores/" />

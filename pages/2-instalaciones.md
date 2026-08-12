@@ -63,29 +63,6 @@ Partimos de la base de que el ordenador que se utilice deberá tener instalado p
     3. Subir el proyecto al nuevo repositorio utilizando GitHub Desktop que permite subir muchos archivos a la vez. También se puede hacer con la terminal integrada de Visual Studio Code utilizando los comandos de Git.
     4. Comprobar que se visualiza la documentación en la URL del repositorio ```https://<nombreUsuario>.github.io/<nombreRepositorio>/```
 
-# Funcionamiento general
-El control de versiones con GitHub se puede utilizar tanto para gestionar el código fuente de un proyecto de software como para generar la documentación del propio proyecto. Estas son las indicaciones para generar la documentación. 
-
-Una vez que se ha creado el proyecto y realizado los pasos iniciales, el proceso para generar la documentación puede tener dos modos de funcionamiento:
-
-* **MODO LOCAL**
-
-    Es el modo **normal de funcionamiento para generar la documentación**, creando los archivos de la documentación y visualizándolos en localhost.
-
-   1. Realizar cambios en los archivos de la documentación.
-   2. `npm run clean` - script para limpiar la carpeta de salida y la caché
-   3. `npm run start` - script para iniciar el servidor local y comprobar que se visualiza la documentación en localhost.
-
-* **MODO WEB**
-
-    Es el modo para **publicar la documentación en GitHub Pages**. También se debe utilizar **al final de cada sesión de trabajo para actualizar los cambios realizados** a la documentación y que se actualice la página web.
-
-    1. Realizar cambios en los archivos de la documentación.
-    2. `npm run clean` - script para limpiar la carpeta de salida y la caché
-    3. `npm run build-ghpages` - script para generar la carpeta de salida con el pathPrefix correcto para GitHub Pages.
-    4. Realizar un commit y subir los cambios al repositorio de GitHub utilizando GitHub Desktop o la terminal integrada de Visual Studio Code.
-
-Cada vez que se suben los cambios al repositorio de GitHub, gracias a GitHub Actions se genera automáticamente la página web. Los cambios en la página web de GitHub Pages no se generan al instante, según lo extensa y complicada que sea la documentación, tardará un tiempo en actualizarse *(generalmente unos pocos minutos)*.
 
 # Actualización de Eleventy
 Para actualizar Eleventy a la última versión, se pueden seguir los siguientes pasos:

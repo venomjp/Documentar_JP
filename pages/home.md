@@ -28,12 +28,13 @@ Mi idea es **integrar el proyecto y la documentación en un mismo repositorio**,
 * Al estar alojada en GitHub Pages, las páginas tienen que ser públicas y estáticas, es fácil de actualizar, mantener y no necesito un servidor propio.
 
 # Estructura de las páginas
-
 {% iconCard 'Estructura de las páginas', 'Formato de las páginas y los distintos elementos que las componen.<br>[Estructura de las páginas de la Documentación](./1-estructuraDoc.md/).', 'copy-simple' %}
 
 # Instalaciones necesarias
-
 {% iconCard 'Instalaciones Previas y Pasos Iniciales', 'Lo que se necesita para que funcione.<br>[Instalaciones necesarias](./2-instalaciones.md/).', 'plus-circle' %}
+
+# Funcionamiento general
+{% iconCard 'Funcionamiento general', 'Cómo podemos generar la página web de la Documentación.<br>[Funcionamiento general](./2-funcionamiento.md/).', 'info' %}
 
 # Configuraciones
 {% iconCard 'Haciendo que funcione', '¿Qué hay que cambiar y en qué archivos se cambia?<br>[Configuración](./3-configuracion.md/).', 'faders' %}
