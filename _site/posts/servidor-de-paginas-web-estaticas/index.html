@@ -684,222 +684,221 @@ WantedBy=multi-user.target
 <p>El script <code>/usr/local/bin/generate-static-sites-index.sh</code> es el que genera la página principal <code>index.html</code> con los enlaces a cada sitio web estático.
 Este script debe tener permisos de ejecución y ser propiedad de root, ya que modifica un archivo del sistema.</p>
 <p><code>sudo nano /usr/local/bin/generate-static-sites-index.sh</code></p>
-<pre><code>    #!/bin/bash
+<pre><code>  #!/bin/bash
 
-    set -euo pipefail
+  set -euo pipefail
+  SITES_DIR=&quot;/opt/static-sites&quot;
+  INDEX=&quot;/usr/share/caddy/index.html&quot;
 
-    SITES_DIR=&quot;/opt/static-sites&quot;
-    INDEX=&quot;/usr/share/caddy/index.html&quot;
+  echo &quot;Esperando a que finalicen los cambios...&quot;
 
-    echo &quot;Esperando a que finalicen los cambios...&quot;
+  # ============================================================
+  # ESPERAR A QUE EL ÁRBOL DE SITIOS SE ESTABILICE
+  # ============================================================
 
-    # ============================================================
-    # ESPERAR A QUE EL ÁRBOL DE SITIOS SE ESTABILICE
-    # ============================================================
+  # Comprobamos varias veces que el número/tamaño de archivos
+  # no esté cambiando.
+  #
+  # Esto evita procesar un sitio mientras todavía se está copiando.
 
-    # Comprobamos varias veces que el número/tamaño de archivos
-    # no esté cambiando.
-    #
-    # Esto evita procesar un sitio mientras todavía se está copiando.
+  previous_state=&quot;&quot;
+  stable_count=0
 
-    previous_state=&quot;&quot;
-    stable_count=0
+  while [ &quot;$stable_count&quot; -lt 3 ]; do
 
-    while [ &quot;$stable_count&quot; -lt 3 ]; do
+      current_state=$(
+          find &quot;$SITES_DIR&quot; \
+              -mindepth 1 \
+              -maxdepth 2 \
+              ! -name '.*' \
+              -printf '%p %s %T@\n' \
+              2&gt;/dev/null |
+          sort
+      )
 
-        current_state=$(
-            find &quot;$SITES_DIR&quot; \
-                -mindepth 1 \
-                -maxdepth 2 \
-                ! -name '.*' \
-                -printf '%p %s %T@\n' \
-                2&gt;/dev/null |
-            sort
-        )
+      if [ &quot;$current_state&quot; = &quot;$previous_state&quot; ]; then
+          stable_count=$((stable_count + 1))
+      else
+          stable_count=0
+          previous_state=&quot;$current_state&quot;
+      fi
 
-        if [ &quot;$current_state&quot; = &quot;$previous_state&quot; ]; then
-            stable_count=$((stable_count + 1))
-        else
-            stable_count=0
-            previous_state=&quot;$current_state&quot;
-        fi
+      sleep 2
+  done
 
-        sleep 2
-    done
-
-    echo &quot;Árbol de sitios estabilizado.&quot;
-
-
-    # ============================================================
-    # PROCESAR SITIOS
-    # ============================================================
-
-    find &quot;$SITES_DIR&quot; \
-        -mindepth 1 \
-        -maxdepth 1 \
-        -type d \
-        ! -name '.*' \
-        -print0 |
-    while IFS= read -r -d '' SITE; do
-
-        echo &quot;Procesando permisos: $SITE&quot;
-
-        # --------------------------------------------------------
-        # Propietario
-        # --------------------------------------------------------
-
-        chown -R webadmin:webadmin &quot;$SITE&quot;
-
-        # --------------------------------------------------------
-        # Directorios
-        #
-        # 755 permite:
-        #   webadmin -&gt; rwx
-        #   caddy    -&gt; r-x
-        #   pluton   -&gt; r-x
-        # --------------------------------------------------------
-
-        find &quot;$SITE&quot; -type d -exec chmod 755 {} +
-
-        # --------------------------------------------------------
-        # Archivos
-        #
-        # 644 permite:
-        #   webadmin -&gt; rw-
-        #   caddy    -&gt; r--
-        #   pluton   -&gt; r--
-        # --------------------------------------------------------
-
-        find &quot;$SITE&quot; -type f -exec chmod 644 {} +
-
-        # --------------------------------------------------------
-        # ACL para Caddy
-        #
-        # Directorios necesitan r-x para poder atravesarlos.
-        # Archivos necesitan r-- para poder leerlos.
-        # --------------------------------------------------------
-
-        find &quot;$SITE&quot; -type d \
-            -exec setfacl -m u:caddy:r-x,m:r-x {} +
-
-        find &quot;$SITE&quot; -type f \
-            -exec setfacl -m u:caddy:r--,m:r-- {} +
-
-        # --------------------------------------------------------
-        # ACL POR DEFECTO
-        #
-        # Esto garantiza que cualquier archivo/directorio creado
-        # posteriormente dentro del sitio herede permisos adecuados.
-        # --------------------------------------------------------
-
-        find &quot;$SITE&quot; -type d \
-            -exec setfacl -m d:u::rwx,d:u:caddy:r-x,d:u:webadmin:rwx,d:g::r-x,d:m::rwx,d:o::r-x {} +
-
-    done
+  echo &quot;Árbol de sitios estabilizado.&quot;
 
 
-    # ============================================================
-    # GENERAR PÁGINA PRINCIPAL
-    # ============================================================
+  # ============================================================
+  # PROCESAR SITIOS
+  # ============================================================
 
-    TMP_INDEX=$(mktemp)
+  find &quot;$SITES_DIR&quot; \
+      -mindepth 1 \
+      -maxdepth 1 \
+      -type d \
+      ! -name '.*' \
+      -print0 |
+  while IFS= read -r -d '' SITE; do
 
-    cat &gt; &quot;$TMP_INDEX&quot; &lt;&lt;'EOF'
-    &lt;!DOCTYPE html&gt;
-    &lt;html lang=&quot;es&quot;&gt;
-    &lt;head&gt;
-        &lt;meta charset=&quot;UTF-8&quot;&gt;
-        &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+      echo &quot;Procesando permisos: $SITE&quot;
 
-        &lt;title&gt;Servidor Caddy - Sitios web&lt;/title&gt;
+      # --------------------------------------------------------
+      # Propietario
+      # --------------------------------------------------------
 
-        &lt;style&gt;
-            body {
-                background: #f1f4f5;
-                font-family: Arial, sans-serif;
-                font-size: 18px;
-                margin: 0;
-                padding: 40px;
-            }
+      chown -R webadmin:webadmin &quot;$SITE&quot;
 
-            .container {
-                background: white;
-                max-width: 1000px;
-                margin: auto;
-                padding: 30px;
-                border-radius: 10px;
-                box-shadow: 0 2px 10px rgba(0,0,0,.1);
-            }
+      # --------------------------------------------------------
+      # Directorios
+      #
+      # 755 permite:
+      #   webadmin -&gt; rwx
+      #   caddy    -&gt; r-x
+      #   pluton   -&gt; r-x
+      # --------------------------------------------------------
 
-            h1 {
-                margin-top: 0;
-            }
+      find &quot;$SITE&quot; -type d -exec chmod 755 {} +
 
-            ul {
-                padding-left: 25px;
-            }
+      # --------------------------------------------------------
+      # Archivos
+      #
+      # 644 permite:
+      #   webadmin -&gt; rw-
+      #   caddy    -&gt; r--
+      #   pluton   -&gt; r--
+      # --------------------------------------------------------
 
-            li {
-                margin: 12px 0;
-            }
+      find &quot;$SITE&quot; -type f -exec chmod 644 {} +
 
-            a {
-                color: #1769aa;
-                text-decoration: none;
-            }
+      # --------------------------------------------------------
+      # ACL para Caddy
+      #
+      # Directorios necesitan r-x para poder atravesarlos.
+      # Archivos necesitan r-- para poder leerlos.
+      # --------------------------------------------------------
 
-            a:hover {
-                text-decoration: underline;
-            }
-        &lt;/style&gt;
-    &lt;/head&gt;
+      find &quot;$SITE&quot; -type d \
+          -exec setfacl -m u:caddy:r-x,m:r-x {} +
 
-    &lt;body&gt;
+      find &quot;$SITE&quot; -type f \
+          -exec setfacl -m u:caddy:r--,m:r-- {} +
 
-    &lt;div class=&quot;container&quot;&gt;
+      # --------------------------------------------------------
+      # ACL POR DEFECTO
+      #
+      # Esto garantiza que cualquier archivo/directorio creado
+      # posteriormente dentro del sitio herede permisos adecuados.
+      # --------------------------------------------------------
 
-        &lt;h1&gt;Servidor Caddy - Sitios web&lt;/h1&gt;
+      find &quot;$SITE&quot; -type d \
+          -exec setfacl -m d:u::rwx,d:u:caddy:r-x,d:u:webadmin:rwx,d:g::r-x,d:m::rwx,d:o::r-x {} +
 
-        &lt;p&gt;Listado de sitios web estáticos disponibles:&lt;/p&gt;
-
-        &lt;ul&gt;
-    EOF
-
-    # Generar automáticamente la lista de sitios.
-    find &quot;$SITES_DIR&quot; \
-        -mindepth 1 \
-        -maxdepth 1 \
-        -type d \
-        ! -name '.*' \
-        -printf '%f\n' |
-    sort -f |
-    while IFS= read -r site; do
-
-        printf '        &lt;li&gt;&lt;a href=&quot;/%s/&quot;&gt;%s&lt;/a&gt;&lt;/li&gt;\n' \
-            &quot;$site&quot; &quot;$site&quot;
-
-    done &gt;&gt; &quot;$TMP_INDEX&quot;
-
-    cat &gt;&gt; &quot;$TMP_INDEX&quot; &lt;&lt;'EOF'
-        &lt;/ul&gt;
-
-    &lt;/div&gt;
-
-    &lt;/body&gt;
-    &lt;/html&gt;
-    EOF
+  done
 
 
-    # ============================================================
-    # INSTALAR ÍNDICE
-    # ============================================================
+  # ============================================================
+  # GENERAR PÁGINA PRINCIPAL
+  # ============================================================
 
-    chown root:caddy &quot;$TMP_INDEX&quot;
-    chmod 644 &quot;$TMP_INDEX&quot;
+  TMP_INDEX=$(mktemp)
 
-    mv &quot;$TMP_INDEX&quot; &quot;$INDEX&quot;
+  cat &gt; &quot;$TMP_INDEX&quot; &lt;&lt;'EOF'
+  &lt;!DOCTYPE html&gt;
+  &lt;html lang=&quot;es&quot;&gt;
+  &lt;head&gt;
+      &lt;meta charset=&quot;UTF-8&quot;&gt;
+      &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
 
-    echo &quot;Índice generado correctamente.&quot;
+      &lt;title&gt;Servidor Caddy - Sitios web&lt;/title&gt;
+
+      &lt;style&gt;
+          body {
+              background: #f1f4f5;
+              font-family: Arial, sans-serif;
+              font-size: 18px;
+              margin: 0;
+              padding: 40px;
+          }
+
+          .container {
+              background: white;
+              max-width: 1000px;
+              margin: auto;
+              padding: 30px;
+              border-radius: 10px;
+              box-shadow: 0 2px 10px rgba(0,0,0,.1);
+          }
+
+          h1 {
+              margin-top: 0;
+          }
+
+          ul {
+              padding-left: 25px;
+          }
+
+          li {
+              margin: 12px 0;
+          }
+
+          a {
+              color: #1769aa;
+              text-decoration: none;
+          }
+
+          a:hover {
+              text-decoration: underline;
+          }
+      &lt;/style&gt;
+  &lt;/head&gt;
+
+  &lt;body&gt;
+
+  &lt;div class=&quot;container&quot;&gt;
+
+      &lt;h1&gt;Servidor Caddy - Sitios web&lt;/h1&gt;
+
+      &lt;p&gt;Listado de sitios web estáticos disponibles:&lt;/p&gt;
+
+      &lt;ul&gt;
+  EOF
+
+  # Generar automáticamente la lista de sitios.
+  find &quot;$SITES_DIR&quot; \
+      -mindepth 1 \
+      -maxdepth 1 \
+      -type d \
+      ! -name '.*' \
+      -printf '%f\n' |
+  sort -f |
+  while IFS= read -r site; do
+
+      printf '        &lt;li&gt;&lt;a href=&quot;/%s/&quot;&gt;%s&lt;/a&gt;&lt;/li&gt;\n' \
+          &quot;$site&quot; &quot;$site&quot;
+
+  done &gt;&gt; &quot;$TMP_INDEX&quot;
+
+  cat &gt;&gt; &quot;$TMP_INDEX&quot; &lt;&lt;'EOF'
+      &lt;/ul&gt;
+
+  &lt;/div&gt;
+
+  &lt;/body&gt;
+  &lt;/html&gt;
+  EOF
+
+
+  # ============================================================
+  # INSTALAR ÍNDICE
+  # ============================================================
+
+  chown root:caddy &quot;$TMP_INDEX&quot;
+  chmod 644 &quot;$TMP_INDEX&quot;
+
+  mv &quot;$TMP_INDEX&quot; &quot;$INDEX&quot;
+
+  echo &quot;Índice generado correctamente.&quot;
 
 </code></pre>
 </li>
@@ -1149,33 +1148,33 @@ Este script debe tener permisos de ejecución y ser propiedad de root, ya que mo
 <li>
 <p><strong>LANZADOR</strong></p>
 <p><code>edit subir-sitio.cmd</code> y pegar el siguiente contenido:</p>
-<pre><code>  @echo off
+<pre><code>@echo off
 
-  powershell.exe -ExecutionPolicy Bypass -File &quot;%USERPROFILE%\Scripts\subir-sitio.ps1&quot;
+powershell.exe -ExecutionPolicy Bypass -File &quot;%USERPROFILE%\Scripts\subir-sitio.ps1&quot;
 
-  if errorlevel 1 (
-    echo.
-    echo ERROR: La subida del sitio ha fallado.
-    echo.
-    pause
-      exit /b 1
-  )
-
+if errorlevel 1 (
   echo.
-  echo Sitio subido correctamente.
+  echo ERROR: La subida del sitio ha fallado.
   echo.
   pause
+    exit /b 1
+)
+
+echo.
+echo Sitio subido correctamente.
+echo.
+pause
 </code></pre>
 </li>
 <li>
 <p><strong>AÑADIR EL SCRIPT A LA VARIABLE DE ENTORNO PATH</strong></p>
 <p>No necesitamos modificar el PATH del sistema. Lo añadiremos solo para tu usuario.</p>
 <p>Ejecuta:</p>
-<pre><code>  [Environment]::SetEnvironmentVariable(
-  &quot;Path&quot;,
-  [Environment]::GetEnvironmentVariable(&quot;Path&quot;, &quot;User&quot;) + &quot;;C:\Users\juanp\Scripts&quot;,
-  &quot;User&quot;
-  )
+<pre><code>[Environment]::SetEnvironmentVariable(
+&quot;Path&quot;,
+[Environment]::GetEnvironmentVariable(&quot;Path&quot;, &quot;User&quot;) + &quot;;C:\Users\juanp\Scripts&quot;,
+&quot;User&quot;
+)
 </code></pre>
 <ul>
 <li>
@@ -1215,36 +1214,36 @@ Este script debe tener permisos de ejecución y ser propiedad de root, ya que mo
   subir-sitio
 </code></pre>
 <p>Aparecerá algo como lo siguiente en la terminal de PowerShell:</p>
-<pre><code>  ============================================
-  SUBIDA DE SITIO WEB ESTÁTICO
-  ============================================
+<pre><code>============================================
+SUBIDA DE SITIO WEB ESTÁTICO
+============================================
 
-  Proyecto : Documentar_Proyecto
-  Origen   : C:\Users\juanp\Proyectos\Documentar_Proyecto\_site
-  Destino  : /opt/static-sites/Documentar_Proyecto
+Proyecto : Documentar_Proyecto
+Origen   : C:\Users\juanp\Proyectos\Documentar_Proyecto\_site
+Destino  : /opt/static-sites/Documentar_Proyecto
 
-  ¿Continuar con la subida? [S/N]: s
+¿Continuar con la subida? [S/N]: s
 
-  1. Preparando directorio temporal...
-  webadmin@pluton's password:
+1. Preparando directorio temporal...
+webadmin@pluton's password:
 
-  2. Copiando contenido de _site...
-  webadmin@pluton's password:
-  busquedaDifusa.png            100%   24KB 123.0KB/s   00:00
-  ...
+2. Copiando contenido de _site...
+webadmin@pluton's password:
+busquedaDifusa.png            100%   24KB 123.0KB/s   00:00
+...
 
-  3. Instalando sitio...
-  webadmin@pluton's password:
+3. Instalando sitio...
+webadmin@pluton's password:
 
-  ============================================
-  SITIO COPIADO CORRECTAMENTE
-  ============================================
+============================================
+SITIO COPIADO CORRECTAMENTE
+============================================
 
-  Sitio : Documentar_Proyecto
-  URL   : http://pluton/Documentar_Proyecto/
+Sitio : Documentar_Proyecto
+URL   : http://pluton/Documentar_Proyecto/
 
-  Los permisos, ACL e índice se procesarán
-  automáticamente en Pluton.
+Los permisos, ACL e índice se procesarán
+automáticamente en Pluton.
 </code></pre>
 </li>
 </ul>

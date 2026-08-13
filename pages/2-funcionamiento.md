@@ -61,20 +61,19 @@ He intentado generar un procedimiento que permita alojar la documentación en un
   * Cada carpeta dentro de `/opt/static-sites` representa un sitio web independiente.
   * Se automatiza la detección de cambios en la carpeta de los sitios web y se reescribe la página principal que contiene una lista con accesos a cada sitio web.
   * Se crea un `Caddyfile` que genera automáticamente los accesos a cada sitio web cada vez que se sube un sitio, sin necesidad de cambiarlo manualmente.
-  * Al copiar un nuevo sitio web mediante `scp`, los permisos se heredan automáticamente.
+  * Al copiar un nuevo sitio web los permisos se heredan automáticamente.
   * No es necesario reiniciar Caddy para que se apliquen los cambios, ya que se detectan automáticamente.
 
 
 * **COPIAR SITIO AL SERVIDOR**
 
-    Desde Windows y utilizando un terminal de PowerShell:
-     1. Crear una carpeta local para el sitio. Debe tener el mismo nombre que el PathPrefix definido en el archivo `settings.json` del proyecto. Por ejemplo, si el PathPrefix es `/mi-proyecto`, la carpeta local debe llamarse `mi-proyecto`:
-    
-    ```ssh webadmin@pluton "mkdir -p /opt/static-sites/mi-proyecto"```
-    
-     2. Instrucción para copiar el contenido de la carpeta `_site`: 
-    
-    ```scp -r .\_site\* webadmin@pluton:/opt/static-sites/mi-proyecto/```
+He automatizado el proceso de subir un sitio web al servidor, para ello he creado un script llamado `subir-sitio` que se encuentra en la carpeta `C:\Users\juanp\Scripts` y que se debe añadir a la variable de entorno Path del usuario.
 
+El flujo queda reducido a abrir una terminal de PowerShell, situarse en la carpeta del proyecto y ejecutar `subir-sitio`. El script detectará automáticamente el nombre del proyecto y realizará la subida al servidor. Nos pedirá la contraseña del usuario `webadmin` en el servidor varias veces.
+
+  ```
+    cd C:\ruta\del\proyecto
+    subir-sitio
+  ```
 
 De manera automática se actualiza la página principal que contiene los accesos a cada sitio web `http://pluton.tailf0dd91.ts.net/`, y se debería poder acceder al sitio web desde la URL: `http://pluton.tailf0dd91.ts.net/mi-proyecto/` siempre que tengamos acceso a la red de Tailscale.
