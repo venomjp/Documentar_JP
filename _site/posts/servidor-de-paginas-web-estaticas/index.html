@@ -472,6 +472,11 @@
                             <a href="#activacion-del-servicio-y-la-unidad-de-observacion" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
                                 Activación del servicio y la unidad de observación
                             </a>
+                        </li>
+                        <li class="d-flex">
+                            <a href="#script-en-windows" class="pl-5 pt-1 pb-1 | fs-4 lsp-3 lh-5 fvs-wght-400 wb-break-word | blwidth-1 blstyle-dashed bcolor-neutral-500">
+                                Script en Windows
+                            </a>
                         </li></ol>
                     </details>
                 
@@ -500,9 +505,9 @@
 </code></pre>
 <p>No utilizamos <code>root</code> para trabajar con las páginas.</p>
 <p><code>id webadmin</code> - para comprobar que el usuario se ha creado correctamente.</p>
-<pre><code>uid=1001(webadmin)
-gid=1001(webadmin)
-groups=1001(webadmin),100(users)
+<pre><code>  uid=1001(webadmin)
+  gid=1001(webadmin)
+  groups=1001(webadmin),100(users)
 </code></pre>
 <p>La finalidad es que <code>webadmin</code>sea el propietario de: <code>/opt/static-sites</code> y de todo su contenido.</p>
 </li>
@@ -514,8 +519,9 @@ groups=1001(webadmin),100(users)
 </code></pre>
 </li>
 <li>
-<p><strong>PERMISOS de los sitios</strong>
-Queremos que:</p>
+<p><strong>PERMISOS de los sitios</strong></p>
+<p>Esta parte es informativa y no hace falta ejecutar ningún comando.
+Buscamos que:</p>
 <ul>
 <li><code>webadmin</code>pueda modificar las páginas</li>
 <li>Caddy pueda leerlas</li>
@@ -523,8 +529,8 @@ Queremos que:</p>
 <li>Los archivos puedan ser leídos por Caddy</li>
 <li>Por eso usamos como permisos normales:</li>
 </ul>
-<pre><code>Directorios -&gt; 755
-Archivos    -&gt; 644
+<pre><code>  Directorios -&gt; 755
+  Archivos    -&gt; 644
 </code></pre>
 <p>Para cambiar los permisos de un sitio existente:</p>
 <pre><code class="language-bash">  sudo chown -R webadmin:webadmin /opt/static-sites/mi-sitio
@@ -575,7 +581,7 @@ Necesitamos ACL por defecto en <code>/opt/static-sites</code> para que todos los
 </code></pre>
 </li>
 <li>
-<p><strong>CONFIGURACIÓN de Caddy /etc/caddy/Caddyfile</strong></p>
+<p><strong>CADDYFILE - CONFIGURACIÓN de Caddy</strong></p>
 <p>La configuración de Caddy se encuentra en <code>/etc/caddy/Caddyfile</code>.</p>
 <p>El siguiente código es el que he utilizado, de manera que Caddy sirve una página principal localizada en el directorio <code>/usr/share/caddy</code> y la carpeta donde cargaremos nuestros sitios web estáticos, cada uno en un directorio <code>/opt/static-sites/</code>:</p>
 <pre><code># El archivo Caddyfile es la forma más sencilla de configurar
@@ -649,6 +655,12 @@ Description=Generar índice de sitios web estáticos
 [Service]
 Type=oneshot
 ExecStart=/usr/local/bin/generate-static-sites-index.sh
+
+# No permitir dos ejecuciones simultáneas
+ExecStartPre=/usr/bin/test -d /opt/static-sites
+
+# Esperar como máximo 10 minutos
+TimeoutStartSec=10min
 </code></pre>
 </li>
 <li>
@@ -674,31 +686,146 @@ Este script debe tener permisos de ejecución y ser propiedad de root, ya que mo
 <p><code>sudo nano /usr/local/bin/generate-static-sites-index.sh</code></p>
 <pre><code>    #!/bin/bash
 
-    set -e
+    set -euo pipefail
 
     SITES_DIR=&quot;/opt/static-sites&quot;
     INDEX=&quot;/usr/share/caddy/index.html&quot;
 
-    {
-        cat &lt;&lt;'EOF'
+    echo &quot;Esperando a que finalicen los cambios...&quot;
+
+    # ============================================================
+    # ESPERAR A QUE EL ÁRBOL DE SITIOS SE ESTABILICE
+    # ============================================================
+
+    # Comprobamos varias veces que el número/tamaño de archivos
+    # no esté cambiando.
+    #
+    # Esto evita procesar un sitio mientras todavía se está copiando.
+
+    previous_state=&quot;&quot;
+    stable_count=0
+
+    while [ &quot;$stable_count&quot; -lt 3 ]; do
+
+        current_state=$(
+            find &quot;$SITES_DIR&quot; \
+                -mindepth 1 \
+                -maxdepth 2 \
+                ! -name '.*' \
+                -printf '%p %s %T@\n' \
+                2&gt;/dev/null |
+            sort
+        )
+
+        if [ &quot;$current_state&quot; = &quot;$previous_state&quot; ]; then
+            stable_count=$((stable_count + 1))
+        else
+            stable_count=0
+            previous_state=&quot;$current_state&quot;
+        fi
+
+        sleep 2
+    done
+
+    echo &quot;Árbol de sitios estabilizado.&quot;
+
+
+    # ============================================================
+    # PROCESAR SITIOS
+    # ============================================================
+
+    find &quot;$SITES_DIR&quot; \
+        -mindepth 1 \
+        -maxdepth 1 \
+        -type d \
+        ! -name '.*' \
+        -print0 |
+    while IFS= read -r -d '' SITE; do
+
+        echo &quot;Procesando permisos: $SITE&quot;
+
+        # --------------------------------------------------------
+        # Propietario
+        # --------------------------------------------------------
+
+        chown -R webadmin:webadmin &quot;$SITE&quot;
+
+        # --------------------------------------------------------
+        # Directorios
+        #
+        # 755 permite:
+        #   webadmin -&gt; rwx
+        #   caddy    -&gt; r-x
+        #   pluton   -&gt; r-x
+        # --------------------------------------------------------
+
+        find &quot;$SITE&quot; -type d -exec chmod 755 {} +
+
+        # --------------------------------------------------------
+        # Archivos
+        #
+        # 644 permite:
+        #   webadmin -&gt; rw-
+        #   caddy    -&gt; r--
+        #   pluton   -&gt; r--
+        # --------------------------------------------------------
+
+        find &quot;$SITE&quot; -type f -exec chmod 644 {} +
+
+        # --------------------------------------------------------
+        # ACL para Caddy
+        #
+        # Directorios necesitan r-x para poder atravesarlos.
+        # Archivos necesitan r-- para poder leerlos.
+        # --------------------------------------------------------
+
+        find &quot;$SITE&quot; -type d \
+            -exec setfacl -m u:caddy:r-x,m:r-x {} +
+
+        find &quot;$SITE&quot; -type f \
+            -exec setfacl -m u:caddy:r--,m:r-- {} +
+
+        # --------------------------------------------------------
+        # ACL POR DEFECTO
+        #
+        # Esto garantiza que cualquier archivo/directorio creado
+        # posteriormente dentro del sitio herede permisos adecuados.
+        # --------------------------------------------------------
+
+        find &quot;$SITE&quot; -type d \
+            -exec setfacl -m d:u::rwx,d:u:caddy:r-x,d:u:webadmin:rwx,d:g::r-x,d:m::rwx,d:o::r-x {} +
+
+    done
+
+
+    # ============================================================
+    # GENERAR PÁGINA PRINCIPAL
+    # ============================================================
+
+    TMP_INDEX=$(mktemp)
+
+    cat &gt; &quot;$TMP_INDEX&quot; &lt;&lt;'EOF'
     &lt;!DOCTYPE html&gt;
     &lt;html lang=&quot;es&quot;&gt;
     &lt;head&gt;
         &lt;meta charset=&quot;UTF-8&quot;&gt;
         &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
-        &lt;title&gt;Servidor web&lt;/title&gt;
+
+        &lt;title&gt;Servidor Caddy - Sitios web&lt;/title&gt;
+
         &lt;style&gt;
             body {
+                background: #f1f4f5;
                 font-family: Arial, sans-serif;
-                max-width: 900px;
-                margin: 40px auto;
-                padding: 0 20px;
-                background: #f5f5f5;
-                color: #222;
+                font-size: 18px;
+                margin: 0;
+                padding: 40px;
             }
 
             .container {
                 background: white;
+                max-width: 1000px;
+                margin: auto;
                 padding: 30px;
                 border-radius: 10px;
                 box-shadow: 0 2px 10px rgba(0,0,0,.1);
@@ -709,7 +836,7 @@ Este script debe tener permisos de ejecución y ser propiedad de root, ya que mo
             }
 
             ul {
-                padding-left: 20px;
+                padding-left: 25px;
             }
 
             li {
@@ -728,41 +855,52 @@ Este script debe tener permisos de ejecución y ser propiedad de root, ya que mo
     &lt;/head&gt;
 
     &lt;body&gt;
+
     &lt;div class=&quot;container&quot;&gt;
 
-    &lt;h1&gt;Servidor web&lt;/h1&gt;
+        &lt;h1&gt;Servidor Caddy - Sitios web&lt;/h1&gt;
 
-    &lt;p&gt;
-        Caddy está funcionando correctamente.
-    &lt;/p&gt;
+        &lt;p&gt;Listado de sitios web estáticos disponibles:&lt;/p&gt;
 
-    &lt;h2&gt;Sitios disponibles&lt;/h2&gt;
-
-    &lt;ul&gt;
+        &lt;ul&gt;
     EOF
 
-        find &quot;$SITES_DIR&quot; -mindepth 1 -maxdepth 1 -type d -printf '%f\n' \
-            | sort -f \
-            | while IFS= read -r site; do
-                printf '    &lt;li&gt;&lt;a href=&quot;/%s/&quot;&gt;%s&lt;/a&gt;&lt;/li&gt;\n' \
-                    &quot;$site&quot; &quot;$site&quot;
-            done
+    # Generar automáticamente la lista de sitios.
+    find &quot;$SITES_DIR&quot; \
+        -mindepth 1 \
+        -maxdepth 1 \
+        -type d \
+        ! -name '.*' \
+        -printf '%f\n' |
+    sort -f |
+    while IFS= read -r site; do
 
-        cat &lt;&lt;'EOF'
-    &lt;/ul&gt;
+        printf '        &lt;li&gt;&lt;a href=&quot;/%s/&quot;&gt;%s&lt;/a&gt;&lt;/li&gt;\n' \
+            &quot;$site&quot; &quot;$site&quot;
+
+    done &gt;&gt; &quot;$TMP_INDEX&quot;
+
+    cat &gt;&gt; &quot;$TMP_INDEX&quot; &lt;&lt;'EOF'
+        &lt;/ul&gt;
 
     &lt;/div&gt;
+
     &lt;/body&gt;
     &lt;/html&gt;
     EOF
 
-    } &gt; &quot;$INDEX&quot;
 
-    chown root:caddy &quot;$INDEX&quot;
-    chmod 644 &quot;$INDEX&quot;
-</code></pre>
-<p>Guardamos el script y le damos permisos de ejecución:</p>
-<pre><code class="language-bash">  sudo chmod 755 /usr/local/bin/generate-static-sites-index.sh
+    # ============================================================
+    # INSTALAR ÍNDICE
+    # ============================================================
+
+    chown root:caddy &quot;$TMP_INDEX&quot;
+    chmod 644 &quot;$TMP_INDEX&quot;
+
+    mv &quot;$TMP_INDEX&quot; &quot;$INDEX&quot;
+
+    echo &quot;Índice generado correctamente.&quot;
+
 </code></pre>
 </li>
 </ul>
@@ -773,10 +911,10 @@ Este script debe tener permisos de ejecución y ser propiedad de root, ya que mo
                             </a>
                     Activación del servicio y la unidad de observación</h1>
 <p>Para que el servicio y la unidad de observación funcionen correctamente, debemos habilitarlos y arrancarlos:</p>
-<pre><code class="language-bash">sudo systemctl daemon-reload
-sudo systemctl enable --now  generate-static-sites-index.path
-sudo systemctl start generate-static-sites-index.service
-sudo systemctl status generate-static-sites-index.service
+<pre><code>  sudo systemctl daemon-reload
+  sudo systemctl enable --now  generate-static-sites-index.path
+  sudo systemctl start generate-static-sites-index.service
+  sudo systemctl status generate-static-sites-index.service
 </code></pre>
 <ul>
 <li>
@@ -793,6 +931,321 @@ sudo systemctl status generate-static-sites-index.service
 </li>
 <li>
 <p>No hace falta reiniciar ni recargar Caddy, ya que el servicio de observación y el script se encargan de actualizar la página principal automáticamente. En caso de necesitarlo la instrucción es: <code>sudo systemctl reload caddy</code>.</p>
+</li>
+</ul>
+
+                        <h1 id="script-en-windows" pl-9="xs,sm">
+                            <a href="#script-en-windows" title="Script en Windows" class="pos-absolute top-50 left-0 t-tY-50 | p-4 ml-1 | td-none | brad-4 bc-neutral-100 bwidth-1 bstyle-dashed bcolor-neutral-500 __hover-1 __soft-shadow" ml-3="xs,sm">
+                                <span class="icon-link-simple | pos-absolute top-50 left-50 t-tY-50 t-tX-50 | fs-4"></span>
+                            </a>
+                    Script en Windows</h1>
+<ul>
+<li>
+<p><strong>IDEA Y FUNCIONAMIENTO</strong></p>
+<p>La idea es tener un script en Windows que haga todo el trabajo:</p>
+<ol>
+<li>Preparar un directorio temporal en el servidor para subir el sitio web estático. El nombre del directorio temporal será generado automáticamente con el nombre del directorio donde se ejecute el script, siempre que contenga una carpeta. Los directorios .tmp son excluidos en la detección de modificaciones en la carpeta <code>/opt/static-sites</code>, así la automatización no detecta cambios mientras se suben los archivos.</li>
+<li>Copiar la carpeta <code>_site</code> al directorio temporal anterior, ya que el proceso de carga puede tardar un tiempo y queremos que la automatización no detecte cambios mientras se suben los archivos.</li>
+<li>Mover el directorio temporal al directorio final en <code>/opt/static-sites/</code>, esto dispara la automatización que genera la página principal.</li>
+<li>Los permisos, tanto de propietario como de ACL, se heredan automáticamente, por lo que no es necesario hacer nada más.</li>
+</ol>
+</li>
+<li>
+<p><strong>UBICACIÓN DEL SCRIPT</strong></p>
+<p>El script de Windows se ubica en la carpeta <code>C:\Users\juanp\Scripts\</code>. Contiene:</p>
+<ul>
+<li><samp>subir-sitio.ps1</samp> - script de PowerShell que realiza la subida del sitio web estático al servidor y ejecuta el script para generar la página principal.</li>
+<li><samp>subir-sitio.cmd</samp> - lanzador que permite ejecutar el script unicamente con la instrucción <code>subir-sitio</code>.</li>
+</ul>
+</li>
+<li>
+<p><strong>CONTENIDO DEL SCRIPT</strong></p>
+<p><code>edit subir-sitio.ps1</code> y pegar el siguiente contenido:</p>
+<pre><code>    # ============================================================
+    # SUBIR SITIO WEB ESTÁTICO A PLUTON
+    # ============================================================
+
+    $ErrorActionPreference = &quot;Stop&quot;
+
+    # ============================================================
+    # CONFIGURACIÓN
+    # ============================================================
+
+    $RemoteUser = &quot;webadmin&quot;
+    $RemoteHost = &quot;pluton&quot;
+    $RemoteBase = &quot;/opt/static-sites&quot;
+
+    # ============================================================
+    # DIRECTORIO ACTUAL
+    # ============================================================
+
+    $ProjectPath = (Get-Location).Path
+    $SiteName = Split-Path $ProjectPath -Leaf
+
+    # ============================================================
+    # RUTA _site
+    # ============================================================
+
+    $SitePath = Join-Path $ProjectPath &quot;_site&quot;
+
+    # ============================================================
+    # COMPROBACIONES
+    # ============================================================
+
+    if (-not (Test-Path $SitePath -PathType Container)) {
+
+        Write-Host &quot;&quot;
+        Write-Host &quot;ERROR: No existe la carpeta _site.&quot; -ForegroundColor Red
+        Write-Host &quot;&quot;
+        Write-Host &quot;Directorio actual:&quot;
+        Write-Host $ProjectPath
+        Write-Host &quot;&quot;
+        exit 1
+    }
+
+    if ([string]::IsNullOrWhiteSpace($SiteName)) {
+
+        Write-Host &quot;&quot;
+        Write-Host &quot;ERROR: No se ha podido determinar el nombre del sitio.&quot; -ForegroundColor Red
+        Write-Host &quot;&quot;
+        exit 1
+    }
+
+    # ============================================================
+    # INFORMACIÓN
+    # ============================================================
+
+    $TempName = &quot;.uploading_$SiteName&quot;
+
+    $RemoteTemp = &quot;$RemoteBase/$TempName&quot;
+    $RemoteFinal = &quot;$RemoteBase/$SiteName&quot;
+
+    Write-Host &quot;&quot;
+    Write-Host &quot;============================================&quot;
+    Write-Host &quot; SUBIDA DE SITIO WEB ESTÁTICO&quot;
+    Write-Host &quot;============================================&quot;
+    Write-Host &quot;&quot;
+    Write-Host &quot;Proyecto : $SiteName&quot;
+    Write-Host &quot;Origen   : $SitePath&quot;
+    Write-Host &quot;Destino  : $RemoteFinal&quot;
+    Write-Host &quot;&quot;
+
+    # ============================================================
+    # CONFIRMACIÓN
+    # ============================================================
+
+    $Answer = Read-Host &quot;¿Continuar con la subida? [S/N]&quot;
+
+    if ($Answer -notmatch &quot;^[sS]$&quot;) {
+
+        Write-Host &quot;&quot;
+        Write-Host &quot;Operación cancelada.&quot;
+        Write-Host &quot;&quot;
+
+        exit 0
+    }
+
+    # ============================================================
+    # CREAR DIRECTORIO TEMPORAL
+    # ============================================================
+
+    Write-Host &quot;&quot;
+    Write-Host &quot;1. Preparando directorio temporal...&quot;
+
+    ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp' &amp;&amp; mkdir -p '$RemoteTemp'&quot;
+
+    if ($LASTEXITCODE -ne 0) {
+
+        Write-Host &quot;&quot;
+        Write-Host &quot;ERROR: No se pudo crear el directorio temporal.&quot; -ForegroundColor Red
+        Write-Host &quot;&quot;
+
+        exit 1
+    }
+
+    # ============================================================
+    # COPIAR CONTENIDO DE _site
+    # ============================================================
+
+    Write-Host &quot;&quot;
+    Write-Host &quot;2. Copiando contenido de _site...&quot;
+    Write-Host &quot;&quot;
+
+    # El punto después de _site significa:
+    #
+    #   copiar EL CONTENIDO de _site
+    #
+    # y no crear:
+    #
+    #   /opt/static-sites/Nombre/_site/
+    #
+    # De esta forma obtenemos directamente:
+    #
+    #   /opt/static-sites/Nombre/index.html
+    #   /opt/static-sites/Nombre/assets/
+    #   /opt/static-sites/Nombre/core/
+    #   etc.
+    #
+    # También permite incluir archivos ocultos.
+
+    scp -r &quot;$SitePath\.&quot; &quot;$RemoteUser@$RemoteHost`:$RemoteTemp/&quot;
+
+    if ($LASTEXITCODE -ne 0) {
+
+        Write-Host &quot;&quot;
+        Write-Host &quot;ERROR: La copia ha fallado.&quot; -ForegroundColor Red
+        Write-Host &quot;&quot;
+        Write-Host &quot;Eliminando directorio temporal...&quot;
+
+        ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp'&quot;
+
+        exit 1
+    }
+
+    # ============================================================
+    # INSTALAR EL SITIO
+    # ============================================================
+
+    Write-Host &quot;&quot;
+    Write-Host &quot;3. Instalando sitio...&quot;
+
+    # El sitio definitivo solo aparece cuando la copia completa
+    # ha terminado.
+    #
+    # Si ya existía una versión anterior, se sustituye ahora.
+
+    $RemoteCommand = &quot;rm -rf '$RemoteFinal' &amp;&amp; mv '$RemoteTemp' '$RemoteFinal'&quot;
+
+    ssh &quot;$RemoteUser@$RemoteHost&quot; $RemoteCommand
+
+    if ($LASTEXITCODE -ne 0) {
+
+        Write-Host &quot;&quot;
+        Write-Host &quot;ERROR: No se pudo instalar el sitio.&quot; -ForegroundColor Red
+        Write-Host &quot;&quot;
+
+        ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp'&quot;
+
+        exit 1
+    }
+
+    # ============================================================
+    # FINAL
+    # ============================================================
+
+    Write-Host &quot;&quot;
+    Write-Host &quot;============================================&quot;
+    Write-Host &quot; SITIO COPIADO CORRECTAMENTE&quot;
+    Write-Host &quot;============================================&quot;
+    Write-Host &quot;&quot;
+    Write-Host &quot;Sitio : $SiteName&quot;
+    Write-Host &quot;URL   : http://$RemoteHost/$SiteName/&quot;
+    Write-Host &quot;&quot;
+    Write-Host &quot;Los permisos, ACL e índice se procesarán&quot;
+    Write-Host &quot;automáticamente en Pluton.&quot;
+    Write-Host &quot;&quot;
+</code></pre>
+</li>
+<li>
+<p><strong>LANZADOR</strong></p>
+<p><code>edit subir-sitio.cmd</code> y pegar el siguiente contenido:</p>
+<pre><code>  @echo off
+
+  powershell.exe -ExecutionPolicy Bypass -File &quot;%USERPROFILE%\Scripts\subir-sitio.ps1&quot;
+
+  if errorlevel 1 (
+    echo.
+    echo ERROR: La subida del sitio ha fallado.
+    echo.
+    pause
+      exit /b 1
+  )
+
+  echo.
+  echo Sitio subido correctamente.
+  echo.
+  pause
+</code></pre>
+</li>
+<li>
+<p><strong>AÑADIR EL SCRIPT A LA VARIABLE DE ENTORNO PATH</strong></p>
+<p>No necesitamos modificar el PATH del sistema. Lo añadiremos solo para tu usuario.</p>
+<p>Ejecuta:</p>
+<pre><code>  [Environment]::SetEnvironmentVariable(
+  &quot;Path&quot;,
+  [Environment]::GetEnvironmentVariable(&quot;Path&quot;, &quot;User&quot;) + &quot;;C:\Users\juanp\Scripts&quot;,
+  &quot;User&quot;
+  )
+</code></pre>
+<ul>
+<li>
+<p><mark>Importante</mark></p>
+<ul>
+<li>
+<p>Cierra completamente PowerShell y abre una nueva ventana.</p>
+</li>
+<li>
+<p>Esto es necesario para que la nueva sesión recoja el PATH actualizado.</p>
+</li>
+</ul>
+</li>
+<li>
+<p><mark>Comprobar el PATH</mark></p>
+<ul>
+<li>
+<p>En la nueva PowerShell: <code>$env:Path -split &quot;;&quot;</code></p>
+</li>
+<li>
+<p>Entre las entradas debería aparecer: <code>C:\Users\juanp\Scripts</code></p>
+</li>
+<li>
+<p>También puedes comprobar directamente: <code>$env:Path -like &quot;*C:\Users\juanp\Scripts*&quot;</code></p>
+</li>
+<li>
+<p>Debe devolver: <code>True</code></p>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>USO DEL SCRIPT</strong></p>
+<p>El flujo queda reducido a situarse en la carpeta del proyecto y ejecutas <code>subir-sitio</code>. El script detectará automáticamente el nombre del proyecto y realizará la subida al servidor. Nos pedirá la contraseña del usuario <code>webadmin</code> en el servidor varias veces.</p>
+<pre><code>  cd C:\ruta\del\proyecto
+  subir-sitio
+</code></pre>
+<p>Aparecerá algo como lo siguiente en la terminal de PowerShell:</p>
+<pre><code>  ============================================
+  SUBIDA DE SITIO WEB ESTÁTICO
+  ============================================
+
+  Proyecto : Documentar_Proyecto
+  Origen   : C:\Users\juanp\Proyectos\Documentar_Proyecto\_site
+  Destino  : /opt/static-sites/Documentar_Proyecto
+
+  ¿Continuar con la subida? [S/N]: s
+
+  1. Preparando directorio temporal...
+  webadmin@pluton's password:
+
+  2. Copiando contenido de _site...
+  webadmin@pluton's password:
+  busquedaDifusa.png            100%   24KB 123.0KB/s   00:00
+  ...
+
+  3. Instalando sitio...
+  webadmin@pluton's password:
+
+  ============================================
+  SITIO COPIADO CORRECTAMENTE
+  ============================================
+
+  Sitio : Documentar_Proyecto
+  URL   : http://pluton/Documentar_Proyecto/
+
+  Los permisos, ACL e índice se procesarán
+  automáticamente en Pluton.
+</code></pre>
 </li>
 </ul>
 
