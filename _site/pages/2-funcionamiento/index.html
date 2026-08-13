@@ -537,14 +537,14 @@
 </li>
 <li>
 <p><strong>COPIAR SITIO AL SERVIDOR</strong></p>
-</li>
-</ul>
 <p>He automatizado el proceso de subir un sitio web al servidor, para ello he creado un script llamado <code>subir-sitio</code> que se encuentra en la carpeta <code>C:\Users\juanp\Scripts</code> y que se debe añadir a la variable de entorno Path del usuario.</p>
 <p>El flujo queda reducido a abrir una terminal de PowerShell, situarse en la carpeta del proyecto y ejecutar <code>subir-sitio</code>. El script detectará automáticamente el nombre del proyecto y realizará la subida al servidor. Nos pedirá la contraseña del usuario <code>webadmin</code> en el servidor varias veces.</p>
-<pre><code>  cd C:\ruta\del\proyecto
-  subir-sitio
+<pre><code>cd C:\ruta\del\proyecto
+subir-sitio
 </code></pre>
 <p>De manera automática se actualiza la página principal que contiene los accesos a cada sitio web <code>http://pluton.tailf0dd91.ts.net/</code>, y se debería poder acceder al sitio web desde la URL: <code>http://pluton.tailf0dd91.ts.net/mi-proyecto/</code> siempre que tengamos acceso a la red de Tailscale.</p>
+</li>
+</ul>
 
             <footer class="minh-100vh">
                 <div class="pt-11 | blwidth-1 blstyle-dashed bcolor-neutral-500"></div>

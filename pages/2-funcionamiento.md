@@ -67,13 +67,13 @@ He intentado generar un procedimiento que permita alojar la documentación en un
 
 * **COPIAR SITIO AL SERVIDOR**
 
-He automatizado el proceso de subir un sitio web al servidor, para ello he creado un script llamado `subir-sitio` que se encuentra en la carpeta `C:\Users\juanp\Scripts` y que se debe añadir a la variable de entorno Path del usuario.
+    He automatizado el proceso de subir un sitio web al servidor, para ello he creado un script llamado `subir-sitio` que se encuentra en la carpeta `C:\Users\juanp\Scripts` y que se debe añadir a la variable de entorno Path del usuario.
 
-El flujo queda reducido a abrir una terminal de PowerShell, situarse en la carpeta del proyecto y ejecutar `subir-sitio`. El script detectará automáticamente el nombre del proyecto y realizará la subida al servidor. Nos pedirá la contraseña del usuario `webadmin` en el servidor varias veces.
+    El flujo queda reducido a abrir una terminal de PowerShell, situarse en la carpeta del proyecto y ejecutar `subir-sitio`. El script detectará automáticamente el nombre del proyecto y realizará la subida al servidor. Nos pedirá la contraseña del usuario `webadmin` en el servidor varias veces.
 
-  ```
+    ```
     cd C:\ruta\del\proyecto
     subir-sitio
-  ```
+    ```
 
-De manera automática se actualiza la página principal que contiene los accesos a cada sitio web `http://pluton.tailf0dd91.ts.net/`, y se debería poder acceder al sitio web desde la URL: `http://pluton.tailf0dd91.ts.net/mi-proyecto/` siempre que tengamos acceso a la red de Tailscale.
+    De manera automática se actualiza la página principal que contiene los accesos a cada sitio web `http://pluton.tailf0dd91.ts.net/`, y se debería poder acceder al sitio web desde la URL: `http://pluton.tailf0dd91.ts.net/mi-proyecto/` siempre que tengamos acceso a la red de Tailscale.
