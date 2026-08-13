@@ -960,189 +960,188 @@ Este script debe tener permisos de ejecución y ser propiedad de root, ya que mo
 <li>
 <p><strong>CONTENIDO DEL SCRIPT</strong></p>
 <p><code>edit subir-sitio.ps1</code> y pegar el siguiente contenido:</p>
-<pre><code>    # ============================================================
-    # SUBIR SITIO WEB ESTÁTICO A PLUTON
-    # ============================================================
+<pre><code># ============================================================
+# SUBIR SITIO WEB ESTÁTICO A PLUTON
+# ============================================================
 
-    $ErrorActionPreference = &quot;Stop&quot;
+$ErrorActionPreference = &quot;Stop&quot;
 
-    # ============================================================
-    # CONFIGURACIÓN
-    # ============================================================
+# ============================================================
+# CONFIGURACIÓN
+# ============================================================
 
-    $RemoteUser = &quot;webadmin&quot;
-    $RemoteHost = &quot;pluton&quot;
-    $RemoteBase = &quot;/opt/static-sites&quot;
+$RemoteUser = &quot;webadmin&quot;
+$RemoteHost = &quot;pluton&quot;
+$RemoteBase = &quot;/opt/static-sites&quot;
 
-    # ============================================================
-    # DIRECTORIO ACTUAL
-    # ============================================================
+# ============================================================
+# DIRECTORIO ACTUAL
+# ============================================================
 
-    $ProjectPath = (Get-Location).Path
-    $SiteName = Split-Path $ProjectPath -Leaf
+$ProjectPath = (Get-Location).Path
+$SiteName = Split-Path $ProjectPath -Leaf
 
-    # ============================================================
-    # RUTA _site
-    # ============================================================
+# ============================================================
+# RUTA _site
+# ============================================================
 
-    $SitePath = Join-Path $ProjectPath &quot;_site&quot;
+$SitePath = Join-Path $ProjectPath &quot;_site&quot;
 
-    # ============================================================
-    # COMPROBACIONES
-    # ============================================================
+# ============================================================
+# COMPROBACIONES
+# ============================================================
 
-    if (-not (Test-Path $SitePath -PathType Container)) {
-
-        Write-Host &quot;&quot;
-        Write-Host &quot;ERROR: No existe la carpeta _site.&quot; -ForegroundColor Red
-        Write-Host &quot;&quot;
-        Write-Host &quot;Directorio actual:&quot;
-        Write-Host $ProjectPath
-        Write-Host &quot;&quot;
-        exit 1
-    }
-
-    if ([string]::IsNullOrWhiteSpace($SiteName)) {
-
-        Write-Host &quot;&quot;
-        Write-Host &quot;ERROR: No se ha podido determinar el nombre del sitio.&quot; -ForegroundColor Red
-        Write-Host &quot;&quot;
-        exit 1
-    }
-
-    # ============================================================
-    # INFORMACIÓN
-    # ============================================================
-
-    $TempName = &quot;.uploading_$SiteName&quot;
-
-    $RemoteTemp = &quot;$RemoteBase/$TempName&quot;
-    $RemoteFinal = &quot;$RemoteBase/$SiteName&quot;
+if (-not (Test-Path $SitePath -PathType Container)) {
 
     Write-Host &quot;&quot;
-    Write-Host &quot;============================================&quot;
-    Write-Host &quot; SUBIDA DE SITIO WEB ESTÁTICO&quot;
-    Write-Host &quot;============================================&quot;
+    Write-Host &quot;ERROR: No existe la carpeta _site.&quot; -ForegroundColor Red
     Write-Host &quot;&quot;
-    Write-Host &quot;Proyecto : $SiteName&quot;
-    Write-Host &quot;Origen   : $SitePath&quot;
-    Write-Host &quot;Destino  : $RemoteFinal&quot;
+    Write-Host &quot;Directorio actual:&quot;
+    Write-Host $ProjectPath
     Write-Host &quot;&quot;
+    exit 1
+}
 
-    # ============================================================
-    # CONFIRMACIÓN
-    # ============================================================
-
-    $Answer = Read-Host &quot;¿Continuar con la subida? [S/N]&quot;
-
-    if ($Answer -notmatch &quot;^[sS]$&quot;) {
-
-        Write-Host &quot;&quot;
-        Write-Host &quot;Operación cancelada.&quot;
-        Write-Host &quot;&quot;
-
-        exit 0
-    }
-
-    # ============================================================
-    # CREAR DIRECTORIO TEMPORAL
-    # ============================================================
+if ([string]::IsNullOrWhiteSpace($SiteName)) {
 
     Write-Host &quot;&quot;
-    Write-Host &quot;1. Preparando directorio temporal...&quot;
+    Write-Host &quot;ERROR: No se ha podido determinar el nombre del sitio.&quot; -ForegroundColor Red
+    Write-Host &quot;&quot;
+    exit 1
+}
 
-    ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp' &amp;&amp; mkdir -p '$RemoteTemp'&quot;
+# ============================================================
+# INFORMACIÓN
+# ============================================================
 
-    if ($LASTEXITCODE -ne 0) {
+$TempName = &quot;.uploading_$SiteName&quot;
 
-        Write-Host &quot;&quot;
-        Write-Host &quot;ERROR: No se pudo crear el directorio temporal.&quot; -ForegroundColor Red
-        Write-Host &quot;&quot;
+$RemoteTemp = &quot;$RemoteBase/$TempName&quot;
+$RemoteFinal = &quot;$RemoteBase/$SiteName&quot;
 
-        exit 1
-    }
+Write-Host &quot;&quot;
+Write-Host &quot;============================================&quot;
+Write-Host &quot; SUBIDA DE SITIO WEB ESTÁTICO&quot;
+Write-Host &quot;============================================&quot;
+Write-Host &quot;&quot;
+Write-Host &quot;Proyecto : $SiteName&quot;
+Write-Host &quot;Origen   : $SitePath&quot;
+Write-Host &quot;Destino  : $RemoteFinal&quot;
+Write-Host &quot;&quot;
 
-    # ============================================================
-    # COPIAR CONTENIDO DE _site
-    # ============================================================
+# ============================================================
+# CONFIRMACIÓN
+# ============================================================
+
+$Answer = Read-Host &quot;¿Continuar con la subida? [S/N]&quot;
+
+if ($Answer -notmatch &quot;^[sS]$&quot;) {
 
     Write-Host &quot;&quot;
-    Write-Host &quot;2. Copiando contenido de _site...&quot;
+    Write-Host &quot;Operación cancelada.&quot;
     Write-Host &quot;&quot;
 
-    # El punto después de _site significa:
-    #
-    #   copiar EL CONTENIDO de _site
-    #
-    # y no crear:
-    #
-    #   /opt/static-sites/Nombre/_site/
-    #
-    # De esta forma obtenemos directamente:
-    #
-    #   /opt/static-sites/Nombre/index.html
-    #   /opt/static-sites/Nombre/assets/
-    #   /opt/static-sites/Nombre/core/
-    #   etc.
-    #
-    # También permite incluir archivos ocultos.
+    exit 0
+}
 
-    scp -r &quot;$SitePath\.&quot; &quot;$RemoteUser@$RemoteHost`:$RemoteTemp/&quot;
+# ============================================================
+# CREAR DIRECTORIO TEMPORAL
+# ============================================================
 
-    if ($LASTEXITCODE -ne 0) {
+Write-Host &quot;&quot;
+Write-Host &quot;1. Preparando directorio temporal...&quot;
 
-        Write-Host &quot;&quot;
-        Write-Host &quot;ERROR: La copia ha fallado.&quot; -ForegroundColor Red
-        Write-Host &quot;&quot;
-        Write-Host &quot;Eliminando directorio temporal...&quot;
+ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp' &amp;&amp; mkdir -p '$RemoteTemp'&quot;
 
-        ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp'&quot;
-
-        exit 1
-    }
-
-    # ============================================================
-    # INSTALAR EL SITIO
-    # ============================================================
+if ($LASTEXITCODE -ne 0) {
 
     Write-Host &quot;&quot;
-    Write-Host &quot;3. Instalando sitio...&quot;
+    Write-Host &quot;ERROR: No se pudo crear el directorio temporal.&quot; -ForegroundColor Red
+    Write-Host &quot;&quot;
 
-    # El sitio definitivo solo aparece cuando la copia completa
-    # ha terminado.
-    #
-    # Si ya existía una versión anterior, se sustituye ahora.
+    exit 1
+}
 
-    $RemoteCommand = &quot;rm -rf '$RemoteFinal' &amp;&amp; mv '$RemoteTemp' '$RemoteFinal'&quot;
+# ============================================================
+# COPIAR CONTENIDO DE _site
+# ============================================================
 
-    ssh &quot;$RemoteUser@$RemoteHost&quot; $RemoteCommand
+Write-Host &quot;&quot;
+Write-Host &quot;2. Copiando contenido de _site...&quot;
+Write-Host &quot;&quot;
 
-    if ($LASTEXITCODE -ne 0) {
+# El punto después de _site significa:
+#
+#   copiar EL CONTENIDO de _site
+#
+#
+#   /opt/static-sites/Nombre/_site/
+#
+# De esta forma obtenemos directamente:
+#
+#   /opt/static-sites/Nombre/index.html
+#   /opt/static-sites/Nombre/assets/
+#   /opt/static-sites/Nombre/core/
+#   etc.
+#
+# También permite incluir archivos ocultos.
 
-        Write-Host &quot;&quot;
-        Write-Host &quot;ERROR: No se pudo instalar el sitio.&quot; -ForegroundColor Red
-        Write-Host &quot;&quot;
+scp -r &quot;$SitePath\.&quot; &quot;$RemoteUser@$RemoteHost`:$RemoteTemp/&quot;
 
-        ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp'&quot;
-
-        exit 1
-    }
-
-    # ============================================================
-    # FINAL
-    # ============================================================
+if ($LASTEXITCODE -ne 0) {
 
     Write-Host &quot;&quot;
-    Write-Host &quot;============================================&quot;
-    Write-Host &quot; SITIO COPIADO CORRECTAMENTE&quot;
-    Write-Host &quot;============================================&quot;
+    Write-Host &quot;ERROR: La copia ha fallado.&quot; -ForegroundColor Red
     Write-Host &quot;&quot;
-    Write-Host &quot;Sitio : $SiteName&quot;
-    Write-Host &quot;URL   : http://$RemoteHost/$SiteName/&quot;
+    Write-Host &quot;Eliminando directorio temporal...&quot;
+
+    ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp'&quot;
+
+    exit 1
+}
+
+# ============================================================
+# INSTALAR EL SITIO
+# ============================================================
+
+Write-Host &quot;&quot;
+Write-Host &quot;3. Instalando sitio...&quot;
+
+# El sitio definitivo solo aparece cuando la copia completa
+# ha terminado.
+#
+# Si ya existía una versión anterior, se sustituye ahora.
+
+$RemoteCommand = &quot;rm -rf '$RemoteFinal' &amp;&amp; mv '$RemoteTemp' '$RemoteFinal'&quot;
+
+ssh &quot;$RemoteUser@$RemoteHost&quot; $RemoteCommand
+
+if ($LASTEXITCODE -ne 0) {
+
     Write-Host &quot;&quot;
-    Write-Host &quot;Los permisos, ACL e índice se procesarán&quot;
-    Write-Host &quot;automáticamente en Pluton.&quot;
+    Write-Host &quot;ERROR: No se pudo instalar el sitio.&quot; -ForegroundColor Red
     Write-Host &quot;&quot;
+
+    ssh &quot;$RemoteUser@$RemoteHost&quot; &quot;rm -rf '$RemoteTemp'&quot;
+
+    exit 1
+}
+
+# ============================================================
+# FINAL
+# ============================================================
+
+Write-Host &quot;&quot;
+Write-Host &quot;============================================&quot;
+Write-Host &quot; SITIO COPIADO CORRECTAMENTE&quot;
+Write-Host &quot;============================================&quot;
+Write-Host &quot;&quot;
+Write-Host &quot;Sitio : $SiteName&quot;
+Write-Host &quot;URL   : http://$RemoteHost/$SiteName/&quot;
+Write-Host &quot;&quot;
+Write-Host &quot;Los permisos, ACL e índice se procesarán&quot;
+Write-Host &quot;automáticamente en Pluton.&quot;
+Write-Host &quot;&quot;
 </code></pre>
 </li>
 <li>
